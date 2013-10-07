@@ -1,0 +1,13 @@
+C:\Users\Hiang\Documents\Visual Studio 2010\Projects\pract\pract\bin\Debug\pract.exe
+C:\Users\Hiang\Documents\Visual Studio 2010\Projects\pract\pract\bin\Debug\pract.pdb
+C:\Users\Hiang\Documents\Visual Studio 2010\Projects\pract\pract\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Hiang\Documents\Visual Studio 2010\Projects\pract\pract\obj\x86\Debug\MainWindow.baml
+C:\Users\Hiang\Documents\Visual Studio 2010\Projects\pract\pract\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Hiang\Documents\Visual Studio 2010\Projects\pract\pract\obj\x86\Debug\App.g.cs
+C:\Users\Hiang\Documents\Visual Studio 2010\Projects\pract\pract\obj\x86\Debug\pract_MarkupCompile.cache
+C:\Users\Hiang\Documents\Visual Studio 2010\Projects\pract\pract\obj\x86\Debug\pract.g.resources
+C:\Users\Hiang\Documents\Visual Studio 2010\Projects\pract\pract\obj\x86\Debug\WpfApplication1.Properties.Resources.resources
+C:\Users\Hiang\Documents\Visual Studio 2010\Projects\pract\pract\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Hiang\Documents\Visual Studio 2010\Projects\pract\pract\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Hiang\Documents\Visual Studio 2010\Projects\pract\pract\obj\x86\Debug\pract.exe
+C:\Users\Hiang\Documents\Visual Studio 2010\Projects\pract\pract\obj\x86\Debug\pract.pdb
