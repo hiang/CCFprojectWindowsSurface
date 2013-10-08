@@ -4,27 +4,33 @@
                         xmlns:s="http://schemas.microsoft.com/surface/2008"
                         Title="MainWindow" Height="150" Width="425">
     <Grid>
-       <!-- <ListBox ItemsSource="{Binding Source={StaticResource MyPhotos}}"
+        <!-- <ListBox ItemsSource="{Binding Source={StaticResource MyPhotos}}"
          Background="Silver" Width="600" Margin="10" SelectedIndex="0"/> -->
-       
+
         <Grid x:Name="inputBox">
-            <Border 
+            <Border
             MinWidth="300"
-            MaxWidth="290"
-            Background="PeachPuff"
-            BorderBrush="Black"
             BorderThickness="1"
             CornerRadius="0,60,50,0"
             Padding="2"
-            HorizontalAlignment="Left" /> <!--align the background edges to the left -->
-            
-            <Border
-                MinWidth="1"
-                Background="AliceBlue"
-                CornerRadius="0,2,2,0"
-                HorizontalAlignment="Right"/>
+            HorizontalAlignment="Left">
+            </Border>
+
+            <WrapPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal">
+                    <Label>Some field</Label>
+                    <TextBox>Some value</TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label>Another field</Label>
+                    <TextBox Width="20">Another value</TextBox>
+                </StackPanel>
+            </WrapPanel>
+            <!--align the background edges to the left -->
+
+
         </Grid>
 
-  
+
     </Grid>
 </Window>
