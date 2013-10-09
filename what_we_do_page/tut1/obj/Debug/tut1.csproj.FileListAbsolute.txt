@@ -1,0 +1,16 @@
+C:\Users\Wilsoon\Desktop\tut1\tut1\tut1\bin\Debug\Resources\icon.png
+C:\Users\Wilsoon\Desktop\tut1\tut1\tut1\bin\Debug\tut1.xml
+C:\Users\Wilsoon\Desktop\tut1\tut1\tut1\bin\Debug\tut1.exe
+C:\Users\Wilsoon\Desktop\tut1\tut1\tut1\bin\Debug\tut1.pdb
+C:\Users\Wilsoon\Desktop\tut1\tut1\tut1\obj\Debug\tut1.csprojResolveAssemblyReference.cache
+C:\Users\Wilsoon\Desktop\tut1\tut1\tut1\obj\Debug\SurfaceWindow1.baml
+C:\Users\Wilsoon\Desktop\tut1\tut1\tut1\obj\Debug\App.baml
+C:\Users\Wilsoon\Desktop\tut1\tut1\tut1\obj\Debug\SurfaceWindow1.g.cs
+C:\Users\Wilsoon\Desktop\tut1\tut1\tut1\obj\Debug\App.g.cs
+C:\Users\Wilsoon\Desktop\tut1\tut1\tut1\obj\Debug\tut1_Content.g.cs
+C:\Users\Wilsoon\Desktop\tut1\tut1\tut1\obj\Debug\tut1_MarkupCompile.cache
+C:\Users\Wilsoon\Desktop\tut1\tut1\tut1\obj\Debug\tut1.g.resources
+C:\Users\Wilsoon\Desktop\tut1\tut1\tut1\obj\Debug\tut1.Properties.Resources.resources
+C:\Users\Wilsoon\Desktop\tut1\tut1\tut1\obj\Debug\tut1.csproj.GenerateResource.Cache
+C:\Users\Wilsoon\Desktop\tut1\tut1\tut1\obj\Debug\tut1.exe
+C:\Users\Wilsoon\Desktop\tut1\tut1\tut1\obj\Debug\tut1.pdb
