@@ -1,0 +1,70 @@
+﻿<s:SurfaceWindow x:Class="tut1.SurfaceWindow1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:s="http://schemas.microsoft.com/surface/2008"
+    Title="What we do page" SizeToContent="Manual">
+    <Grid Background="white" ClipToBounds="True">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="28" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="500" />
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="inputBox">
+            <Border
+            Width="1395"
+            BorderThickness="10"
+            CornerRadius="0,360,360,0"
+            Padding="2"
+            HorizontalAlignment="Left" Margin="0,6,0,149" BorderBrush="Black" Height="759" VerticalAlignment="Stretch">
+            
+            </Border>
+
+        </Grid>
+
+        <Grid Height="992" Width="1925" ClipToBounds="True" Margin="0,0,0,22">
+            <!--align the background edges to the left -->
+            <!-- Textfield for the email address-->
+            <s:SurfaceButton Background="#FFF0F0F0" Content="About us" Margin="41,142,0,785" Click="SurfaceButton_Click" Height="65" FontWeight="Bold" FontSize="30" HorizontalAlignment="Left" Width="266" Foreground="Black" FontStretch="Normal" />
+            <Border BorderBrush="Black" BorderThickness="5" 
+                    Height="289" HorizontalAlignment="Right" Name="border1" 
+                    VerticalAlignment="Top"  Width="630" 
+                    CornerRadius="0,0,0,360" >
+                <s:SurfaceButton Background="#FFF0F0F0" Content="Back to home"  Name="surfaceButton5" FontWeight="Bold" FontSize="30" HorizontalAlignment="Stretch" IsDefault="False" Click="surfaceButton5_Click" Height="53" Foreground="Black" Width="220" />
+            </Border>
+            <s:SurfaceButton Background="#FFF0F0F0" Content="Our Ambassadors" Margin="41,224,0,703" Name="surfaceButton1" FontWeight="Bold" FontSize="30" HorizontalAlignment="Left" IsDefault="False" Click="surfaceButton1_Click" Height="65" Foreground="Black" />
+            <s:SurfaceButton Background="#FFF0F0F0" Content="Our people" Margin="41,306,0,621" Name="surfaceButton2" Height="65" FontWeight="Bold" FontSize="30" HorizontalAlignment="Left" Width="266" Foreground="Black" />
+            <s:SurfaceButton Background="#FFF0F0F0" Content="Our History" Margin="41,388,0,539" Name="surfaceButton4" Height="65" FontWeight="Bold" FontSize="30" HorizontalAlignment="Left" Click="surfaceButton4_Click" Width="266" Foreground="Black" />
+            <Label Content="What we do" Height="100" FontSize="50" HorizontalAlignment="Left" Margin="47,49,0,0" Name="label1" VerticalAlignment="Top" Width="460" Foreground="black" />
+            <Border BorderThickness="4" BorderBrush="Black" Margin="399,104,794,0" Height="634" VerticalAlignment="Top">
+                
+                <ScrollViewer Width="724">
+                <TextBlock Foreground="Black" FontSize="20"  Background="White" TextAlignment="Justify" TextWrapping="Wrap" Padding="10" Height="700" Width="727" FontStretch="Normal" MaxWidth="700">
+                    <Run FontSize="42" Foreground="Red">About Us</Run> <LineBreak /><LineBreak />  <Run Foreground="Blue"> Our vision is that every child and their family walking the child cancer journey will never feel alone.</Run><LineBreak /><LineBreak />
+
+<Run>Every week in New Zealand three families are told their child has cancer. We support these families from the very beginning.  Our vision is that every child and their family walking the child cancer journey will never feel alone and our mission is to support them throughout their journey.</Run><LineBreak /><LineBreak />
+ 
+By doing this we reduce isolation and the impact of cancer. Through offering and coordinating support services we ensure children and their families are supported, informed, and well cared for at every stage of their cancer journey.<LineBreak /><LineBreak />
+ 
+This assistance is delivered throughout New Zealand by our Family Support team working in conjunction with the foundation’s branch members (parents and volunteers) in the local community.<LineBreak /><LineBreak />
+ 
+In our day to day work we are mindful of our values: We are compassionate, practical and responsible. We value best practice, partnerships, and diversity.<LineBreak /><LineBreak />
+ 
+The Foundation is governed by a board and comprises six regions, 22 branches and 22 full-time and 15 part-time staff based at Family Places in Auckland, Wellington, Christchurch and Dunedin and at locations in other regions.<LineBreak /><LineBreak />
+ 
+Each year we need at least $6 million to continue our services. This is raised through the generosity of individuals, grants, donations and sponsorships.<LineBreak /><LineBreak />
+ 
+The Foundation’s work with children with cancer and their families is unique and receives no direct government funding or support from other cancer agencies.<LineBreak /><LineBreak />
+                </TextBlock>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </Grid>
+    
+    </s:SurfaceWindow>
