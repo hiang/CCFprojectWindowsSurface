@@ -3,30 +3,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:s="http://schemas.microsoft.com/surface/2008"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="_306Project1.SurfaceWindow1"
-    Title="_306Project1" d:DesignHeight="226" SizeToContent="WidthAndHeight">
+    Title="_306Project1" d:DesignHeight="1080" d:DesignWidth="1">
 
     <Grid>
-    	<Grid.ColumnDefinitions>
-    		<ColumnDefinition />
-    		<ColumnDefinition />
-    	</Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="0.9*"/>
-            <RowDefinition Height="0.1*"/>
-        </Grid.RowDefinitions>
-
-        <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.ColumnSpan="3">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <TextBlock Foreground="White" Text="    Navigation    " VerticalAlignment="Center"/>
-                <s:SurfaceButton Content="      Home        " Click="go_HomePage_0"/>
-                <s:SurfaceButton Content="      what we do      " Click="go_WhatWeDo_1"/>
-                <s:SurfaceButton Content="      how you can help        " Click = "go_HowYouCanHelp_6"/>
-                <s:SurfaceButton Content="      news and events     " Click = "go_NewsAndEvents_11"/>
-                <s:SurfaceButton Content="      family support      " Click = "go_FamilySupport_15"/>
-                <s:SurfaceButton Content="  back   " Click="go_Back"/>
-            </StackPanel>
-        </StackPanel>
-
         <Grid Grid.Row="0" x:Name="Frame" Grid.Column="1"  >
 
             <Grid x:Name="_HomePage_0" Background="White" Visibility="Visible"  HorizontalAlignment="Left" >
