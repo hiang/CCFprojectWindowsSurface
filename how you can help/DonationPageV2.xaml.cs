@@ -57,6 +57,9 @@ namespace se306Project1
 
         private void go_HowYouCanHelp_Donate_7(object sender, RoutedEventArgs e)
         {
+            //Set active button
+            setNonActiveBtn(currentPage);
+            DonateButn.Background = Brushes.Gray;
             
             disableCurrentContent(currentPage);
              
@@ -73,12 +76,17 @@ namespace se306Project1
 
         private void go_HowYouCanHelp_Volunteer_8(object sender, RoutedEventArgs e)
         {
-            
+            //Set the active button
+            setNonActiveBtn(currentPage);
+            VolunteerButn.Background = Brushes.Gray;
+            //Visibility setting
             disableCurrentContent(currentPage);
             currentPage = "volunteer";
-
-            volunteerText.Visibility = System.Windows.Visibility.Visible; 
-           
+            VolunteerButn.Visibility = System.Windows.Visibility.Visible;
+            volunteerText.Visibility = System.Windows.Visibility.Visible;
+            emailInput.Visibility = System.Windows.Visibility.Visible;
+            submilEButton.Visibility = System.Windows.Visibility.Visible;
+            VolunteerSignLabel.Visibility = System.Windows.Visibility.Visible; 
             //The content grid for volunteer becomes visible 
             //Here I assume that all other pages are set to collapsed at the begining 
             //volunteerContentGrid.Visibility=System.Windows.Visibility.Visible;
@@ -88,11 +96,14 @@ namespace se306Project1
 
         private void go_HowYouCanHelp_Fundraise_9(object sender, RoutedEventArgs e)
         {
+            setNonActiveBtn(currentPage);
+            FundraiseButn.Background = Brushes.Gray; 
             disableCurrentContent(currentPage);
             currentPage = "fundraise";
             fundraiseText.Visibility = System.Windows.Visibility.Visible; 
         }
 
+        //Not using this atm. Need to rethink about Purchase feature
         private void go_HowYouCanHelp_Purchase_10(object sender, RoutedEventArgs e)
         {
             currentPage = "purchase";
@@ -110,20 +121,20 @@ namespace se306Project1
         }
 
         //not using this now
-        private void setBtnBackground(String topic)
+        private void setNonActiveBtn(String topic)
         {
             switch(topic)
             {
                 case "donate":
-                    DonateButn.Background = Brushes.AliceBlue;
+                    DonateButn.Background = Brushes.White;
                     break;
                 
                 case "volunteer":
-                    VolunteerButn.Background = Brushes.AliceBlue;
+                    VolunteerButn.Background = Brushes.White;
                     break; 
 
                 case "fundraise":
-                    FundraiseButn.Background = Brushes.AliceBlue;
+                    FundraiseButn.Background = Brushes.White;
                     break;
             }
         }
@@ -142,6 +153,9 @@ namespace se306Project1
 
                 case "volunteer":
                     volunteerText.Visibility = System.Windows.Visibility.Collapsed;
+                    emailInput.Visibility = System.Windows.Visibility.Collapsed;
+                    submilEButton.Visibility = System.Windows.Visibility.Collapsed;
+                    VolunteerSignLabel.Visibility = System.Windows.Visibility.Collapsed;
                     break;
 
                 case "fundraise":
