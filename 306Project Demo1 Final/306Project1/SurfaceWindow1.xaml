@@ -329,21 +329,7 @@ We aim to reduce the impact of cancer by offering services to ensure children an
             
             <!--END OF HOW HELP PAGE-->
             
-            <!--
-            <Grid x:Name="_NewsAndEvents_11" Background="LightGray" Visibility="Collapsed">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <TextBlock Grid.Column="0" Grid.Row="0" Text=" new and events" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" Foreground="Purple"/>
-                <s:SurfaceButton Grid.Row="1"  Background="Red" HorizontalAlignment="Center" Content=" News" Click="go__NewsAndEvents_News_12"/>
-                <s:SurfaceButton Grid.Row="2"  Background="Green" HorizontalAlignment="Center" Content="   Events " Click="go_NewsAndEvents_Events_13"/>
-                <s:SurfaceButton Grid.Row="3"  Background="Blue" HorizontalAlignment="Center" Content=" Media " Click="go_NewsAndEvents_Media_14" />
-            </Grid>
-            -->
+            <!--NEWS AND EVENTS PAGE-->
             <Grid x:Name="_NewsAndEvents_11" Width="1900" Height="1000" Background="white" ClipToBounds="True" Visibility="Collapsed">
 
                 <Grid.RowDefinitions>
@@ -359,12 +345,11 @@ We aim to reduce the impact of cancer by offering services to ensure children an
                 </Grid.ColumnDefinitions>
 
                 <Grid x:Name="inputBox">
-                    <Border
-            Width="1395"
-            BorderThickness="10"
-            CornerRadius="0,360,360,0"
-            Padding="2"
-            HorizontalAlignment="Left" Margin="0,-10,0,149" BorderBrush="Black" Height="759" VerticalAlignment="Stretch">
+                    <Border Width="1395"
+                    BorderThickness="10"
+                    CornerRadius="0,360,360,0"
+                    Padding="2"
+                    HorizontalAlignment="Left" Margin="0,-10,0,149" BorderBrush="Black" Height="759" VerticalAlignment="Stretch">
 
                     </Border>
 
@@ -392,7 +377,8 @@ We aim to reduce the impact of cancer by offering services to ensure children an
                              Background="#FFF0F0F0" FontWeight="Bold" FontSize="30" HorizontalAlignment="Left" FontStretch="Normal"
                              Content="Media" 
                              Click="Newsevents_SurfaceButton_Click3"/>
-
+                             
+                    <!--Display list of news-->
                     <s:SurfaceListBox Margin="408,142,844,273"
                               Visibility="Visible"
                               Background="Gray"
@@ -402,6 +388,7 @@ We aim to reduce the impact of cancer by offering services to ensure children an
                               ItemsSource="{Binding Path=NewsItems}" />
                               <!--SelectionChanged="news_SelectionChanged"-->
 
+                    <!--Display list of events-->
                     <s:SurfaceListBox Margin="408,142,844,273"
                               Visibility="Collapsed"
                               Background="Gray"
@@ -410,6 +397,7 @@ We aim to reduce the impact of cancer by offering services to ensure children an
                               ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                               ItemsSource="{Binding Path=EventsItems}"/>
 
+                    <!--Display list of media-->
                     <s:SurfaceListBox Margin="408,142,844,273"
                               Visibility="Collapsed"
                               Background="Gray"
@@ -418,7 +406,7 @@ We aim to reduce the impact of cancer by offering services to ensure children an
                               ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                               ItemsSource="{Binding Path=MediaItems}"/>
 
-                    <Label Content="News and Events" Height="100" 
+                <Label Content="News and Events" Height="100" 
                    Foreground="Black"
                    FontSize="50"
                    HorizontalAlignment="Left" Margin="47,49,0,0" 
@@ -438,6 +426,8 @@ We aim to reduce the impact of cancer by offering services to ensure children an
             <Grid x:Name="_NewsAndEvents_Media_14" Background="LightGray" Visibility="Collapsed">
                 <s:SurfaceButton Grid.Row="0"  Background="blue" HorizontalAlignment="Center" Content=" media" />
             </Grid>
+            
+            <!--END OF HOW HELP PAGE-->
 
             <Grid x:Name="_FamilySupport_15" Width="1900" Height="1000" Background="white" ClipToBounds="True" Visibility="Collapsed">
 
