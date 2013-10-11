@@ -81,24 +81,19 @@ namespace _306Project1
             BeadsItems.Add(new DataItems("Click here for the member's tally sheet", ""));
             BeadsItems.Add(new DataItems("Click here for the sibling's programme", ""));
             BeadsItems.Add(new DataItems("Click here for the update on Beads of Courage㈢  programme", ""));
+            
             sharingItems.Add(new DataItems("August 2013 (.pdf 6.2MB)", "Feature Stories: Lucy's Life in the Maniatoto; Wiremu's Journey; CCF's \nHistory Book."));
             sharingItems.Add(new DataItems("March 2013 (.pdf 5MB)", "Feature Stories: Introducing our 2013 Ambassadors - Hilton, Myah and \nEmilie!; The Canterbury Earthquake - Two Years On."));
             sharingItems.Add(new DataItems("November 2012 (.pdf 4.8MB)", "Feature Stories: Memorials - remembering our loved ones; Our catch ups \n- don't they look great!; Shauna & Her Matching Mates."));
             sharingItems.Add(new DataItems("August 2012 (.pdf 6.8MB)", "Feature Stories: Sione & Jerome - a dream come true!; Alex and Molly, \nKatia & Anouk - a unique bond."));
+            
             contactItems.Add(new DataItems("Family unity's a head-turner", "27/06/13"));
             contactItems.Add(new DataItems("Family unity's a head-turner", "27/06/13"));
-
-
-
             contactItems.Add(new DataItems("Charity Home for CCF", "12/10/2013 to 20/11/13"));
             contactItems.Add(new DataItems("Crafty Knitwits Knitathon Grand Auction", "19/10/13"));
             contactItems.Add(new DataItems("Top of the Range Horse Trek", "27/01/14 to 02/02/14"));
-
-
-
             contactItems.Add(new DataItems("Support services", "Our Family Support team work in conjunction with the\nfoundation's branch members (parents, caregivers, and volunteers) \nto deliver a range of support services to ensure every child\n and their family walking the child cancer journey will never feel alone."));
             
-
             // end of initialization of family services stuff
 
             // initialization of news events stuff
@@ -113,13 +108,9 @@ namespace _306Project1
             NewsItems.Add(new DataItems("Family unity's a head-turner", "27/06/13"));
             NewsItems.Add(new DataItems("Family unity's a head-turner", "27/06/13"));
 
-
-
             EventsItems.Add(new DataItems("Charity Home for CCF", "12/10/2013 to 20/11/13"));
             EventsItems.Add(new DataItems("Crafty Knitwits Knitathon Grand Auction", "19/10/13"));
             EventsItems.Add(new DataItems("Top of the Range Horse Trek", "27/01/14 to 02/02/14"));
-
-
 
             MediaItems.Add(new DataItems("Elish Wilkes on Close Up", "Mark Sainsbury and Close Up screened an amazing interview with \nEilish Wilkes with input from Mum, Kathie.  Close Up interviewed Eilish \na few years ago and this segment revisits how she is doing. \n<Read More>"));
             MediaItems.Add(new DataItems("Comfort found in silver lining", "Last July The Aucklander shared with its readers Kelcey Robert's story. \nSophie Bond catches up with Kelcey again and meets her friend Koral \nMarchant. "));
@@ -414,7 +405,9 @@ namespace _306Project1
         
         // end of methods for family services
 
-        // methods for news and events -- miza
+        // methods for news and events
+        
+        //Method that corresponding to the display of News section
         private void Newsevents_SurfaceButton_Click1(object sender, RoutedEventArgs e)
         {
             news.Visibility = System.Windows.Visibility.Visible;
@@ -423,7 +416,7 @@ namespace _306Project1
 
         }
 
-        /// clickable button
+        //Method that corresponding to the display of Events section
         private void Newsevents_SurfaceButton_Click2(object sender, RoutedEventArgs e)
         {
             news.Visibility = System.Windows.Visibility.Collapsed;
@@ -432,7 +425,7 @@ namespace _306Project1
 
         }
 
-        /// clickable button
+        //Method that corresponding to the display of Media section
         private void Newsevents_SurfaceButton_Click3(object sender, RoutedEventArgs e)
         {
             news.Visibility = System.Windows.Visibility.Collapsed;
@@ -445,9 +438,7 @@ namespace _306Project1
         private ObservableCollection<DataItems> eventItems;
         private ObservableCollection<DataItems> mediaItems;
 
-        /// <summary>
-        /// Items that bind with the drag source list box.
-        /// </summary>
+        // Bind items to News list box.
         public ObservableCollection<DataItems> NewsItems
         {
             get
@@ -461,6 +452,7 @@ namespace _306Project1
             }
         }
 
+        // Bind items to Events list box.
         public ObservableCollection<DataItems> EventsItems
         {
             get
@@ -474,6 +466,7 @@ namespace _306Project1
             }
         }
 
+        // Bind items to Media list box.
         public ObservableCollection<DataItems> MediaItems
         {
             get
@@ -486,9 +479,10 @@ namespace _306Project1
                 return mediaItems;
             }
         }
-        //end of methods for news and events -- miza
+        //end of methods for news and events
 
         //methods for donation -- hiang
+        
         private String currentPage = "donate"; 
 
         private void submit_email(object sender, RoutedEventArgs e)
