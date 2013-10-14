@@ -1,0 +1,15 @@
+C:\Users\Hiang\Documents\GitHub\se306_se7en\se306Project1\se306Project1\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Hiang\Documents\GitHub\se306_se7en\se306Project1\se306Project1\obj\x86\Release\MainWindow.baml
+C:\Users\Hiang\Documents\GitHub\se306_se7en\se306Project1\se306Project1\obj\x86\Release\MainWindow.g.cs
+C:\Users\Hiang\Documents\GitHub\se306_se7en\se306Project1\se306Project1\obj\x86\Release\App.g.cs
+C:\Users\Hiang\Documents\GitHub\se306_se7en\se306Project1\se306Project1\obj\x86\Release\se306Project1_MarkupCompile.cache
+C:\Users\Hiang\Documents\GitHub\se306_se7en\se306Project1\se306Project1\obj\x86\Release\DonationPageV2.baml
+C:\Users\Hiang\Documents\GitHub\se306_se7en\se306Project1\se306Project1\obj\x86\Release\DonationPageV2.g.cs
+C:\Users\Hiang\Documents\GitHub\se306_se7en\se306Project1\se306Project1\obj\x86\Release\se306Project1.g.resources
+C:\Users\Hiang\Documents\GitHub\se306_se7en\se306Project1\se306Project1\obj\x86\Release\se306Project1.Properties.Resources.resources
+C:\Users\Hiang\Documents\GitHub\se306_se7en\se306Project1\se306Project1\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Hiang\Documents\GitHub\se306_se7en\se306Project1\se306Project1\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Hiang\Documents\GitHub\se306_se7en\se306Project1\se306Project1\bin\Release\se306Project1.exe
+C:\Users\Hiang\Documents\GitHub\se306_se7en\se306Project1\se306Project1\bin\Release\se306Project1.pdb
+C:\Users\Hiang\Documents\GitHub\se306_se7en\se306Project1\se306Project1\obj\x86\Release\se306Project1.exe
+C:\Users\Hiang\Documents\GitHub\se306_se7en\se306Project1\se306Project1\obj\x86\Release\se306Project1.pdb
