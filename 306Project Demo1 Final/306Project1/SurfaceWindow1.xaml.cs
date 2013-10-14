@@ -48,10 +48,24 @@ namespace _306Project1
         }
 
 
-
+        //PRIVATE FIELD DECLARATIONS
         private ObservableCollection<Grid> pages = new ObservableCollection<Grid>();
+        //this declaration is used by how you can help (hiang)
         private int current_page = 0;
+        //declaration for family services
+        private ObservableCollection<DataItems> beadsItems;
+        private ObservableCollection<DataItems> SupportItems;
+        private ObservableCollection<DataItems> SharingItems;
+        private ObservableCollection<DataItems> HolidayItems;
+        private ObservableCollection<DataItems> ParentItems;
+        private ObservableCollection<DataItems> ScholarshipItems;
+        private ObservableCollection<DataItems> ContactItems;
+        //declarations for events news and media
+        private ObservableCollection<DataItems> newsItems;
+        private ObservableCollection<DataItems> eventItems;
+        private ObservableCollection<DataItems> mediaItems;
 
+        //initialization, used by global navigation, family services and events/news/media
         protected override void OnInitialized(EventArgs e)
         {
             base.OnInitialized(e);
@@ -124,28 +138,7 @@ namespace _306Project1
 
         }
 
-        public void go_Back(object sender, RoutedEventArgs e) 
-        { 
-            if (current_page ==1 || current_page == 6 || current_page == 11 || current_page == 15)
-            {
-                go_HomePage_0(sender , e);
-            }
-            else if (current_page>=2 && current_page <= 5) 
-            {
-                go_WhatWeDo_1(sender, e);
-            }else if (current_page>=7 && current_page <= 10) 
-            { 
-                go_HowYouCanHelp_6(sender , e);
-            }else if (current_page>=12 && current_page <= 14) 
-            { 
-                go_NewsAndEvents_11(sender , e);
-            }else if (current_page>=16 && current_page <= 17) 
-            { 
-                go_FamilySupport_15(sender , e);
-            }
 
-        
-        }
 
         //button methods from wilson's what we do page
         private void ambassadors_Click(object sender, RoutedEventArgs e)
@@ -300,15 +293,6 @@ namespace _306Project1
             contact_list.Visibility = System.Windows.Visibility.Visible;
 
         }
-        
-        
-        private ObservableCollection<DataItems> beadsItems;
-        private ObservableCollection<DataItems> SupportItems;
-        private ObservableCollection<DataItems> SharingItems;
-        private ObservableCollection<DataItems> HolidayItems;
-        private ObservableCollection<DataItems> ParentItems;
-        private ObservableCollection<DataItems> ScholarshipItems;
-        private ObservableCollection<DataItems> ContactItems;
 
         /// <summary>
         /// Items that bind with the drag source list box.
@@ -434,10 +418,6 @@ namespace _306Project1
 
         }
 
-        private ObservableCollection<DataItems> newsItems;
-        private ObservableCollection<DataItems> eventItems;
-        private ObservableCollection<DataItems> mediaItems;
-
         // Bind items to News list box.
         public ObservableCollection<DataItems> NewsItems
         {
@@ -541,6 +521,36 @@ namespace _306Project1
 
 
         // end of methods for donation -- hiang
+
+
+
+        // Global - navigation
+        public void go_Back(object sender, RoutedEventArgs e)
+        {
+            if (current_page == 1 || current_page == 6 || current_page == 11 || current_page == 15)
+            {
+                go_HomePage_0(sender, e);
+            }
+            else if (current_page >= 2 && current_page <= 5)
+            {
+                go_WhatWeDo_1(sender, e);
+            }
+            else if (current_page >= 7 && current_page <= 10)
+            {
+                go_HowYouCanHelp_6(sender, e);
+            }
+            else if (current_page >= 12 && current_page <= 14)
+            {
+                go_NewsAndEvents_11(sender, e);
+            }
+            else if (current_page >= 16 && current_page <= 17)
+            {
+                go_FamilySupport_15(sender, e);
+            }
+
+
+        }
+
         public void go_HomePage_0(object sender, RoutedEventArgs e)
         {
             pages.ElementAt(current_page).Visibility = System.Windows.Visibility.Collapsed;
@@ -649,8 +659,6 @@ namespace _306Project1
 
         }
 
-
-
         public void go_NewsAndEvents_11(object sender, RoutedEventArgs e)
         {
             pages.ElementAt(current_page).Visibility = System.Windows.Visibility.Collapsed;
@@ -707,8 +715,9 @@ namespace _306Project1
 
 
         }
+        // end of Global - navigation
 
-
+        //application interaction handlers
         /// <summary>
         /// Adds handlers for window availability events.
         /// </summary>
@@ -763,8 +772,10 @@ namespace _306Project1
             //TODO: disable audio, animations here
         }
     }
+    //end of application interaction handlers
 
 
+    // Custom classes to assist data binding
     public class News
     {
         private string name;
@@ -808,6 +819,7 @@ namespace _306Project1
             this.details = details;
         }
     }
-
+    // end of custom classes
     
 }
+       
