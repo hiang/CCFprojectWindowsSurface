@@ -5,7 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="_306Project1.SurfaceWindow1"
     Title="_306Project1" >
     
-    <!-- reference used by Kyle's family support-->
+    <!-- Data binding used by event/news/media and family services -->
     <s:SurfaceWindow.Resources>
 
         <DataTemplate x:Key="SurfaceListBoxItemDataTemplate">
@@ -25,11 +25,11 @@
             </StackPanel>
         </DataTemplate>
     </s:SurfaceWindow.Resources>
-    <!--end of the reference-->
+    <!--end of codechunk -->
     <Grid>
     	
         <Grid  x:Name="Frame"   >
-<!--    this is the layout ofhome page                  -->
+            <!-- this is the layout ofhome page -->
             <Grid x:Name="_HomePage_0" Width="1900" Height="1000" Background="White" Visibility="Visible" ZIndex="0">
                 <s:SurfaceButton Foreground="Black" Background="White" Content="What We Do" Click="go_WhatWeDo_1" Height="200" HorizontalAlignment="Left" Margin="315,200,0,0" Name="home_surfaceButton1" VerticalAlignment="Top" Width="200" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="20" />
                 <s:SurfaceButton Foreground="Black" Background="White" Content="How You Can Help" Click = "go_HowYouCanHelp_6" Height="200" HorizontalAlignment="Left" Margin="1369,200,0,0" Name="surfaceButton2" VerticalAlignment="Top" Width="200" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="20" />
@@ -242,7 +242,7 @@ We aim to reduce the impact of cancer by offering services to ensure children an
 
             <!--HOW CAN YOU HELP PAGE -->
             </Grid>
-            <Grid x:Name="_HowYouCanHelp_6" Width="1900" Height="1000" Background="white" ClipToBounds="True" Visibility="Collapsed">
+            <Grid Name="_HowYouCanHelp_6" Background="white" ClipToBounds="True" Visibility="Collapsed">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
@@ -254,14 +254,13 @@ We aim to reduce the impact of cancer by offering services to ensure children an
                     <ColumnDefinition Width="500" />
                 </Grid.ColumnDefinitions>
 
-                <!--Round curved Rectangle-->
-                <Grid x:Name="howcanyouhelp_inputBox">
+                <Grid x:Name="howyoucanhelp_inputBox">
                     <Border
-                     Width="1395"
-                     BorderThickness="10"
-                     CornerRadius="0,360,360,0"
-                     Padding="2"
-                     HorizontalAlignment="Left" Margin="0,6,0,149" BorderBrush="Black" Height="759" VerticalAlignment="Stretch">
+            Width="1395"
+            BorderThickness="10"
+            CornerRadius="0,360,360,0"
+            Padding="2"
+            HorizontalAlignment="Left" Margin="0,6,0,149" BorderBrush="Black" Height="759" VerticalAlignment="Stretch">
 
                     </Border>
 
@@ -271,45 +270,55 @@ We aim to reduce the impact of cancer by offering services to ensure children an
                     <!--align the background edges to the left -->
                     <!-- Textfield for the email address-->
 
+                    <!--The top right corner part The Back to Home button-->
                     <Border BorderBrush="Black" BorderThickness="5" 
-                    Height="289" HorizontalAlignment="Right" Name="howcanyouhelp_border1" 
+                    Height="289" HorizontalAlignment="Right" Name="howyoucanhelp_border1" 
                     VerticalAlignment="Top"  Width="626" 
                     CornerRadius="0,0,0,360" Padding="90">
-                    <s:SurfaceButton Background="#FFF0F0F0" Content="Back to home"  Name="howcanyouhelp_back_to_home" FontWeight="Bold" FontSize="30" HorizontalAlignment="Left" IsDefault="False" Click="go_Back" Height="51" Foreground="Black" Width="211" HorizontalContentAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False" VerticalContentAlignment="Center" />
+                        <s:SurfaceButton Background="Gray" Content="Back to home"  Name="howyoucanhelp_back_to_home" FontWeight="Bold" FontSize="30" HorizontalAlignment="Left" IsDefault="False" Click="go_Back" Height="51" Foreground="Black" Width="211" HorizontalContentAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False" VerticalContentAlignment="Center" />
                     </Border>
-                    <!--The four main buttons on the donate page-->
+                    <Image Source="./Resources/ccf_logo.jpg"  HorizontalAlignment="Left" Width="280" Margin="1612,31,0,747" />
+
+                    <!--Four main subpage buttons-->
                     <TextBlock FontSize="42" Margin="38,70,1477,845" Text="How You Can Help" Foreground="Black"/>
-                    <s:SurfaceButton Background="#FFF0F0F0" Content="Fundraise" Name="FundraiseButn" Visibility="Visible" Click="go_HowYouCanHelp_Fundraise_9" Margin="38,251,1647,0" FontSize="30" Height="80" VerticalAlignment="Top" />
-                    <s:SurfaceButton Background="#FFF0F0F0" Content="Donate" FontSize="30" Margin="38,168,1647,747" Name="DonateButn" Visibility="Visible" Click="go_HowYouCanHelp_Donate_7" />
-                    <s:SurfaceButton Background="#FFF0F0F0" Content="Volunteer" Margin="39,337,1647,583" Name="VolunteerButn" Visibility="Visible" Click="go_HowYouCanHelp_Volunteer_8" FontSize="30" />
-                    <s:SurfaceButton Background="#FFF0F0F0" Content="Purchase" Margin="39,415,1647,0" Name="PurchaseButn" Visibility="Visible" Click="go_HowYouCanHelp_Purchase_10" FontSize="30" Height="65" VerticalAlignment="Top" />
-                    
-                    <!--Elements in the donate page-->
-                    <s:SurfaceButton Content="Submit" Height="73" HorizontalAlignment="Right" Margin="0,586,771,0" Name="submilEButton" Click="submit_email" VerticalAlignment="Top" Width="182" FontSize="40" />
+                    <s:SurfaceButton Content="Fundraise" Name="FundraiseButn" Visibility="Visible" Click="go_HowYouCanHelp_Fundraise_9" Margin="38,251,1647,0" FontSize="30" Height="80" VerticalAlignment="Top" />
+                    <s:SurfaceButton Background="Gray" Content="Donate" FontSize="30" Margin="38,168,1647,747" Name="DonateButn" Visibility="Visible" Click="go_HowYouCanHelp_Donate_7" />
+                    <s:SurfaceButton Content="Volunteer" Margin="39,337,1647,583" Name="VolunteerButn" Visibility="Visible" Click="go_HowYouCanHelp_Volunteer_8" FontSize="30" />
+                    <!--  <s:SurfaceButton Content="Purchase" Margin="39,415,1647,0" Name="PurchaseButn" Visibility="Visible" Click="go_HowYouCanHelp_Purchase_10" FontSize="30" Height="65" VerticalAlignment="Top" />
+-->
+                    <!--I think that Purchase is not needed here-->
+
+                    <!--donate page-->
                     <TextBlock Name="qrLabel" FontSize="42" Margin="0,157,1092,758" Text="Donate via QR Code" HorizontalAlignment="Right" Width="402" Foreground="Black"/>
                     <Image Name="qrCodeImg" Source="qrcode.png" Margin="431,227,0,512" HorizontalAlignment="Left" Width="280" />
-                    <TextBox Name="emailInput" Margin="407,586,998,337" BorderThickness="3" TextAlignment="Left" VerticalContentAlignment="Center"  Text="{Binding ShortCutText, Mode=TwoWay}" FontWeight="Thin"></TextBox>
-                    <Label Content="Donate via Email" Height="75" HorizontalAlignment="Left" Margin="407,505,0,0" Name="donateELabel" VerticalAlignment="Top" Width="442" FontSize="42" Foreground="Black" />
-                    
-                    <!--Fundraise page-->
-                    <TextBlock Name="fundraiseText" Visibility="Collapsed" Foreground="Black" FontSize="20" Background="White" TextAlignment="Justify" TextWrapping="Wrap" Padding="10" FontStretch="Normal" MaxWidth="700" Margin="407,147,896,512">
-                    <Run FontSize="42" Foreground="Black">Ways To Fundraise</Run> <LineBreak /><LineBreak />  <Run Foreground="Black"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event. </Run> <LineBreak /><LineBreak />   
-                      Here are just a few fundraising ideas: <LineBreak></LineBreak>
-                      -   Corporate event - boxing, head shaving etc <LineBreak></LineBreak>
-                      -   Sporting event - golfing, bowls etc <LineBreak></LineBreak>
-                      -   Art Auction <LineBreak></LineBreak></TextBlock>
+
+                    <TextBox Name="emailInput"  Margin="407,586,998,337" BorderThickness="3" TextAlignment="Left" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged_1" Text="{Binding ShortCutText, Mode=TwoWay}"  FontWeight="Thin"></TextBox>
+                    <s:SurfaceButton Content="Submit" Height="73" HorizontalAlignment="Right" Margin="0,586,771,0" Name="submilEButton" VerticalAlignment="Top" Width="182" FontSize="40" Background="Gray" />
+                    <!--Fundraise Page-->
+                    <TextBlock Name="fundraiseText" Visibility="Collapsed" Foreground="Black" FontSize="20"  Background="White" TextAlignment="Justify" TextWrapping="Wrap" Padding="10" FontStretch="Normal" MaxWidth="700" Margin="407,147,896,512">
+             <Run FontSize="42" Foreground="Black">Ways To Fundraise</Run> <LineBreak /><LineBreak />  <Run Foreground="Black"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event. </Run> <LineBreak/><LineBreak/>   
+                Here are just a few fundraising ideas: <LineBreak></LineBreak>
+                -   Corporate event - boxing, head shaving etc <LineBreak></LineBreak>
+                -   Sporting event - golfing, bowls etc <LineBreak></LineBreak>
+                -   Art Auction <LineBreak></LineBreak>
+                    </TextBlock>
+
+
+
 
                     <!--Volunteer page-->
-                    <TextBlock Name="volunteerText" Visibility="Collapsed" Foreground="Black" FontSize="20" Background="White" TextAlignment="Justify" TextWrapping="Wrap" Padding="10" FontStretch="Normal" MaxWidth="700" Margin="407,147,818,452">
-                    <Run FontSize="42" Foreground="Black">Get Involved</Run> <LineBreak /><LineBreak />  <Run Foreground="Black"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event.</Run><LineBreak /><LineBreak />
+                    <TextBlock Visibility="Collapsed" Name="volunteerText" Foreground="Black" FontSize="20"  Background="White" TextAlignment="Justify" TextWrapping="Wrap" Padding="10" FontStretch="Normal" MaxWidth="700" Margin="407,157,828,512">
+             <Run FontSize="42" Foreground="Black">Get Involved</Run> <LineBreak /><LineBreak />  <Run Foreground="Black"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event.</Run><LineBreak /><LineBreak />
                  
-                     Our volunteers provide a range of services and support including participating in CCF Branch activities, helping out at the Family Places, working alongside our staff and helping our fundraising team during events such as the national Annual Street Appeal and Funrazor events.
-                     How much time is required?
-                     This depends on how much time you are able to give, and whether you would like to volunteer on a regular basis or purely for one-off events. Your local Volunteer coordinator/manager can provide you with more information.</TextBlock>
+            Our volunteers provide a range of services and support including participating in CCF Branch activities, helping out at the Family Places, working alongside our staff and helping our fundraising team during events such as the national Annual Street Appeal and Funrazor events.
+
+                    </TextBlock>
+                    <Label Content="Donate via Email" Height="75" HorizontalAlignment="Left" Margin="407,505,0,0" Name="donateELabel" VerticalAlignment="Top" Width="747" FontSize="42" Foreground="Black"/>
+                    <Label Name="VolunteerSignLabel" Content="Sign Up Now" FontSize="42" Height="75" HorizontalAlignment="Left" Margin="407,505,0,0"  VerticalAlignment="Top" Width="747" Visibility="Collapsed" Foreground="Black" />
                 </Grid>
             </Grid>
-            
-            
+
+
             <Grid x:Name="_HowYouCanHelp_Donate_7" Background="LightGray" Visibility="Collapsed">
                 <s:SurfaceButton Grid.Row="0"  Background="Red" HorizontalAlignment="Center" Content=" donate" />
 

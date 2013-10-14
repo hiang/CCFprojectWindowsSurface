@@ -489,7 +489,6 @@ namespace _306Project1
         {
 
         }
-
         private void disableCurrentContent(String topic)
         {
             switch (topic)
@@ -504,15 +503,39 @@ namespace _306Project1
 
                 case "volunteer":
                     volunteerText.Visibility = System.Windows.Visibility.Collapsed;
+                    emailInput.Visibility = System.Windows.Visibility.Collapsed;
+                    submilEButton.Visibility = System.Windows.Visibility.Collapsed;
+                    VolunteerSignLabel.Visibility = System.Windows.Visibility.Collapsed;
                     break;
 
                 case "fundraise":
                     fundraiseText.Visibility = System.Windows.Visibility.Collapsed;
                     break;
-                case "purchase":
-                    break;
 
             }
+
+        }
+
+        private void setNonActiveBtn(String topic)
+        {
+            switch (topic)
+            {
+                case "donate":
+                    DonateButn.Background = Brushes.White;
+                    break;
+
+                case "volunteer":
+                    VolunteerButn.Background = Brushes.White;
+                    break;
+
+                case "fundraise":
+                    FundraiseButn.Background = Brushes.White;
+                    break;
+            }
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
 
         }
 
@@ -578,6 +601,10 @@ namespace _306Project1
         }
         public void go_HowYouCanHelp_Donate_7(object sender, RoutedEventArgs e)
         {
+            //Set active button
+            setNonActiveBtn(currentPage);
+            DonateButn.Background = Brushes.Gray;
+
             disableCurrentContent(currentPage);
 
             //Enable the donate content to visible 
@@ -592,24 +619,26 @@ namespace _306Project1
         }
         public void go_HowYouCanHelp_Volunteer_8(object sender, RoutedEventArgs e)
         {
+            //Set the active button
+            setNonActiveBtn(currentPage);
+            VolunteerButn.Background = Brushes.Gray;
+            //Visibility setting
             disableCurrentContent(currentPage);
-
-
-            volunteerText.Visibility = System.Windows.Visibility.Visible;
             currentPage = "volunteer";
-            //The content grid for volunteer becomes visible 
-            //Here I assume that all other pages are set to collapsed at the begining 
-            //volunteerContentGrid.Visibility=System.Windows.Visibility.Visible;
+            VolunteerButn.Visibility = System.Windows.Visibility.Visible;
+            volunteerText.Visibility = System.Windows.Visibility.Visible;
+            emailInput.Visibility = System.Windows.Visibility.Visible;
+            submilEButton.Visibility = System.Windows.Visibility.Visible;
+            VolunteerSignLabel.Visibility = System.Windows.Visibility.Visible; 
 
         }
         public void go_HowYouCanHelp_Fundraise_9(object sender, RoutedEventArgs e)
         {
+            setNonActiveBtn(currentPage);
+            FundraiseButn.Background = Brushes.Gray;
             disableCurrentContent(currentPage);
-
-            fundraiseText.Visibility = System.Windows.Visibility.Visible;
             currentPage = "fundraise";
-
-
+            fundraiseText.Visibility = System.Windows.Visibility.Visible; 
         }
 
         public void go_HowYouCanHelp_Purchase_10(object sender, RoutedEventArgs e)
