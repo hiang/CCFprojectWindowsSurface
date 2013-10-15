@@ -883,6 +883,11 @@ namespace _306Project1
         {
             //TODO: disable audio, animations here
         }
+
+        private void SurfaceWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
     //end of application interaction handlers
 

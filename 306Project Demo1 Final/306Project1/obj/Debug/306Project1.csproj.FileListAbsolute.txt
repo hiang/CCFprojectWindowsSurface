@@ -194,3 +194,20 @@ C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\obj\Debug\GenerateResource.
 \\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\306Project1.g.resources
 \\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
 \\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\306Project1.exe
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\306Project1.pdb
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\bin\Debug\Resources\icon.png
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\bin\Debug\306Project1.xml
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\bin\Debug\306Project1.exe
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\bin\Debug\306Project1.pdb
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\SurfaceWindow1.baml
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\App.baml
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\SurfaceWindow1.g.cs
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\App.g.cs
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\306Project1_Content.g.cs
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\306Project1.g.resources
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\bin\Debug\Microsoft.Expression.Drawing.dll
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\bin\Debug\Microsoft.Expression.Drawing.xml
