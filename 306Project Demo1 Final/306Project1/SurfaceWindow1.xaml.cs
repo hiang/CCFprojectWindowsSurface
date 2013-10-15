@@ -86,7 +86,7 @@ namespace _306Project1
             pages.Add(_HowYouCanHelp_Donate_7);
             pages.Add(_HowYouCanHelp_Volunteer_8);
             pages.Add(_HowYouCanHelp_Fundraise_9);
-            pages.Add(_HowYouCanHelp_Purchase_10);
+            pages.Add(_HowYouCanHelp_Sponsor_10);
             pages.Add(_NewsAndEvents_11);
             pages.Add(_NewsAndEvents_News_12);
             pages.Add(_NewsAndEvents_Events_13);
@@ -475,6 +475,7 @@ namespace _306Project1
         {
 
         }
+
         private void disableCurrentContent(String topic)
         {
             switch (topic)
@@ -498,6 +499,10 @@ namespace _306Project1
                     fundraiseText.Visibility = System.Windows.Visibility.Collapsed;
                     break;
 
+                case "sponsor":
+                    sponsorText.Visibility = System.Windows.Visibility.Collapsed;
+                    break;
+
             }
 
         }
@@ -516,6 +521,10 @@ namespace _306Project1
 
                 case "fundraise":
                     FundraiseButn.Background = Brushes.White;
+                    break;
+
+                case "sponsor":
+                    SponsorButn.Background = Brushes.White;
                     break;
             }
         }
@@ -630,7 +639,7 @@ namespace _306Project1
             submilEButton.Visibility = System.Windows.Visibility.Visible;
             emailInput.Visibility = System.Windows.Visibility.Visible;
             //Now the current page is a "donate" page 
-            currentPage = "donate"; 
+            currentPage = "donate";
 
         }
         public void go_HowYouCanHelp_Volunteer_8(object sender, RoutedEventArgs e)
@@ -645,7 +654,7 @@ namespace _306Project1
             volunteerText.Visibility = System.Windows.Visibility.Visible;
             emailInput.Visibility = System.Windows.Visibility.Visible;
             submilEButton.Visibility = System.Windows.Visibility.Visible;
-            VolunteerSignLabel.Visibility = System.Windows.Visibility.Visible; 
+            VolunteerSignLabel.Visibility = System.Windows.Visibility.Visible;
 
         }
         public void go_HowYouCanHelp_Fundraise_9(object sender, RoutedEventArgs e)
@@ -654,16 +663,18 @@ namespace _306Project1
             FundraiseButn.Background = Brushes.Gray;
             disableCurrentContent(currentPage);
             currentPage = "fundraise";
-            fundraiseText.Visibility = System.Windows.Visibility.Visible; 
+            fundraiseText.Visibility = System.Windows.Visibility.Visible;
         }
 
-        public void go_HowYouCanHelp_Purchase_10(object sender, RoutedEventArgs e)
+        public void go_HowYouCanHelp_Sponsor_10(object sender, RoutedEventArgs e)
         {
+            setNonActiveBtn(currentPage);
+            SponsorButn.Background = Brushes.Gray;
             disableCurrentContent(currentPage);
-            currentPage = "purchase";
-
-
+            currentPage = "sponsor";
+            sponsorText.Visibility = System.Windows.Visibility.Visible;
         }
+
 
         public void go_NewsAndEvents_11(object sender, RoutedEventArgs e)
         {

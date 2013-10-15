@@ -391,84 +391,113 @@ We aim to reduce the impact of cancer by offering services to ensure children an
                 </Grid>
             </Grid>
             <!-- END OF WHAT WE DO -->
-            
 
-            <!-- HOW YOU CAN HELP -->
 
+           <!--HOW YOU CAN HELP PAGE-->
             <Grid Name="_HowYouCanHelp_6" Background="white" ClipToBounds="True" Visibility="Collapsed">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="28" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="500" />
-                </Grid.ColumnDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="28" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="500" />
+            </Grid.ColumnDefinitions>
 
-                <Grid x:Name="howyoucanhelp_inputBox">
-                    <Border
+            <Grid x:Name="howyoucanhelp_inputBox">
+                <Border
             Width="1395"
             BorderThickness="10"
             CornerRadius="0,360,360,0"
             Padding="2"
             HorizontalAlignment="Left" Margin="0,6,0,149" BorderBrush="Black" Height="759" VerticalAlignment="Stretch">
 
-                    </Border>
+                </Border>
 
-                </Grid>
-
-                <Grid Height="992" Width="1925" ClipToBounds="True" Margin="0,0,0,22">
-                    <!--align the background edges to the left -->
-                    <!-- Textfield for the email address-->
-
-                    <!--The top right corner part The Back to Home button-->
-                    <Border BorderBrush="Black" BorderThickness="5" 
-                    Height="289" HorizontalAlignment="Right" Name="howyoucanhelp_border1" 
-                    VerticalAlignment="Top"  Width="626" 
-                    CornerRadius="0,0,0,360" Padding="90">
-                        <s:SurfaceButton Background="Gray" Content="Back to home"  Name="howyoucanhelp_back_to_home" FontWeight="Bold" FontSize="30" HorizontalAlignment="Left" IsDefault="False" Click="go_Back" Height="51" Foreground="Black" Width="211" HorizontalContentAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False" VerticalContentAlignment="Center" />
-                    </Border>
-                    <Image Source="./Resources/ccf_logo.jpg"  HorizontalAlignment="Left" Width="280" Margin="1612,31,0,747" />
-
-                    <!--Four main subpage buttons-->
-                    <TextBlock FontSize="42" Margin="38,70,1477,845" Text="How You Can Help" Foreground="Black"/>
-                    <s:SurfaceButton Content="Fundraise" Name="FundraiseButn" Visibility="Visible" Click="go_HowYouCanHelp_Fundraise_9" Margin="38,251,1647,0" FontSize="30" Height="80" VerticalAlignment="Top" />
-                    <s:SurfaceButton Background="Gray" Content="Donate" FontSize="30" Margin="38,168,1647,747" Name="DonateButn" Visibility="Visible" Click="go_HowYouCanHelp_Donate_7" />
-                    <s:SurfaceButton Content="Volunteer" Margin="39,337,1647,583" Name="VolunteerButn" Visibility="Visible" Click="go_HowYouCanHelp_Volunteer_8" FontSize="30" />
-                    <!--  <s:SurfaceButton Content="Purchase" Margin="39,415,1647,0" Name="PurchaseButn" Visibility="Visible" Click="go_HowYouCanHelp_Purchase_10" FontSize="30" Height="65" VerticalAlignment="Top" />
--->
-                    <!--I think that Purchase is not needed here-->
-
-                    <!--donate page-->
-                    <TextBlock Name="qrLabel" FontSize="42" Margin="0,157,1092,758" Text="Donate via QR Code" HorizontalAlignment="Right" Width="402" Foreground="Black"/>
-                    <Image Name="qrCodeImg" Source="qrcode.png" Margin="431,227,0,512" HorizontalAlignment="Left" Width="280" />
-
-                    <TextBox Name="emailInput"  Margin="407,586,998,337" BorderThickness="3" TextAlignment="Left" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged_1" Text="{Binding ShortCutText, Mode=TwoWay}"  FontWeight="Thin"></TextBox>
-                    <s:SurfaceButton Content="Submit" Height="73" HorizontalAlignment="Right" Margin="0,586,771,0" Name="submilEButton" VerticalAlignment="Top" Width="182" FontSize="40" Background="Gray" />
-                    <!--Fundraise Page-->
-                    <TextBlock Name="fundraiseText" Visibility="Collapsed" Foreground="Black" FontSize="20"  Background="White" TextAlignment="Justify" TextWrapping="Wrap" Padding="10" FontStretch="Normal" MaxWidth="700" Margin="407,147,896,512">
-             <Run FontSize="42" Foreground="Black">Ways To Fundraise</Run> <LineBreak /><LineBreak />  <Run Foreground="Black"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event. </Run> <LineBreak/><LineBreak/>   
-                Here are just a few fundraising ideas: <LineBreak></LineBreak>
-                -   Corporate event - boxing, head shaving etc <LineBreak></LineBreak>
-                -   Sporting event - golfing, bowls etc <LineBreak></LineBreak>
-                -   Art Auction <LineBreak></LineBreak>
-                    </TextBlock>
-
-                    <!--Volunteer page-->
-                    <TextBlock Visibility="Collapsed" Name="volunteerText" Foreground="Black" FontSize="20"  Background="White" TextAlignment="Justify" TextWrapping="Wrap" Padding="10" FontStretch="Normal" MaxWidth="700" Margin="407,157,828,512">
-             <Run FontSize="42" Foreground="Black">Get Involved</Run> <LineBreak /><LineBreak />  <Run Foreground="Black"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event.</Run><LineBreak /><LineBreak />
-                 
-            Our volunteers provide a range of services and support including participating in CCF Branch activities, helping out at the Family Places, working alongside our staff and helping our fundraising team during events such as the national Annual Street Appeal and Funrazor events.
-
-                    </TextBlock>
-                    <Label Content="Donate via Email" Height="75" HorizontalAlignment="Left" Margin="407,505,0,0" Name="donateELabel" VerticalAlignment="Top" Width="747" FontSize="42" Foreground="Black"/>
-                    <Label Name="VolunteerSignLabel" Content="Sign Up Now" FontSize="42" Height="75" HorizontalAlignment="Left" Margin="407,505,0,0"  VerticalAlignment="Top" Width="747" Visibility="Collapsed" Foreground="Black" />
-                </Grid>
             </Grid>
-            
-            <!-- END OF HOW YOU CAN HELP -->
+
+            <Grid Height="992" Width="1925" ClipToBounds="True" Margin="0,0,0,22">
+                <!--align the background edges to the left -->
+                <!-- Textfield for the email address-->
+
+                <!--The top right corner part The Back to Home button-->
+                <Border BorderBrush="Black" BorderThickness="5" 
+                    Height="289" HorizontalAlignment="Right" Name="howyoucanhelp_border1" 
+                    VerticalAlignment="Top"  Width= "626" 
+                    CornerRadius="0,0,0,360" Padding="90">
+                    <s:SurfaceButton Background="Gray" Content="Back to home"  Name="howyoucanhelp_back_to_home" FontWeight="Bold" FontSize="30" HorizontalAlignment="Left" IsDefault="False" Click="go_Back" Height="51" Foreground="Black" Width="211" HorizontalContentAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False" VerticalContentAlignment="Center" />
+                </Border>
+                <Image Source="./Resources/ccf_logo.jpg"  HorizontalAlignment="Left" Width="280" Margin="1612,31,0,747" />
+
+                <!--Four main subpage buttons-->
+                <TextBlock FontSize="42" Margin="38,70,1477,845" Text="How You Can Help" Foreground="Black"/>
+                <s:SurfaceButton Content="Sponsor" Name="SponsorButn" Visibility="Visible" Click="go_HowYouCanHelp_Sponsor_10" Margin="38,251,1647,0" FontSize="30" Height="80" VerticalAlignment="Top" />
+                <s:SurfaceButton Background="Gray" Content="Donate" FontSize="30" Margin="38,168,1647,747" Name="DonateButn" Visibility="Visible" Click="go_HowYouCanHelp_Donate_7" />
+                <s:SurfaceButton Content="Volunteer" Margin="39,337,1647,578" Name="VolunteerButn" Visibility="Visible" Click="go_HowYouCanHelp_Volunteer_8" FontSize="30" />
+                <s:SurfaceButton Content="Fundraise" Name="FundraiseButn" Visibility="Visible" Click="go_HowYouCanHelp_Fundraise_9" FontSize="30" VerticalAlignment="Top" Margin="38,420,1647,0" Height="77" />
+
+
+                <!--donate page-->
+                <TextBlock Name="qrLabel" FontSize="42" Margin="0,157,1092,758" Text="Donate via QR Code" HorizontalAlignment="Right" Width="402" Foreground="Black"/>
+                <Image Name="qrCodeImg" Source="qrcode.png" Margin="431,227,0,512" HorizontalAlignment="Left" Width="280" />
+
+                <TextBox Name="emailInput"  Margin="407,586,998,331" BorderThickness="3" TextAlignment="Left" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged_1" Text="{Binding ShortCutText, Mode=TwoWay}"  FontWeight="Thin"></TextBox>
+                <s:SurfaceButton Content="Submit" Height="75" HorizontalAlignment="Right" Margin="0,586,771,0" Name="submilEButton" VerticalAlignment="Top" Width="182" FontSize="40" Background="Gray" />
+
+                <!--Fundraise Page-->
+                <TextBlock Name="fundraiseText" Visibility="Collapsed" Foreground="Black" FontSize="20"  Background="White" TextAlignment="Justify" TextWrapping="Wrap" Padding="10" FontStretch="Normal" MaxWidth="700" Margin="407,147,896,512">
+                    <Run FontSize="42" Foreground="Black">Ways To Fundraise</Run> <LineBreak /><LineBreak />  <Run Foreground="Black"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event. </Run> <LineBreak/><LineBreak/>   
+                    Here are just a few fundraising ideas: <LineBreak></LineBreak>
+                    -   Corporate event - boxing, head shaving etc <LineBreak></LineBreak>
+                    -   Sporting event - golfing, bowls etc <LineBreak></LineBreak>
+                    -   Art Auction <LineBreak></LineBreak>
+                </TextBlock>
+
+                <!--Volunteer page-->
+                <TextBlock Visibility="Collapsed" Name="volunteerText" Foreground="Black" FontSize="20"  Background="White" TextAlignment="Justify" TextWrapping="Wrap" Padding="10" FontStretch="Normal" MaxWidth="700" Margin="407,157,828,512">
+                    <Run FontSize="42" Foreground="Black">Get Involved</Run> <LineBreak /><LineBreak />  <Run Foreground="Black"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event.</Run><LineBreak /><LineBreak />
+                 
+                     Our volunteers provide a range of services and support including participating in CCF Branch activities, helping out at the Family Places, working alongside our staff and helping our fundraising team during events such as the national Annual Street Appeal and Funrazor events.
+
+                </TextBlock>
+                <Label Content="Donate via Email" Height="75" HorizontalAlignment="Left" Margin="407,505,0,0" Name="donateELabel" VerticalAlignment="Top" Width="747" FontSize="42" Foreground="Black"/>
+                <Label Name="VolunteerSignLabel" Content="Sign Up Now" FontSize="42" Height="75" HorizontalAlignment="Left" Margin="407,505,0,0"  VerticalAlignment="Top" Width="747" Visibility="Collapsed" Foreground="Black" />
+
+                <!--Sponsor content-->
+                <TextBlock Name="sponsorText" Visibility="Collapsed" Foreground="Black" FontSize="20"  Background="White" TextAlignment="Justify" TextWrapping="Wrap" Padding="10" FontStretch="Normal" MaxWidth="700" Margin="407,147,0,0" Height="635">
+                    <Run FontSize="42" Foreground="Black">Ways To Sponsor</Run> <LineBreak /><LineBreak />  <Run Foreground="Black" > Become a sponsor or business partner </Run> 
+                    <LineBreak></LineBreak>
+                    You may choose to support and partner with Child Cancer Foundation to help New Zealand children with cancer or align our vision and values with that of your company.
+                    <LineBreak></LineBreak> <LineBreak></LineBreak>
+                    When you choose to support Child Cancer Foundation we will work with you to maximize the mutual benefits of the partnership.
+                    <LineBreak></LineBreak>
+                    There are many ways your business or organisation can support and contribute:
+                    <LineBreak></LineBreak>
+                    - Donations <LineBreak></LineBreak>
+                    - Sponsorship <LineBreak></LineBreak>
+                    - Cause-related marketing initiatives  <LineBreak></LineBreak>
+                    - Matching gifts   <LineBreak></LineBreak>
+                    - Payroll giving   <LineBreak></LineBreak>
+                    - Corporate challenge or event   <LineBreak></LineBreak>
+                    - National Appeal     <LineBreak></LineBreak>
+                    - Christmas gifting in lieu    <LineBreak></LineBreak>
+                        <LineBreak></LineBreak>  
+                         Please contact Jade on 09 303 9979 or email jlegeyt@childcancer.org.nz to obtain more information and provide supports.
+                </TextBlock>
+
+            </Grid>
+
+
+     
+
+        </Grid>
+
+
+
+        <!--END OF HOW YOU CAN HELP PAGE-->
+        <!-- END OF HOW YOU CAN HELP -->
             
             <!-- EVENTS NEWS AND MEDIA -->
             <Grid x:Name="_NewsAndEvents_11" Width="1900" Height="1000" Background="white" ClipToBounds="True" Visibility="Collapsed">
@@ -744,7 +773,7 @@ We aim to reduce the impact of cancer by offering services to ensure children an
                 <s:SurfaceButton Grid.Row="0"  Background="Blue" HorizontalAlignment="Center" Content=" fundraise" />
 
             </Grid>
-            <Grid x:Name="_HowYouCanHelp_Purchase_10" Background="LightGray" Visibility="Collapsed">
+            <Grid x:Name="_HowYouCanHelp_Sponsor_10" Background="LightGray" Visibility="Collapsed">
                 <s:SurfaceButton Grid.Row="0"  Background="Pink" HorizontalAlignment="Center" Content=" purchase" />
 
             </Grid>
