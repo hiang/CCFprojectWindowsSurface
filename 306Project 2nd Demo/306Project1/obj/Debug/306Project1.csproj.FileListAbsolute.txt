@@ -265,3 +265,21 @@ C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306ver_button\306Project1\obj\Debu
 C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306ver_button\306Project1\obj\Debug\306Project1.g.resources
 C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306ver_button\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
 C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306ver_button\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\obj\Debug\306Project1.exe
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\obj\Debug\306Project1.pdb
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\bin\Debug\Resources\icon.png
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\bin\Debug\306Project1.xml
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\bin\Debug\306Project1.exe
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\bin\Debug\306Project1.pdb
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\bin\Debug\Microsoft.Expression.Drawing.xml
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\obj\Debug\306Project1.csprojResolveAssemblyReference.cache
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\obj\Debug\SurfaceWindow1.baml
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\obj\Debug\App.baml
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\obj\Debug\SurfaceWindow1.g.cs
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\obj\Debug\App.g.cs
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\obj\Debug\306Project1_Content.g.cs
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\obj\Debug\306Project1.g.resources
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+C:\Users\Chengen\Documents\GitHub\se306_se7en\306Project 2nd Demo\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
