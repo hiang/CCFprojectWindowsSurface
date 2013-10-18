@@ -1,0 +1,17 @@
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\bin\Debug\Resources\icon.png
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\bin\Debug\Homepage.xml
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\bin\Debug\Homepage.exe
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\bin\Debug\Homepage.pdb
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\obj\Debug\SurfaceWindow1.baml
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\obj\Debug\App.baml
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\obj\Debug\SurfaceWindow1.g.cs
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\obj\Debug\App.g.cs
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\obj\Debug\Homepage_Content.g.cs
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\obj\Debug\Homepage_MarkupCompile.cache
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\obj\Debug\Homepage.g.resources
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\obj\Debug\Homepage.Properties.Resources.resources
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\obj\Debug\Homepage.exe
+C:\Users\Erqian Zhang\Desktop\workspace\Homepage\Homepage\obj\Debug\Homepage.pdb

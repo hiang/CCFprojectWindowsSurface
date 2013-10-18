@@ -1,0 +1,283 @@
+\\engad.foe.auckland.ac.nz\engdfs\home\ezha006\Desktop\ws\306Project1\306Project1\bin\Debug\Resources\icon.png
+\\engad.foe.auckland.ac.nz\engdfs\home\ezha006\Desktop\ws\306Project1\306Project1\bin\Debug\306Project1.xml
+\\engad.foe.auckland.ac.nz\engdfs\home\ezha006\Desktop\ws\306Project1\306Project1\bin\Debug\306Project1.exe
+\\engad.foe.auckland.ac.nz\engdfs\home\ezha006\Desktop\ws\306Project1\306Project1\bin\Debug\306Project1.pdb
+\\engad.foe.auckland.ac.nz\engdfs\home\ezha006\Desktop\ws\306Project1\306Project1\obj\Debug\306Project1.csprojResolveAssemblyReference.cache
+\\engad.foe.auckland.ac.nz\engdfs\home\ezha006\Desktop\ws\306Project1\306Project1\obj\Debug\SurfaceWindow1.baml
+\\engad.foe.auckland.ac.nz\engdfs\home\ezha006\Desktop\ws\306Project1\306Project1\obj\Debug\App.baml
+\\engad.foe.auckland.ac.nz\engdfs\home\ezha006\Desktop\ws\306Project1\306Project1\obj\Debug\SurfaceWindow1.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\home\ezha006\Desktop\ws\306Project1\306Project1\obj\Debug\App.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\home\ezha006\Desktop\ws\306Project1\306Project1\obj\Debug\306Project1_Content.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\home\ezha006\Desktop\ws\306Project1\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+\\engad.foe.auckland.ac.nz\engdfs\home\ezha006\Desktop\ws\306Project1\306Project1\obj\Debug\306Project1.g.resources
+\\engad.foe.auckland.ac.nz\engdfs\home\ezha006\Desktop\ws\306Project1\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+\\engad.foe.auckland.ac.nz\engdfs\home\ezha006\Desktop\ws\306Project1\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+\\engad.foe.auckland.ac.nz\engdfs\home\ezha006\Desktop\ws\306Project1\306Project1\obj\Debug\306Project1.exe
+\\engad.foe.auckland.ac.nz\engdfs\home\ezha006\Desktop\ws\306Project1\306Project1\obj\Debug\306Project1.pdb
+C:\Users\Chengen\Desktop\hans\306Project1\306Project1\obj\Debug\306Project1.exe
+C:\Users\Chengen\Desktop\hans\306Project1\306Project1\obj\Debug\306Project1.pdb
+C:\Users\Chengen\Desktop\hans\306Project1\306Project1\bin\Debug\Resources\icon.png
+C:\Users\Chengen\Desktop\hans\306Project1\306Project1\bin\Debug\306Project1.xml
+C:\Users\Chengen\Desktop\hans\306Project1\306Project1\bin\Debug\306Project1.exe
+C:\Users\Chengen\Desktop\hans\306Project1\306Project1\bin\Debug\306Project1.pdb
+C:\Users\Chengen\Desktop\hans\306Project1\306Project1\obj\Debug\306Project1.csprojResolveAssemblyReference.cache
+C:\Users\Chengen\Desktop\hans\306Project1\306Project1\obj\Debug\SurfaceWindow1.baml
+C:\Users\Chengen\Desktop\hans\306Project1\306Project1\obj\Debug\App.baml
+C:\Users\Chengen\Desktop\hans\306Project1\306Project1\obj\Debug\SurfaceWindow1.g.cs
+C:\Users\Chengen\Desktop\hans\306Project1\306Project1\obj\Debug\App.g.cs
+C:\Users\Chengen\Desktop\hans\306Project1\306Project1\obj\Debug\306Project1_Content.g.cs
+C:\Users\Chengen\Desktop\hans\306Project1\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+C:\Users\Chengen\Desktop\hans\306Project1\306Project1\obj\Debug\306Project1.g.resources
+C:\Users\Chengen\Desktop\hans\306Project1\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+C:\Users\Chengen\Desktop\hans\306Project1\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+C:\Users\Chengen\Desktop\306Project1\306Project1\obj\Debug\306Project1.exe
+C:\Users\Chengen\Desktop\306Project1\306Project1\obj\Debug\306Project1.pdb
+C:\Users\Chengen\Desktop\306Project1\306Project1\obj\Debug\306Project1.csprojResolveAssemblyReference.cache
+C:\Users\Chengen\Desktop\306Project1\306Project1\obj\Debug\App.baml
+C:\Users\Chengen\Desktop\306Project1\306Project1\obj\Debug\App.g.cs
+C:\Users\Chengen\Desktop\306Project1\306Project1\obj\Debug\306Project1_Content.g.cs
+C:\Users\Chengen\Desktop\306Project1\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+C:\Users\Chengen\Desktop\306Project1\306Project1\bin\Debug\Resources\icon.png
+C:\Users\Chengen\Desktop\306Project1\306Project1\bin\Debug\306Project1.xml
+C:\Users\Chengen\Desktop\306Project1\306Project1\bin\Debug\306Project1.exe
+C:\Users\Chengen\Desktop\306Project1\306Project1\bin\Debug\306Project1.pdb
+C:\Users\Chengen\Desktop\306Project1\306Project1\obj\Debug\SurfaceWindow1.baml
+C:\Users\Chengen\Desktop\306Project1\306Project1\obj\Debug\SurfaceWindow1.g.cs
+C:\Users\Chengen\Desktop\306Project1\306Project1\obj\Debug\306Project1.g.resources
+C:\Users\Chengen\Desktop\306Project1\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+C:\Users\Chengen\Desktop\306Project1\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+C:\Users\Chengen\Desktop\306Project2\306Project1\obj\Debug\306Project1.exe
+C:\Users\Chengen\Desktop\306Project2\306Project1\obj\Debug\306Project1.pdb
+C:\Users\Chengen\Desktop\306Project2\306Project1\bin\Debug\Resources\icon.png
+C:\Users\Chengen\Desktop\306Project2\306Project1\bin\Debug\306Project1.xml
+C:\Users\Chengen\Desktop\306Project2\306Project1\bin\Debug\306Project1.exe
+C:\Users\Chengen\Desktop\306Project2\306Project1\bin\Debug\306Project1.pdb
+C:\Users\Chengen\Desktop\306Project2\306Project1\obj\Debug\306Project1.csprojResolveAssemblyReference.cache
+C:\Users\Chengen\Desktop\306Project2\306Project1\obj\Debug\SurfaceWindow1.baml
+C:\Users\Chengen\Desktop\306Project2\306Project1\obj\Debug\App.baml
+C:\Users\Chengen\Desktop\306Project2\306Project1\obj\Debug\SurfaceWindow1.g.cs
+C:\Users\Chengen\Desktop\306Project2\306Project1\obj\Debug\App.g.cs
+C:\Users\Chengen\Desktop\306Project2\306Project1\obj\Debug\306Project1_Content.g.cs
+C:\Users\Chengen\Desktop\306Project2\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+C:\Users\Chengen\Desktop\306Project2\306Project1\obj\Debug\306Project1.g.resources
+C:\Users\Chengen\Desktop\306Project2\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+C:\Users\Chengen\Desktop\306Project2\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+\\engad.foe.auckland.ac.nz\engdfs\Home\nmur822\Downloads\306Project2\306Project1\obj\Debug\306Project1.exe
+\\engad.foe.auckland.ac.nz\engdfs\Home\nmur822\Downloads\306Project2\306Project1\obj\Debug\306Project1.pdb
+\\engad.foe.auckland.ac.nz\engdfs\Home\nmur822\Downloads\306Project2\306Project1\bin\Debug\Resources\icon.png
+\\engad.foe.auckland.ac.nz\engdfs\Home\nmur822\Downloads\306Project2\306Project1\bin\Debug\306Project1.xml
+\\engad.foe.auckland.ac.nz\engdfs\Home\nmur822\Downloads\306Project2\306Project1\bin\Debug\306Project1.exe
+\\engad.foe.auckland.ac.nz\engdfs\Home\nmur822\Downloads\306Project2\306Project1\bin\Debug\306Project1.pdb
+\\engad.foe.auckland.ac.nz\engdfs\Home\nmur822\Downloads\306Project2\306Project1\obj\Debug\306Project1.csprojResolveAssemblyReference.cache
+\\engad.foe.auckland.ac.nz\engdfs\Home\nmur822\Downloads\306Project2\306Project1\obj\Debug\SurfaceWindow1.baml
+\\engad.foe.auckland.ac.nz\engdfs\Home\nmur822\Downloads\306Project2\306Project1\obj\Debug\App.baml
+\\engad.foe.auckland.ac.nz\engdfs\Home\nmur822\Downloads\306Project2\306Project1\obj\Debug\SurfaceWindow1.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\Home\nmur822\Downloads\306Project2\306Project1\obj\Debug\App.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\Home\nmur822\Downloads\306Project2\306Project1\obj\Debug\306Project1_Content.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\Home\nmur822\Downloads\306Project2\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+\\engad.foe.auckland.ac.nz\engdfs\Home\nmur822\Downloads\306Project2\306Project1\obj\Debug\306Project1.g.resources
+\\engad.foe.auckland.ac.nz\engdfs\Home\nmur822\Downloads\306Project2\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+\\engad.foe.auckland.ac.nz\engdfs\Home\nmur822\Downloads\306Project2\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+E:\306Project2\306Project1\obj\Debug\306Project1.exe
+E:\306Project2\306Project1\obj\Debug\306Project1.pdb
+E:\306Project2\306Project1\bin\Debug\Resources\icon.png
+E:\306Project2\306Project1\bin\Debug\306Project1.xml
+E:\306Project2\306Project1\bin\Debug\306Project1.exe
+E:\306Project2\306Project1\bin\Debug\306Project1.pdb
+E:\306Project2\306Project1\obj\Debug\ResolveAssemblyReference.cache
+E:\306Project2\306Project1\obj\Debug\SurfaceWindow1.baml
+E:\306Project2\306Project1\obj\Debug\App.baml
+E:\306Project2\306Project1\obj\Debug\SurfaceWindow1.g.cs
+E:\306Project2\306Project1\obj\Debug\App.g.cs
+E:\306Project2\306Project1\obj\Debug\306Project1_Content.g.cs
+E:\306Project2\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+E:\306Project2\306Project1\obj\Debug\306Project1.g.resources
+E:\306Project2\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+E:\306Project2\306Project1\obj\Debug\GenerateResource.read.1.tlog
+E:\306Project2\306Project1\obj\Debug\GenerateResource.write.1.tlog
+E:\se306 demo\306Project1\obj\Debug\306Project1.exe
+E:\se306 demo\306Project1\obj\Debug\306Project1.pdb
+E:\se306 demo\306Project1\bin\Debug\Resources\icon.png
+E:\se306 demo\306Project1\bin\Debug\306Project1.xml
+E:\se306 demo\306Project1\bin\Debug\306Project1.exe
+E:\se306 demo\306Project1\bin\Debug\306Project1.pdb
+E:\se306 demo\306Project1\obj\Debug\ResolveAssemblyReference.cache
+E:\se306 demo\306Project1\obj\Debug\SurfaceWindow1.baml
+E:\se306 demo\306Project1\obj\Debug\App.baml
+E:\se306 demo\306Project1\obj\Debug\SurfaceWindow1.g.cs
+E:\se306 demo\306Project1\obj\Debug\App.g.cs
+E:\se306 demo\306Project1\obj\Debug\306Project1_Content.g.cs
+E:\se306 demo\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+E:\se306 demo\306Project1\obj\Debug\306Project1.g.resources
+E:\se306 demo\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+E:\se306 demo\306Project1\obj\Debug\GenerateResource.read.1.tlog
+E:\se306 demo\306Project1\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\obj\Debug\306Project1.exe
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\obj\Debug\306Project1.pdb
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\bin\Debug\Resources\icon.png
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\bin\Debug\306Project1.xml
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\bin\Debug\306Project1.exe
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\bin\Debug\306Project1.pdb
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\obj\Debug\SurfaceWindow1.baml
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\obj\Debug\App.baml
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\obj\Debug\SurfaceWindow1.g.cs
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\obj\Debug\App.g.cs
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\obj\Debug\306Project1_Content.g.cs
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\obj\Debug\306Project1.g.resources
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Erqian Zhang\Desktop\se306 demo\306Project1\obj\Debug\GenerateResource.write.1.tlog
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1.exe
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1.pdb
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\bin\Debug\Resources\icon.png
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\bin\Debug\306Project1.xml
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\bin\Debug\306Project1.exe
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\bin\Debug\306Project1.pdb
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1.csprojResolveAssemblyReference.cache
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\SurfaceWindow1.baml
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\App.baml
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\SurfaceWindow1.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\App.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1_Content.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1.g.resources
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final updated hiang's part\306Project1\obj\Debug\306Project1.exe
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final updated hiang's part\306Project1\obj\Debug\306Project1.pdb
+\\engad.foe.auckland.ac.nz\engdfs\Home\cli207\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\bin\Debug\Resources\icon.png
+\\engad.foe.auckland.ac.nz\engdfs\Home\cli207\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\bin\Debug\306Project1.xml
+\\engad.foe.auckland.ac.nz\engdfs\Home\cli207\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\bin\Debug\306Project1.exe
+\\engad.foe.auckland.ac.nz\engdfs\Home\cli207\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\bin\Debug\306Project1.pdb
+\\engad.foe.auckland.ac.nz\engdfs\Home\cli207\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\SurfaceWindow1.baml
+\\engad.foe.auckland.ac.nz\engdfs\Home\cli207\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\App.baml
+\\engad.foe.auckland.ac.nz\engdfs\Home\cli207\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\SurfaceWindow1.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\Home\cli207\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\App.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\Home\cli207\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\306Project1_Content.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\Home\cli207\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+\\engad.foe.auckland.ac.nz\engdfs\Home\cli207\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\306Project1.g.resources
+\\engad.foe.auckland.ac.nz\engdfs\Home\cli207\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+\\engad.foe.auckland.ac.nz\engdfs\Home\cli207\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+\\engad.foe.auckland.ac.nz\engdfs\Home\cli207\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\306Project1.exe
+\\engad.foe.auckland.ac.nz\engdfs\Home\cli207\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\306Project1.pdb
+\\engad.foe.auckland.ac.nz\engdfs\home\hzhe024\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1.exe
+\\engad.foe.auckland.ac.nz\engdfs\home\hzhe024\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1.pdb
+\\engad.foe.auckland.ac.nz\engdfs\home\hzhe024\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\bin\Debug\Resources\icon.png
+\\engad.foe.auckland.ac.nz\engdfs\home\hzhe024\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\bin\Debug\306Project1.xml
+\\engad.foe.auckland.ac.nz\engdfs\home\hzhe024\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\bin\Debug\306Project1.exe
+\\engad.foe.auckland.ac.nz\engdfs\home\hzhe024\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\bin\Debug\306Project1.pdb
+\\engad.foe.auckland.ac.nz\engdfs\home\hzhe024\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1.csprojResolveAssemblyReference.cache
+\\engad.foe.auckland.ac.nz\engdfs\home\hzhe024\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\SurfaceWindow1.baml
+\\engad.foe.auckland.ac.nz\engdfs\home\hzhe024\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\App.baml
+\\engad.foe.auckland.ac.nz\engdfs\home\hzhe024\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\SurfaceWindow1.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\home\hzhe024\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\App.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\home\hzhe024\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1_Content.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\home\hzhe024\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+\\engad.foe.auckland.ac.nz\engdfs\home\hzhe024\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1.g.resources
+\\engad.foe.auckland.ac.nz\engdfs\home\hzhe024\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+\\engad.foe.auckland.ac.nz\engdfs\home\hzhe024\Desktop\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+\\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\306Project1.exe
+\\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\306Project1.pdb
+\\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\bin\Debug\Resources\icon.png
+\\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\bin\Debug\306Project1.xml
+\\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\bin\Debug\306Project1.exe
+\\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\bin\Debug\306Project1.pdb
+\\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\306Project1.csprojResolveAssemblyReference.cache
+\\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\SurfaceWindow1.baml
+\\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\App.baml
+\\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\SurfaceWindow1.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\App.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\306Project1_Content.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+\\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\306Project1.g.resources
+\\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+\\engad.foe.auckland.ac.nz\engdfs\Home\hguo031\Desktop\GitHub\se306_se7en\306Project Demo1 Final\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\306Project1.exe
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\306Project1.pdb
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\bin\Debug\Resources\icon.png
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\bin\Debug\306Project1.xml
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\bin\Debug\306Project1.exe
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\bin\Debug\306Project1.pdb
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\SurfaceWindow1.baml
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\App.baml
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\SurfaceWindow1.g.cs
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\App.g.cs
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\306Project1_Content.g.cs
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\306Project1.g.resources
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\bin\Debug\Microsoft.Expression.Drawing.dll
+F:\SOFTENG III  -  2013\Semester 2\306\ORIGINAL\306Project Demo1 Final\306Project1\bin\Debug\Microsoft.Expression.Drawing.xml
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1.exe
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1.pdb
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\bin\Debug\Resources\icon.png
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\bin\Debug\306Project1.xml
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\bin\Debug\306Project1.exe
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\bin\Debug\306Project1.pdb
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\bin\Debug\Microsoft.Expression.Drawing.dll
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\bin\Debug\Microsoft.Expression.Drawing.xml
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1.csprojResolveAssemblyReference.cache
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\SurfaceWindow1.baml
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\App.baml
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\SurfaceWindow1.g.cs
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\App.g.cs
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1_Content.g.cs
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1.g.resources
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+F:\SOFTENG III  -  2013\Semester 2\306\master branch\se306_se7en-master\306Project Demo1 Final\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\bin\Debug\Resources\icon.png
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\bin\Debug\306Project1.xml
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\bin\Debug\306Project1.exe
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\bin\Debug\306Project1.pdb
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\bin\Debug\Microsoft.Expression.Drawing.dll
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\bin\Debug\Microsoft.Expression.Drawing.xml
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\SurfaceWindow1.baml
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\App.baml
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\SurfaceWindow1.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\App.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\306Project1_Content.g.cs
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\306Project1.g.resources
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\306Project1.exe
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\306Project1.pdb
+\\engad.foe.auckland.ac.nz\engdfs\home\cli207\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\306Project1.csprojResolveAssemblyReference.cache
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\306Project1.exe
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\306Project1.pdb
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\bin\Debug\Resources\icon.png
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\bin\Debug\306Project1.xml
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\bin\Debug\306Project1.exe
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\bin\Debug\306Project1.pdb
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\bin\Debug\Microsoft.Expression.Drawing.xml
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\SurfaceWindow1.baml
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\App.baml
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\SurfaceWindow1.g.cs
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\App.g.cs
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\306Project1_Content.g.cs
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\306Project1.g.resources
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+C:\Users\Chengen\Desktop\306Project Demo1 Final -- taylor's copy\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Debug\306Project1.exe
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Debug\306Project1.pdb
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\bin\Debug\Resources\icon.png
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\bin\Debug\306Project1.xml
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\bin\Debug\306Project1.exe
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\bin\Debug\306Project1.pdb
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\bin\Debug\Microsoft.Expression.Drawing.xml
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Debug\SurfaceWindow1.baml
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Debug\App.baml
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Debug\SurfaceWindow1.g.cs
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Debug\App.g.cs
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Debug\306Project1_Content.g.cs
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Debug\306Project1.g.resources
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+C:\Users\Kuyul\Documents\학교\SOFT PIII\306\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
