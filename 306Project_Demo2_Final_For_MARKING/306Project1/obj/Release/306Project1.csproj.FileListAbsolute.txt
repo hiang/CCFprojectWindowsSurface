@@ -1,0 +1,17 @@
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\bin\Release\Resources\icon.png
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\bin\Release\306Project1.xml
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\bin\Release\306Project1.exe
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\bin\Release\306Project1.pdb
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\bin\Release\Microsoft.Expression.Drawing.dll
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\bin\Release\Microsoft.Expression.Drawing.xml
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Release\SurfaceWindow1.baml
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Release\App.baml
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Release\SurfaceWindow1.g.cs
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Release\App.g.cs
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Release\306Project1_Content.g.cs
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Release\306Project1_MarkupCompile.cache
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Release\306Project1.g.resources
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Release\_306Project1.Properties.Resources.resources
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Release\306Project1.csproj.GenerateResource.Cache
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Release\306Project1.exe
+C:\Users\Chengen\Desktop\306Project Demo2 Final\306Project Demo2 Final\306Project1\obj\Release\306Project1.pdb
