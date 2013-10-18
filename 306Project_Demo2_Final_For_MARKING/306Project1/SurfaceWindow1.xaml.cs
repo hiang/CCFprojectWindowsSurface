@@ -802,8 +802,15 @@ namespace _306Project1
 
         }
 
+        
+        //Hiang method for How You Can Help Page 
+        //Disable the current content page if a different menu button is clicked. 
+        //The content that will be set to collapsed will depend on its previous state. 
+        //For example, if the current page is Donate, the content will be set to collapsed when the user presses
+        //on a different menu button 
         private void disableCurrentContent(String topic)
         {
+            //Each topic is a the name of menu button 
             switch (topic)
             {
                 case "donate":
@@ -832,10 +839,13 @@ namespace _306Project1
             }
         }
 
+
+       //Need to recheck this method before removing it. However, it's not being used now 
         private void setNonActiveBtn(String topic)
         {
+            //each topic is the button name 
             switch (topic)
-            {
+            Nee{
                 case "donate":
                     DonateButn.Background = Brushes.White;
                     break;
@@ -859,10 +869,16 @@ namespace _306Project1
 
         }
 
+        //Hiang method 
+        //This method is responsible for set active button. 
+        //This means that the colour of button will become brighter after the user clicked on it. 
         private void setActiveHowWeHelp(String activeBtn)
         {
+            //Create a new image which is used for swapping image buttons 
             ImageBrush myBrush = new ImageBrush();
             Image image = new Image();
+            
+            //Each actvieBtn is the name of the button that is pressed by the user 
             switch (activeBtn)
             {
                 case "donate":
@@ -904,6 +920,10 @@ namespace _306Project1
             }
         }
 
+        //Hiang method for deactiving How You Can Help menu buttons 
+        //THis method deactivate the button when the user presses on a different button
+        //The button colour would become darker which is shown an inactive state, i.e. this button is 
+        //not clicked 
         private void setNonActiveBtnHowYouHelp(String topic)
         {
             ImageBrush myBrush = new ImageBrush();
@@ -1043,6 +1063,8 @@ namespace _306Project1
 
 
         }
+        
+        //This method will be invoked when the user clicked on the How You Can Help button on the home screen 
         public void go_HowYouCanHelp_6(object sender, RoutedEventArgs e)
         {
             Grid now_page = pages.ElementAt(current_page);
@@ -1056,7 +1078,9 @@ namespace _306Project1
 
             pages.ElementAt(current_page).Visibility = System.Windows.Visibility.Visible;
         }
-
+        
+        
+        //This method will be invoked when the user clicks on Donate button on How You Can Help page
         public void go_HowYouCanHelp_Donate_7(object sender, RoutedEventArgs e)
         {
             //Set active button
@@ -1077,6 +1101,8 @@ namespace _306Project1
             setActiveHowWeHelp(currentPage);
 
         }
+        
+        //This method will be invoked when the user clicks on the Volunteer button on How You Can Help page
         public void go_HowYouCanHelp_Volunteer_8(object sender, RoutedEventArgs e)
         {
             //Set the active button
@@ -1094,23 +1120,28 @@ namespace _306Project1
             VolunteerSignLabel.Visibility = System.Windows.Visibility.Visible;
 
         }
+        
+        //This method will be invoked when the user clicks on Fundraise button on How You Can Help page
         public void go_HowYouCanHelp_Fundraise_9(object sender, RoutedEventArgs e)
         {
             setNonActiveBtnHowYouHelp(currentPage);
             //FundraiseButn.Background = Brushes.Gray;
             setActiveHowWeHelp("fundraise");
 
+            //Diable the sponsor page and disable the content of the page that has been previously chosen 
             disableCurrentContent(currentPage);
             currentPage = "fundraise";
             fundraiseText.Visibility = System.Windows.Visibility.Visible;
         }
 
+        //This mehtod will be invoked when the user click on the sponsor button on How You Can Help page
         public void go_HowYouCanHelp_Sponsor_10(object sender, RoutedEventArgs e)
         {
             setNonActiveBtnHowYouHelp(currentPage);
             // SponsorButn.Background = Brushes.Gray;
             setActiveHowWeHelp("sponsor");
 
+            //Enable the sponsor page and disable the content of the page tht has been previous chosen 
             disableCurrentContent(currentPage);
             currentPage = "sponsor";
             sponsorText.Visibility = System.Windows.Visibility.Visible;
@@ -1188,6 +1219,8 @@ namespace _306Project1
 
 
         }
+        
+        //The Tic Tac Toe game will be shown up on the home screen when the user pressed on Mini Game
         public void go_game(object sender, RoutedEventArgs e)// control mini game button
         {
             foreach (Button btn in wrapPanel1.Children)
@@ -1283,6 +1316,8 @@ namespace _306Project1
                 btn.IsEnabled = true;
             }
         }
+        
+        //This mehtod will be called when the user clicked on the Quit Tic Tac Toe Game button 
         private void Quit_Click(object sender, RoutedEventArgs e)
         {
             if (LayoutRoot.Visibility == System.Windows.Visibility.Visible)
