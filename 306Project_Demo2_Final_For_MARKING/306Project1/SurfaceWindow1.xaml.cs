@@ -845,7 +845,7 @@ namespace _306Project1
         {
             //each topic is the button name 
             switch (topic)
-            Nee{
+            {
                 case "donate":
                     DonateButn.Background = Brushes.White;
                     break;
