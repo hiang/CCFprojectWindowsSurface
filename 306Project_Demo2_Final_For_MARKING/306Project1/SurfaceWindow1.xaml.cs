@@ -97,23 +97,20 @@ namespace _306Project1
             pages.Add(_FamilySupport_SupportService_17);
 
             //initialization of family services stuff
-            
-            BeadsItems.Add(new DataItems("Click here for the collection guide", "", ""));
-            BeadsItems.Add(new DataItems("Click here for the member's tally sheet", "", ""));
-            BeadsItems.Add(new DataItems("Click here for the sibling's programme", "", ""));
-            BeadsItems.Add(new DataItems("Click here for the update on Beads of Courage㈢  programme", "", ""));
-            
-            sharingItems.Add(new DataItems("August 2013 (.pdf 6.2MB)", "", "Feature Stories: Lucy's Life in the Maniatoto; Wiremu's Journey; CCF's \nHistory Book."));
-            sharingItems.Add(new DataItems("March 2013 (.pdf 5MB)", "", "Feature Stories: Introducing our 2013 Ambassadors - Hilton, Myah and \nEmilie!; The Canterbury Earthquake - Two Years On."));
-            sharingItems.Add(new DataItems("November 2012 (.pdf 4.8MB)", "", "Feature Stories: Memorials - remembering our loved ones; Our catch ups \n- don't they look great!; Shauna & Her Matching Mates."));
-            sharingItems.Add(new DataItems("August 2012 (.pdf 6.8MB)", "", "Feature Stories: Sione & Jerome - a dream come true!; Alex and Molly, \nKatia & Anouk - a unique bond."));
-            
-            contactItems.Add(new DataItems("Family unity's a head-turner", "27/06/13", ""));
-            contactItems.Add(new DataItems("Family unity's a head-turner", "27/06/13", ""));
-            contactItems.Add(new DataItems("Charity Home for CCF", "12/10/2013 to 20/11/13", ""));
-            contactItems.Add(new DataItems("Crafty Knitwits Knitathon Grand Auction", "19/10/13", ""));
-            contactItems.Add(new DataItems("Top of the Range Horse Trek", "27/01/14 to 02/02/14", ""));
-            contactItems.Add(new DataItems("Support services", "", "Our Family Support team work in conjunction with the\nfoundation's branch members (parents, caregivers, and volunteers) \nto deliver a range of support services to ensure every child\n and their family walking the child cancer journey will never feel alone."));
+
+            BeadsItems.Add(new DataItems("Collection guide", "", "http://www.childcancer.org.nz/CCFSite/media/images/Ambassadors/Beads-of-Courage-Collection-Guideline-Sept-2012_2.pdf"));
+            BeadsItems.Add(new DataItems("Member's tally sheet", "", "http://www.childcancer.org.nz/CCFSite/media/images/Ambassadors/FSC-Beads-of-Courage-MEMBERS-Programme-SEP-2012-FINAL.pdf"));
+            BeadsItems.Add(new DataItems("Sibling's programme", "", "http://www.childcancer.org.nz/CCFSite/media/images/Ambassadors/FSC-Beads-of-Courage-SIBLING-Programme-SEP-2012-FINAL.pdf"));
+            BeadsItems.Add(new DataItems("Update on Beads of Courage㈢  programme", "", "http://www.childcancer.org.nz/CCFSite/media/images/Ambassadors/Newsletter-Sep-2102---Beads-of-Courage_1.pdf"));
+
+            sharingItems.Add(new DataItems("August 2013 (.pdf 6.2MB)", "Feature Stories: Lucy's Life in the Maniatoto; \nWiremu's Journey; CCF's \nHistory Book.", "http://www.childcancer.org.nz/getattachment/Family-support/Sharing-magazine/J000154_SharingAUG13_LR.pdf.aspx"));
+            sharingItems.Add(new DataItems("March 2013 (.pdf 5MB)", "Feature Stories: Introducing our 2013 Ambassadors\n - Hilton, Myah and \nEmilie!; The Canterbury Earthquake - Two Years On.", "http://www.childcancer.org.nz/getattachment/Family-support/Sharing-magazine/Sharing-March-2013-(1).pdf.aspx"));
+            sharingItems.Add(new DataItems("November 2012 (.pdf 4.8MB)", "Feature Stories: Memorials - remembering our loved ones; Our catch ups \n- don't they look great!; Shauna & Her Matching Mates.", "http://www.childcancer.org.nz/getattachment/Family-support/Sharing-magazine/J000023_CCFSharingNOV_LR.pdf.aspx"));
+            sharingItems.Add(new DataItems("August 2012 (.pdf 6.8MB)", "Feature Stories: Sione & Jerome - a dream come true!; Alex and Molly, \nKatia & Anouk - a unique bond.", "http://www.childcancer.org.nz/getattachment/Family-support/Sharing-magazine/J000023_CCFSharingAUG_LR.pdf.aspx"));
+
+            contactItems.Add(new DataItems("Family Support - Auckland﻿", "", "Janet Masina\n(09) 303 9885\njmasina@childcancer.org.nz\n\nMary Mangan\n(09) 303 9971\nmmangan@childcancer.org.nz"));
+            contactItems.Add(new DataItems("Family Support - Christchurch ﻿", "", "Christine Graham\n(03) 365 1485\ncgraham@childcancer.org.nz\n\nDiane Kerr\n021 838 142\ndkerr@childcancer.org.nz"));
+            contactItems.Add(new DataItems("Family Support - Dunedin﻿", "", "Christine Donovan\n(03) 471 7258\ncdonovan@childcancer.org.nz"));
             
             // end of initialization of family services stuff
 
@@ -380,6 +377,14 @@ namespace _306Project1
             brush7.ImageSource = new BitmapImage(new Uri("Resources/306p2_elements/306p2_elements_family_support/306p2_elements__0000_highlighted_button_Contact-list.png", UriKind.Relative));
             ContactList.Background = brush7;
 
+            selectedbeadsofcourage_border.Visibility = System.Windows.Visibility.Visible;
+            selectedsupportservices_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedsharingmagazines_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedholidayhomes_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedparentresources_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedscholarships_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedcontactlist_border.Visibility = System.Windows.Visibility.Collapsed;
+
         }
 
         /// clickable button
@@ -413,6 +418,14 @@ namespace _306Project1
             Scholarship.Background = brush6;
             brush7.ImageSource = new BitmapImage(new Uri("Resources/306p2_elements/306p2_elements_family_support/306p2_elements__0000_highlighted_button_Contact-list.png", UriKind.Relative));
             ContactList.Background = brush7;
+
+            selectedbeadsofcourage_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedsupportservices_border.Visibility = System.Windows.Visibility.Visible;
+            selectedsharingmagazines_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedholidayhomes_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedparentresources_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedscholarships_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedcontactlist_border.Visibility = System.Windows.Visibility.Collapsed;
 
         }
 
@@ -448,6 +461,13 @@ namespace _306Project1
             brush7.ImageSource = new BitmapImage(new Uri("Resources/306p2_elements/306p2_elements_family_support/306p2_elements__0000_highlighted_button_Contact-list.png", UriKind.Relative));
             ContactList.Background = brush7;
 
+            selectedbeadsofcourage_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedsupportservices_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedsharingmagazines_border.Visibility = System.Windows.Visibility.Visible;
+            selectedholidayhomes_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedparentresources_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedscholarships_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedcontactlist_border.Visibility = System.Windows.Visibility.Collapsed;
         }
 
         /// clickable button
@@ -482,6 +502,13 @@ namespace _306Project1
             brush7.ImageSource = new BitmapImage(new Uri("Resources/306p2_elements/306p2_elements_family_support/306p2_elements__0000_highlighted_button_Contact-list.png", UriKind.Relative));
             ContactList.Background = brush7;
 
+            selectedbeadsofcourage_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedsupportservices_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedsharingmagazines_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedholidayhomes_border.Visibility = System.Windows.Visibility.Visible;
+            selectedparentresources_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedscholarships_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedcontactlist_border.Visibility = System.Windows.Visibility.Collapsed;
         }
 
         /// clickable button
@@ -516,6 +543,13 @@ namespace _306Project1
             brush7.ImageSource = new BitmapImage(new Uri("Resources/306p2_elements/306p2_elements_family_support/306p2_elements__0000_highlighted_button_Contact-list.png", UriKind.Relative));
             ContactList.Background = brush7;
 
+            selectedbeadsofcourage_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedsupportservices_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedsharingmagazines_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedholidayhomes_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedparentresources_border.Visibility = System.Windows.Visibility.Visible;
+            selectedscholarships_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedcontactlist_border.Visibility = System.Windows.Visibility.Collapsed;
         }
 
         private void familyservices_SurfaceButton_Click6(object sender, RoutedEventArgs e)
@@ -549,6 +583,13 @@ namespace _306Project1
             brush7.ImageSource = new BitmapImage(new Uri("Resources/306p2_elements/306p2_elements_family_support/306p2_elements__0000_highlighted_button_Contact-list.png", UriKind.Relative));
             ContactList.Background = brush7;
 
+            selectedbeadsofcourage_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedsupportservices_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedsharingmagazines_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedholidayhomes_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedparentresources_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedscholarships_border.Visibility = System.Windows.Visibility.Visible;
+            selectedcontactlist_border.Visibility = System.Windows.Visibility.Collapsed;
         }
 
         private void familyservices_SurfaceButton_Click7(object sender, RoutedEventArgs e)
@@ -582,6 +623,13 @@ namespace _306Project1
             brush7.ImageSource = new BitmapImage(new Uri("Resources/306p2_elements/306p2_elements_family_support/306p2_elements__0001_normal_button_Contact-list.png", UriKind.Relative));
             ContactList.Background = brush7;
 
+            selectedbeadsofcourage_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedsupportservices_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedsharingmagazines_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedholidayhomes_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedparentresources_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedscholarships_border.Visibility = System.Windows.Visibility.Collapsed;
+            selectedcontactlist_border.Visibility = System.Windows.Visibility.Visible;
         }
 
         /// <summary>
@@ -802,15 +850,8 @@ namespace _306Project1
 
         }
 
-        
-        //Hiang method for How You Can Help Page 
-        //Disable the current content page if a different menu button is clicked. 
-        //The content that will be set to collapsed will depend on its previous state. 
-        //For example, if the current page is Donate, the content will be set to collapsed when the user presses
-        //on a different menu button 
         private void disableCurrentContent(String topic)
         {
-            //Each topic is a the name of menu button 
             switch (topic)
             {
                 case "donate":
@@ -839,11 +880,8 @@ namespace _306Project1
             }
         }
 
-
-       //Need to recheck this method before removing it. However, it's not being used now 
         private void setNonActiveBtn(String topic)
         {
-            //each topic is the button name 
             switch (topic)
             {
                 case "donate":
@@ -869,16 +907,10 @@ namespace _306Project1
 
         }
 
-        //Hiang method 
-        //This method is responsible for set active button. 
-        //This means that the colour of button will become brighter after the user clicked on it. 
         private void setActiveHowWeHelp(String activeBtn)
         {
-            //Create a new image which is used for swapping image buttons 
             ImageBrush myBrush = new ImageBrush();
             Image image = new Image();
-            
-            //Each actvieBtn is the name of the button that is pressed by the user 
             switch (activeBtn)
             {
                 case "donate":
@@ -920,10 +952,6 @@ namespace _306Project1
             }
         }
 
-        //Hiang method for deactiving How You Can Help menu buttons 
-        //THis method deactivate the button when the user presses on a different button
-        //The button colour would become darker which is shown an inactive state, i.e. this button is 
-        //not clicked 
         private void setNonActiveBtnHowYouHelp(String topic)
         {
             ImageBrush myBrush = new ImageBrush();
@@ -1063,8 +1091,6 @@ namespace _306Project1
 
 
         }
-        
-        //This method will be invoked when the user clicked on the How You Can Help button on the home screen 
         public void go_HowYouCanHelp_6(object sender, RoutedEventArgs e)
         {
             Grid now_page = pages.ElementAt(current_page);
@@ -1078,9 +1104,7 @@ namespace _306Project1
 
             pages.ElementAt(current_page).Visibility = System.Windows.Visibility.Visible;
         }
-        
-        
-        //This method will be invoked when the user clicks on Donate button on How You Can Help page
+
         public void go_HowYouCanHelp_Donate_7(object sender, RoutedEventArgs e)
         {
             //Set active button
@@ -1101,8 +1125,6 @@ namespace _306Project1
             setActiveHowWeHelp(currentPage);
 
         }
-        
-        //This method will be invoked when the user clicks on the Volunteer button on How You Can Help page
         public void go_HowYouCanHelp_Volunteer_8(object sender, RoutedEventArgs e)
         {
             //Set the active button
@@ -1120,28 +1142,23 @@ namespace _306Project1
             VolunteerSignLabel.Visibility = System.Windows.Visibility.Visible;
 
         }
-        
-        //This method will be invoked when the user clicks on Fundraise button on How You Can Help page
         public void go_HowYouCanHelp_Fundraise_9(object sender, RoutedEventArgs e)
         {
             setNonActiveBtnHowYouHelp(currentPage);
             //FundraiseButn.Background = Brushes.Gray;
             setActiveHowWeHelp("fundraise");
 
-            //Diable the sponsor page and disable the content of the page that has been previously chosen 
             disableCurrentContent(currentPage);
             currentPage = "fundraise";
             fundraiseText.Visibility = System.Windows.Visibility.Visible;
         }
 
-        //This mehtod will be invoked when the user click on the sponsor button on How You Can Help page
         public void go_HowYouCanHelp_Sponsor_10(object sender, RoutedEventArgs e)
         {
             setNonActiveBtnHowYouHelp(currentPage);
             // SponsorButn.Background = Brushes.Gray;
             setActiveHowWeHelp("sponsor");
 
-            //Enable the sponsor page and disable the content of the page tht has been previous chosen 
             disableCurrentContent(currentPage);
             currentPage = "sponsor";
             sponsorText.Visibility = System.Windows.Visibility.Visible;
@@ -1219,8 +1236,6 @@ namespace _306Project1
 
 
         }
-        
-        //The Tic Tac Toe game will be shown up on the home screen when the user pressed on Mini Game
         public void go_game(object sender, RoutedEventArgs e)// control mini game button
         {
             foreach (Button btn in wrapPanel1.Children)
@@ -1316,8 +1331,6 @@ namespace _306Project1
                 btn.IsEnabled = true;
             }
         }
-        
-        //This mehtod will be called when the user clicked on the Quit Tic Tac Toe Game button 
         private void Quit_Click(object sender, RoutedEventArgs e)
         {
             if (LayoutRoot.Visibility == System.Windows.Visibility.Visible)

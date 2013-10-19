@@ -655,14 +655,10 @@
                             <TranslateTransform/>
                         </TransformGroup>
                     </Grid.RenderTransform>
-                    
-                    <!--Add gackground on How You Can help, the yellow background-->
                     <Grid.Background>
                         <ImageBrush ImageSource="./Resources/306p2_elements/306p2_elements_how_you_can_help/306p2_elements__0010_fill.png"/>
                     </Grid.Background>
 
-                    <!--This is the Go Back To Home, on the top right corner of How You Help page-->
-                    <!--This is the white round quarter circle-->
                     <Grid Width="336" Height="345" HorizontalAlignment="Right" VerticalAlignment="Top">
                         <s:SurfaceButton Name="howyoucanhelp_to_home" Click="go_Back" IsDefault="False" Width="336" Height="345">
                             <s:SurfaceButton.Background>
@@ -670,9 +666,7 @@
                             </s:SurfaceButton.Background>
                         </s:SurfaceButton>
                     </Grid>
-                    
-                    <!--This is the green sphere, which is the main background for the contents and button of How you 
-                    can help page-->
+
                     <Grid Width="1631" Height="1080" HorizontalAlignment="Left" VerticalAlignment="Center">
                         <Grid.Background>
                             <ImageBrush ImageSource="./Resources/306p2_elements/306p2_elements_how_you_can_help/306p2_elements__0009_green-sphere---how-you-can-help.png"/>
@@ -700,7 +694,7 @@
                                 </Grid.RowDefinitions>
 
                                 <!--Four main subpage buttons-->
-                                <!--The menu button for Donate--> 
+
                                 <Grid Grid.Row="0">
                                     <s:SurfaceButton Name="DonateButn" Click="go_HowYouCanHelp_Donate_7" Width="293" Height="69" HorizontalAlignment="right" VerticalAlignment="center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
                                         <s:SurfaceButton.Background>
@@ -709,7 +703,6 @@
                                     </s:SurfaceButton>
                                 </Grid>
 
-                                <!--The menu button for sponsor-->
                                 <Grid Grid.Row="1">
                                     <s:SurfaceButton Name="SponsorButn" Click="go_HowYouCanHelp_Sponsor_10" Width="293" Height="69" HorizontalAlignment="right" VerticalAlignment="center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
                                         <s:SurfaceButton.Background>
@@ -717,8 +710,7 @@
                                         </s:SurfaceButton.Background>
                                     </s:SurfaceButton>
                                 </Grid>
-                                
-                                <!--The menu button for Volunteer-->
+
                                 <Grid Grid.Row="2">
                                     <s:SurfaceButton Name="VolunteerButn" Click="go_HowYouCanHelp_Volunteer_8" Width="293" Height="69" HorizontalAlignment="right" VerticalAlignment="center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
                                         <s:SurfaceButton.Background>
@@ -727,7 +719,6 @@
                                     </s:SurfaceButton>
                                 </Grid>
 
-                                <!--The menu button for Fundraise-->
                                 <Grid Grid.Row="3">
                                     <s:SurfaceButton Name="FundraiseButn" Click="go_HowYouCanHelp_Fundraise_9" Width="293" Height="69" HorizontalAlignment="right" VerticalAlignment="center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
                                         <s:SurfaceButton.Background>
@@ -738,7 +729,6 @@
 
                             </Grid>
 
-                            <!--This grid is used for storing contents for all subpages of How You Can Help page-->
                             <Grid Name="howyoucanhelp_content_panel" Grid.Column="2">
                                 <!--donate page-->
                                 <Grid x:Name="Donatepage" Visibility="Visible">
@@ -802,6 +792,9 @@
                                 </Grid>
                                 
 
+                                
+                                
+
                                 <!--Sponsor content-->
                                 <TextBlock Name="sponsorText" Visibility="Collapsed" Foreground="DarkOliveGreen" FontSize="28" TextAlignment="Justify" TextWrapping="Wrap" Padding="0,10,5,10" FontStretch="Normal" MaxWidth="700" Height="635">
                                     <Run FontSize="48" Foreground="DarkGreen">Ways To Sponsor</Run><LineBreak /><LineBreak />
@@ -826,16 +819,28 @@
 
                                 <!--Fundraise Page-->
                                 <TextBlock Name="fundraiseText" Visibility="Collapsed" Foreground="DarkOliveGreen" FontSize="28" HorizontalAlignment="Left" Background="Transparent" TextAlignment="Justify" TextWrapping="Wrap" Padding="0,10,5,10" 
-                                    FontStretch="Normal" Width="700">
-                                <Run FontSize="48" Foreground="DarkGreen">Ways To Fundraise</Run> <LineBreak /><LineBreak />  <Run Foreground="DarkBlue"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event. </Run> <LineBreak /><LineBreak />   
-                                    Here are just a few fundraising ideas: <LineBreak></LineBreak>
-                                    -   Corporate event - boxing, head shaving etc <LineBreak></LineBreak>
-                                    -   Sporting event - golfing, bowls etc <LineBreak></LineBreak>
-                                    -   Art Auction <LineBreak></LineBreak></TextBlock>
-                                </Grid>
+                               FontStretch="Normal" Width="700">
+                    <Run FontSize="48" Foreground="DarkGreen">Ways To Fundraise</Run> <LineBreak /><LineBreak />  <Run Foreground="DarkBlue"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event. </Run> <LineBreak /><LineBreak />   
+                    Here are just a few fundraising ideas: <LineBreak></LineBreak>
+                    -   Corporate event - boxing, head shaving etc <LineBreak></LineBreak>
+                    -   Sporting event - golfing, bowls etc <LineBreak></LineBreak>
+                    -   Art Auction <LineBreak></LineBreak></TextBlock>
+
+                                
+
+                                
+                            </Grid>
+
+
+
 
                         </Grid>
-                  </Grid>
+
+                        
+
+                        
+
+                    </Grid>
 
                 </Grid>
                 <!-- END OF HOW YOU CAN HELP -->
@@ -954,6 +959,7 @@
                                 <Border Name="selectednews_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
                                     <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="SelectedNews" Text="{Binding SelectedItem.Details, ElementName=news}" />
                                 </Border>
+                                
 
                                 <!--Display the selected events-->
                                 <Border Name="selectedevent_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Collapsed">
@@ -1083,6 +1089,8 @@
                                         </s:SurfaceButton.Background>
                                     </s:SurfaceButton>
                                 </Grid>
+                                
+                                
 
                             </Grid>
                             
@@ -1091,7 +1099,7 @@
                               Visibility="Visible"
                               Background="Transparent"
                               Name="Beads_of_Courage"
-                              BorderBrush="Transparent"
+                              
                               ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                               ItemsSource="{Binding Path=BeadsItems}"
                               s:SurfaceScrollViewer.VerticalScrollBarVisibility="Hidden"
@@ -1101,7 +1109,7 @@
                               Visibility="Collapsed"
                               Background="Transparent"
                               Name="Support_Services"
-                              BorderBrush="Transparent"
+                             
                               ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                               ItemsSource="{Binding Path=supportItems}"
                               s:SurfaceScrollViewer.VerticalScrollBarVisibility="Hidden"
@@ -1111,7 +1119,7 @@
                               Visibility="Collapsed"
                               Background="Transparent"
                               Name="Sharing_Magazine"
-                              BorderBrush="Transparent"
+                              
                               ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                               ItemsSource="{Binding Path=sharingItems}"
                               s:SurfaceScrollViewer.VerticalScrollBarVisibility="Hidden"
@@ -1122,7 +1130,7 @@
                               Visibility="Collapsed"
                               Background="Transparent"
                               Name="Holiday_Homes"
-                              BorderBrush="Transparent"
+                           
                               ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                               ItemsSource="{Binding Path=holidayItems}"
                               s:SurfaceScrollViewer.VerticalScrollBarVisibility="Hidden"
@@ -1132,7 +1140,7 @@
                               Visibility="Collapsed"
                               Background="Transparent"
                               Name="Parent_Resources"
-                              BorderBrush="Transparent"
+                             
                               ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                               ItemsSource="{Binding Path=parentItems}"
                               s:SurfaceScrollViewer.VerticalScrollBarVisibility="Hidden"
@@ -1142,7 +1150,7 @@
                               Visibility="Collapsed"
                               Background="Transparent"
                               Name="Scholarships"
-                              BorderBrush="Transparent"
+                             
                               ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                               ItemsSource="{Binding Path=scholarshipItems}"
                               s:SurfaceScrollViewer.VerticalScrollBarVisibility="Hidden"
@@ -1152,7 +1160,7 @@
                               Visibility="Collapsed"
                               Background="Transparent"
                               Name="contact_list"
-                              BorderBrush="Transparent"
+                              
                               ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                               ItemsSource="{Binding Path=contactItems}"
                               s:SurfaceScrollViewer.VerticalScrollBarVisibility="Hidden"
@@ -1160,24 +1168,44 @@
 
                             </Grid>
 
-                            <Grid Name="familyservices_subcontent_panel" Grid.Column="4">
+                        
 
-                                <!--Display the selected news-->
-                                <Border Name="selectedbeadsofcourage_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible">
-                                    <TextBlock  FontSize="28" Foreground="Black" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedbeadsofcourage" Text="{Binding SelectedItem.Details, ElementName=news}" />
-                                </Border>
+                        <Grid Name="familyservices_subcontent_panel" Grid.Column="4">
 
-                                <!--Display the selected events-->
-                                <Border Name="selectedsupportservices_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Collapsed">
-                                    <TextBlock FontSize="28" Foreground="Black" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedsupportservices" Text="{Binding SelectedItem.Details, ElementName=events}" />
-                                </Border>
+                            <!--Display the selected news-->
 
-                                <!--Display the selected media-->
-                                <Border Name="selectedsharingmagazines_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Collapsed">
-                                    <TextBlock FontSize="28" Foreground="Black" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedsharingmagazines" Text="{Binding SelectedItem.Details, ElementName=media}" />
-                                </Border>
+                            <Border Name="selectedbeadsofcourage_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
+                                <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedbeadsofcourage" Text="{Binding SelectedItem.Details, ElementName=Beads_of_Courage}" />
+                            </Border>
 
-                            </Grid>
+                            <Border Name="selectedsupportservices_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
+                                <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedsupportservices" Text="{Binding SelectedItem.Details, ElementName=Support_Services}" />
+                            </Border>
+
+
+                            <Border Name="selectedsharingmagazines_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
+                                <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedsharingmagazines" Text="{Binding SelectedItem.Details, ElementName=Sharing_Magazine}" />
+                            </Border>
+
+
+                            <Border Name="selectedholidayhomes_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
+                                <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedsharingholiday" Text="{Binding SelectedItem.Details, ElementName=Holiday_Homes}" />
+                            </Border>
+
+                            <Border Name="selectedparentresources_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
+                                <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedsharingparent" Text="{Binding SelectedItem.Details, ElementName=Parent_Resources}" />
+                            </Border>
+                            
+
+                            <Border Name="selectedscholarships_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
+                                <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedsharingscholarships" Text="{Binding SelectedItem.Details, ElementName=Scholarships}" />
+                            </Border>
+
+                            <Border Name="selectedcontactlist_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
+                                <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedsharingcontactlist" Text="{Binding SelectedItem.Details, ElementName=contact_list}" />
+                            </Border>                            
+
+                        </Grid>
                         </Grid>
                     </Grid>
                 </Grid>

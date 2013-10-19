@@ -336,3 +336,21 @@ C:\Users\Wilsoon\Desktop\jiaode\306Project Demo2 Final\306Project1\obj\Debug\306
 C:\Users\Wilsoon\Desktop\jiaode\306Project Demo2 Final\306Project1\obj\Debug\306Project1.g.resources
 C:\Users\Wilsoon\Desktop\jiaode\306Project Demo2 Final\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
 C:\Users\Wilsoon\Desktop\jiaode\306Project Demo2 Final\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\obj\Debug\306Project1.exe
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\obj\Debug\306Project1.pdb
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\bin\Debug\Resources\icon.png
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\bin\Debug\306Project1.xml
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\bin\Debug\306Project1.exe
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\bin\Debug\306Project1.pdb
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\bin\Debug\Microsoft.Expression.Drawing.xml
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\obj\Debug\306Project1.csprojResolveAssemblyReference.cache
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\obj\Debug\SurfaceWindow1.baml
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\obj\Debug\App.baml
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\obj\Debug\SurfaceWindow1.g.cs
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\obj\Debug\App.g.cs
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\obj\Debug\306Project1_Content.g.cs
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\obj\Debug\306Project1_MarkupCompile.cache
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\obj\Debug\306Project1.g.resources
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\obj\Debug\_306Project1.Properties.Resources.resources
+C:\Users\Kuyul\306pjt2\306Project_Demo2_Final_For_MARKING\306Project1\obj\Debug\306Project1.csproj.GenerateResource.Cache
