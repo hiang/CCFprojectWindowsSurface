@@ -1175,37 +1175,48 @@
                             <!--Display the selected news-->
 
                             <Border Name="selectedbeadsofcourage_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
-                                <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedbeadsofcourage" Text="{Binding SelectedItem.Details, ElementName=Beads_of_Courage}" />
+                                    <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5">
+                                     <Hyperlink NavigateUri="{Binding SelectedItem.Details, ElementName=Beads_of_Courage}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="{Binding SelectedItem.Details, ElementName=Beads_of_Courage}"/>
+                                    </Hyperlink>
+                                    </TextBlock>
                             </Border>
 
-                            <Border Name="selectedsupportservices_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
+                            <Border Name="selectedsupportservices_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Collapsed" >
                                 <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedsupportservices" Text="{Binding SelectedItem.Details, ElementName=Support_Services}" />
                             </Border>
 
 
-                            <Border Name="selectedsharingmagazines_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
-                                <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedsharingmagazines" Text="{Binding SelectedItem.Details, ElementName=Sharing_Magazine}" />
-                            </Border>
+                            <Border Name="selectedsharingmagazines_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Collapsed" >
+
+                                    <TextBlock FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5">
+                                    <Hyperlink NavigateUri="{Binding SelectedItem.Details, ElementName=Sharing_Magazine}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text= "{Binding SelectedItem.Details, ElementName=Sharing_Magazine}"/>
+                                    </Hyperlink>
+                                     </TextBlock>
+                                </Border>
 
 
-                            <Border Name="selectedholidayhomes_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
+                                <Border Name="selectedholidayhomes_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Collapsed" >
                                 <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedsharingholiday" Text="{Binding SelectedItem.Details, ElementName=Holiday_Homes}" />
                             </Border>
 
-                            <Border Name="selectedparentresources_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
+                                <Border Name="selectedparentresources_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Collapsed" >
                                 <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedsharingparent" Text="{Binding SelectedItem.Details, ElementName=Parent_Resources}" />
                             </Border>
-                            
 
-                            <Border Name="selectedscholarships_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
+
+                                <Border Name="selectedscholarships_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Collapsed" >
                                 <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedsharingscholarships" Text="{Binding SelectedItem.Details, ElementName=Scholarships}" />
                             </Border>
 
-                            <Border Name="selectedcontactlist_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
+                                <Border Name="selectedcontactlist_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Collapsed" >
                                 <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="selectedsharingcontactlist" Text="{Binding SelectedItem.Details, ElementName=contact_list}" />
-                            </Border>                            
+                            </Border>
 
-                        </Grid>
+
+
+                            </Grid>
                         </Grid>
                     </Grid>
                 </Grid>

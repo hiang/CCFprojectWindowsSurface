@@ -34,6 +34,12 @@ namespace _306Project1
         int turn;
         int i, j;
 
+        private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
+        {
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(e.Uri.ToString()));
+            e.Handled = true;
+        }
+
         public SurfaceWindow1()
         {
             InitializeComponent();
