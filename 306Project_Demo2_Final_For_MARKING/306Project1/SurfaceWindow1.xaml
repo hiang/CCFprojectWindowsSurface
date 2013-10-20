@@ -1112,8 +1112,13 @@
                             </Grid>
 
                                 <Grid Name="familyservice_content_panel" Grid.Column="2">
+                                    
                                 <Border Name="fnsmain" Visibility="Visible" Background="Transparent">
-                                    <Grid  Visibility="Visible" Background="Transparent" Height="800" Width="1000">
+
+                                    <Grid  Visibility="Visible" Height="800" Width="1000">
+                                        <Grid.Background>
+                                            <SolidColorBrush Color="White" Opacity="0.1" />
+                                        </Grid.Background>
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="100"/>
                                         <RowDefinition Height="250"/>
@@ -1156,15 +1161,34 @@
                               s:SurfaceScrollViewer.VerticalScrollBarVisibility="Hidden"
                               s:SurfaceScrollViewer.HorizontalScrollBarVisibility="Hidden"/>
 
-                                <s:SurfaceListBox Height="634" Width="380"
-                              Visibility="Collapsed"
-                              Background="Transparent"
-                              Name="Support_Services"
-                             
-                              ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
-                              ItemsSource="{Binding Path=supportItems}"
-                              s:SurfaceScrollViewer.VerticalScrollBarVisibility="Hidden"
-                              s:SurfaceScrollViewer.HorizontalScrollBarVisibility="Hidden"/>
+
+                                <Border Width="2000" Height="800" HorizontalAlignment="Left" VerticalAlignment="Top">
+                                    <Border.Background>
+                                        <SolidColorBrush Color="White" Opacity="0.1" />
+                                    </Border.Background>
+                                    <s:SurfaceScrollViewer Name="Support_Services" Visibility="Collapsed"  HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Hidden">
+                                    
+                                    <TextBlock   FontSize="28" Padding="15" Foreground="Black" TextAlignment="Justify" TextWrapping="Wrap" Height="1600" Width="1000" FontStretch="Normal">
+                                        
+                                      <Run FontSize="48" FontStyle="Italic" Foreground="#4a73b9">Support Services</Run><LineBreak></LineBreak><LineBreak></LineBreak>
+                                      <Run FontSize="28" Foreground="#4a73b9">
+                                      Our Family Support team work in conjunction with the Foundation's branch members (parents, caregivers and volunteers) to deliver a range of support services to ensure every child and their family walking the child cancer journey will never feel alone.
+                                      </Run>
+                                        <LineBreak/><LineBreak/>
+                                        Our Family Support Coordinators provide support to children and their families in hospital, at home and in the community. They offer individual and group support, information, financial assistance and advocacy. Our Coordinators also offer support for bereaved families. They connect similar families and provide a link to other agencies and community support groups.
+                                        <LineBreak/><LineBreak/>
+                                        The Foundation offers children with cancer Beads of Courage, a registered, therapeutic programme of the Child Cancer Foundation. The programme provides a physical story of a child’s journey recognising their strength and courage during cancer treatments and procedures. Each bead represents a treatment (for example chemotherapy, injections, scans); an experience (hair loss, isolation, fever) or milestone (completion of treatment). The Sibling Beads Programme offers siblings the opportunity to earn beads by displaying positive behaviour and helpful attitudes to assist their family.
+                                        <LineBreak/><LineBreak/>
+                                        Our 22 voluntary branches comprised of parents, caregivers, and volunteers nationwide host regular social activities to connect families. Parent volunteers offer mutual support and shared experiences.
+                                        <LineBreak/><LineBreak/>
+                                        Families are informed and linked nationwide by receiving our Sharing Magazine, a publication produced by the foundation three times annually. Families can also access our Family Places (Auckland, Wellington, Christchurch and Dunedin) – day centres where local children and their families, as well as those away from their home towns for treatment, can relax and source information and support from our Coordinators. Our holiday homes (Taupo and Arrowtown) offer families quality time together away from the stressors of the treatment journey or to celebrate a milestone.
+                                        <LineBreak/><LineBreak/>
+                                        We also offer a Scholarship Programme to assist children with cancer, their siblings and/or their parents to reach their full potential and not be disadvantaged by their cancer journey.
+
+
+                                    </TextBlock>
+                                </s:SurfaceScrollViewer>
+                                </Border>
 
                                 <s:SurfaceListBox Height="634" Width="380"
                               Visibility="Collapsed"
