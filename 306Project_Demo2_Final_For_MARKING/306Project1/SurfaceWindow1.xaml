@@ -99,9 +99,9 @@
                     
                     <Grid Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Bottom">
                         <TextBlock Padding="20,0,0,10">
-                            <Image Height="100" Source="./qrcode.png"/>
+                            <Image Height="100" Source="./Resources/QR_Codes/fbQr.png"/>
                                <TextBlock Padding="40,0,0,10"> 
-                                    <Image Height="100" Source="./qrcode.png"/>
+                                    <Image Height="100" Source="./Resources/QR_Codes/twitterQR.png"/>
                                </TextBlock>
                         </TextBlock>
                     </Grid>  <!--End of Qr code grid-->
