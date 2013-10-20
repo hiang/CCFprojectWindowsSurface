@@ -700,7 +700,12 @@
                                 <ColumnDefinition Width="100"/>
                                 <ColumnDefinition Width="1151"/>
                             </Grid.ColumnDefinitions>
-
+                            
+                            <Grid Grid.Column="2" Visibility="Visible" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                <TextBlock Padding="0,0,0,300">
+                                <Image Width="700" Source="./Resources/306p2_elements/306p2_elements_how_you_can_help/donateChild.png"/>
+                                </TextBlock>
+                            </Grid>
                             <Grid Grid.Column="0" Name="howyoucanhelp_menu_panel">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="80"/>
@@ -759,7 +764,8 @@
                                     </Grid.RowDefinitions>
                                     
                                     <Grid Grid.Row="0">
-                                        <TextBlock Name="qrLabel" Text="Donate via QR Code" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                                        <TextBlock Name="qrLabel" Text="Donate via QR Code" HorizontalAlignment="Left" 
+                                                   VerticalAlignment="Center" 
                                                    Foreground="DarkBlue" FontSize="48"/>
                                     </Grid>
                                     
