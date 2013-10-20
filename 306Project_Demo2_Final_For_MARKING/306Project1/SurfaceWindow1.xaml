@@ -75,7 +75,8 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="450"/>
                             <RowDefinition Height="180"/>
-                            <RowDefinition Height="450"/>
+                            <RowDefinition Height="350"/>
+                            <RowDefinition Height="100"/>
                         </Grid.RowDefinitions>
 
                         <s:SurfaceButton Grid.Row="0" Name="home_surfaceButton1" Click="go_WhatWeDo_1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="318" Height="325" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
@@ -90,6 +91,22 @@
                             </s:SurfaceButton.Background>
                         </s:SurfaceButton>
                     </Grid>
+                    
+                    <!--Added Social feature-->
+                    <Grid Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <TextBlock Padding="20,930,0,0" FontSize="20" Foreground="DarkBlue">Connect With Us </TextBlock>                 
+                    </Grid>
+                    
+                    <Grid Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                        <TextBlock Padding="20,0,0,10">
+                            <Image Height="100" Source="./qrcode.png"/>
+                               <TextBlock Padding="40,0,0,10"> 
+                                    <Image Height="100" Source="./qrcode.png"/>
+                               </TextBlock>
+                        </TextBlock>
+                    </Grid>  <!--End of Qr code grid-->
+                    <!--End of social feature grid on row 3-->
+                    
                     <Grid Grid.Row="0" Column="1">
                         <Grid Width="862" Height="878">
                             <Grid.RowDefinitions>
