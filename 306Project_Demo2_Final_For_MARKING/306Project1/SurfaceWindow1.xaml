@@ -1034,7 +1034,7 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="380"/>
                                 <ColumnDefinition Width="15"/>
-                                <ColumnDefinition Width="380"/>
+                                <ColumnDefinition Width="1000"/>
                                 <ColumnDefinition Width="15"/>
                                 <ColumnDefinition Width="826"/>
                             </Grid.ColumnDefinitions>
@@ -1110,10 +1110,44 @@
                                 
 
                             </Grid>
-                            
-                            <Grid Name="familyservice_content_panel" Grid.Column="2">
-                                <s:SurfaceListBox Height="634" Width="380"
-                              Visibility="Visible"
+
+                                <Grid Name="familyservice_content_panel" Grid.Column="2">
+                                <Border Name="fnsmain" Visibility="Visible" Background="Transparent">
+                                    <Grid  Visibility="Visible" Background="Transparent" Height="800" Width="1000">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="100"/>
+                                        <RowDefinition Height="250"/>
+                                        <RowDefinition Height="200"/>
+                                        <RowDefinition Height="auto"/>
+                                        
+                                    </Grid.RowDefinitions>
+                                    <Grid Grid.Row="0">
+                                        <TextBlock Name="Familysupportmain" 
+                                                   Text="Dealing with the emotional and financial challenges that come with caring for a child with cancer can be extremely traumatic."
+                                                   HorizontalAlignment="left"
+                                                   VerticalAlignment="Top"
+                                                   Foreground="Black"   
+                                                   FontSize="30"/>
+                                    </Grid>
+                                    
+                                    <Grid Grid.Row="1">
+                                        <Image Name="fsbanner" Source="/Resources/family_and_support_banner.jpg" Width="280" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                    </Grid>
+                                    
+                                    <Grid Grid.Row="2">
+                                        <TextBlock Name="Familysupportmain2" 
+                                                   Text="We are here to provide support services to help overcome these challenges and to ensure these families don't feel alone in their journey."
+                                                   HorizontalAlignment="left"
+                                                   VerticalAlignment="Top"
+                                                   Foreground="Black"
+                                                   FontSize="30"/>
+                                    </Grid>
+
+                                </Grid>
+                                </Border>
+
+                                    <s:SurfaceListBox Height="800" Width="1000"
+                              Visibility="Collapsed"
                               Background="Transparent"
                               Name="Beads_of_Courage"
                               
