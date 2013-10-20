@@ -93,13 +93,14 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <None Include="Resources\QRHowYouCanHelp\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\QR_Codes\donateQr.png" />
+    <Resource Include="Resources\QR_Codes\twitterQR.png" />
+    <Resource Include="Resources\QR_Codes\fbQr.png" />
     <Resource Include="Resources\news1.PNG" />
     <Resource Include="Resources\news2.PNG" />
     <Resource Include="Resources\news3.PNG" />
-    <Resource Include="Resources\QRHowYouCanHelp\qrcode.png" />
     <Resource Include="Resources\1.jpg" />
     <Resource Include="Resources\stuff1.jpg" />
     <Resource Include="Resources\stuff2.jpg" />
@@ -107,7 +108,6 @@
     <Resource Include="Resources\stuff4.jpg" />
     <Resource Include="Resources\ambassadors.JPG" />
     <Resource Include="Resources\ccf_logo.jpg" />
-    <Resource Include="qrcode.png" />
     <Resource Include="Resources\HelpBackground.png" />
     <Resource Include="Resources\306p2_elements\306p2_elements_events_news_media\306p2_elements__0000_highlighted_button_Media.png" />
     <Resource Include="Resources\306p2_elements\306p2_elements_events_news_media\306p2_elements__0001_highlighted_button_News.png" />
@@ -169,6 +169,7 @@
     <Resource Include="Resources\306p2_elements\306p2_elements_what_we_do\306p2_elements__0000_highlighted_button_our_history.png" />
     <Resource Include="Resources\306p2_elements\306p2_elements_what_we_do\306p2_elements__0004_normal_button_our_history.png" />
     <Resource Include="Resources\family_and_support_banner.jpg" />
+    <Resource Include="Resources\306p2_elements\306p2_elements_how_you_can_help\donateChild.png" />
     <Content Include="Resources\icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -180,6 +181,7 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
