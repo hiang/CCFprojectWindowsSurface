@@ -361,6 +361,7 @@ namespace _306Project1
             Holiday_Homes.Visibility = System.Windows.Visibility.Collapsed;
             Scholarships.Visibility = System.Windows.Visibility.Collapsed;
             contact_list.Visibility = System.Windows.Visibility.Collapsed;
+            fnsmain.Visibility = System.Windows.Visibility.Collapsed;
             var brush = new ImageBrush();
             var brush2 = new ImageBrush();
             var brush3 = new ImageBrush();
