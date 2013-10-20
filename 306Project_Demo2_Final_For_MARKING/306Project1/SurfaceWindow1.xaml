@@ -99,9 +99,9 @@
                     
                     <Grid Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Bottom">
                         <TextBlock Padding="20,0,0,10">
-                            <Image Height="100" Source="./qrcode.png"/>
+                            <Image Height="100" Source="./Resources/QR_Codes/fbQr.png"/>
                                <TextBlock Padding="40,0,0,10"> 
-                                    <Image Height="100" Source="./qrcode.png"/>
+                                    <Image Height="100" Source="./Resources/QR_Codes/twitterQR.png"/>
                                </TextBlock>
                         </TextBlock>
                     </Grid>  <!--End of Qr code grid-->
@@ -759,19 +759,24 @@
                                     </Grid.RowDefinitions>
                                     
                                     <Grid Grid.Row="0">
-                                        <TextBlock Name="qrLabel" Text="Donate via QR Code" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="DarkGreen" FontSize="48"/>
+                                        <TextBlock Name="qrLabel" Text="Donate via QR Code" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                                                   Foreground="DarkBlue" FontSize="48"/>
                                     </Grid>
                                     
                                     <Grid Grid.Row="1">
-                                        <Image Name="qrCodeImg" Source="./Resources/QRHowYouCanHelp/qrcode.png" Width="280" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                        <Image Name="qrCodeImg" Source="./Resources/QR_Codes/donateQr.png" Width="280" 
+                                               HorizontalAlignment="Left" VerticalAlignment="Center"/>
                                     </Grid>
 
                                     <Grid Grid.Row="3">
-                                        <Label Name="donateELabel" Content="Donate via Phone"  HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="DarkGreen" FontSize="48"/>
+                                        <Label Name="donateELabel" Content="Donate via Phone"  HorizontalAlignment="Left" 
+                                               VerticalAlignment="Center" Foreground="DarkBlue" FontSize="48"/>
                                     </Grid>
 
                                     <Grid Grid.Row="4">
-                                        <TextBlock Name="donateMsg" Text="Text 'Donate' to 4560 to make a donation" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="DarkOliveGreen" FontSize="28"/>
+                                        <TextBlock Name="donateMsg" Text="Text 'Donate' to 4560 to make a donation" 
+                                                   HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Black" 
+                                                   FontSize="28"/>
                                     </Grid>
 
                                 </Grid>
@@ -785,8 +790,11 @@
                                     </Grid.RowDefinitions>
                                     
                                     <Grid Grid.Row="0">
-                                        <TextBlock Name="volunteerText" Visibility="Collapsed" Foreground="DarkOliveGreen" FontSize="28" TextAlignment="Justify" TextWrapping="Wrap" Padding="0,10,5,10" FontStretch="Normal" MaxWidth="700">
-                                            <Run FontSize="48" Foreground="DarkGreen">Get Involved</Run> <LineBreak />  <Run Foreground="DarkOliveGreen"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event.</Run><LineBreak /><LineBreak />
+                                        <TextBlock Name="volunteerText" Visibility="Collapsed" Foreground="Black" FontSize="28" 
+                                                   TextAlignment="Justify" TextWrapping="Wrap" Padding="0,10,5,10" FontStretch="Normal"
+                                                   MaxWidth="700">
+                                            <Run FontSize="48" Foreground="DarkBlue">Get Involved</Run> <LineBreak />  
+                                            <Run Foreground="DarkBlue"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event.</Run><LineBreak /><LineBreak />
                                             Our volunteers provide a range of services and support including participating in CCF Branch activities,
                                             helping out at the Family Places, working alongside our staff and helping our fundraising team during 
                                             events such as the national Annual Street Appeal and Funrazor events.
@@ -796,14 +804,14 @@
                                     <Grid Grid.Row="1">
                                         <Label Name="VolunteerSignLabel" Content="Sign Up Now" FontSize="48" Height="75" 
                                             HorizontalAlignment="Left" VerticalAlignment="Top" Width="747" 
-                                            Visibility="Collapsed" Foreground="DarkGreen"/>
+                                            Visibility="Collapsed" Foreground="DarkBlue"/>
                                     </Grid>
                                     
                                     <Grid Grid.Row="2">
                                         <TextBlock Name="volunteerMsg" Visibility="Collapsed" FontSize="28" MaxWidth="700"
                                             HorizontalAlignment="Left" 
                                             Text="Send your Email Address via Free Text to 4304 and you will receive a sign up link via email. " 
-                                            Foreground="DarkOliveGreen"/>
+                                            Foreground="Black"/>
                                     </Grid>
 
                                 </Grid>
@@ -813,8 +821,10 @@
                                 
 
                                 <!--Sponsor content-->
-                                <TextBlock Name="sponsorText" Visibility="Collapsed" Foreground="DarkOliveGreen" FontSize="28" TextAlignment="Justify" TextWrapping="Wrap" Padding="0,10,5,10" FontStretch="Normal" MaxWidth="700" Height="635">
-                                    <Run FontSize="48" Foreground="DarkGreen">Ways To Sponsor</Run><LineBreak /><LineBreak />
+                                <TextBlock Name="sponsorText" Visibility="Collapsed" Foreground="Black" FontSize="28" 
+                                           TextAlignment="Justify" TextWrapping="Wrap" Padding="0,10,5,10" FontStretch="Normal"
+                                           MaxWidth="700" Height="635">
+                                    <Run FontSize="48" Foreground="DarkBlue">Ways To Sponsor</Run><LineBreak></LineBreak>
                                     <Run Foreground="DarkBlue"> Become a sponsor or business partner </Run><LineBreak></LineBreak><LineBreak></LineBreak>
                                     You may choose to support and partner with Child Cancer Foundation to help New Zealand children with cancer or align our vision and values with that of your company.
                                     <LineBreak></LineBreak> <LineBreak></LineBreak>
@@ -835,9 +845,12 @@
                                 </TextBlock>
 
                                 <!--Fundraise Page-->
-                                <TextBlock Name="fundraiseText" Visibility="Collapsed" Foreground="DarkOliveGreen" FontSize="28" HorizontalAlignment="Left" Background="Transparent" TextAlignment="Justify" TextWrapping="Wrap" Padding="0,10,5,10" 
+                                <TextBlock Name="fundraiseText" Visibility="Collapsed" Foreground="Black" FontSize="28" 
+                                           HorizontalAlignment="Left" Background="Transparent" TextAlignment="Justify" 
+                                           TextWrapping="Wrap" Padding="0,10,5,10" 
                                FontStretch="Normal" Width="700">
-                    <Run FontSize="48" Foreground="DarkGreen">Ways To Fundraise</Run> <LineBreak /><LineBreak />  <Run Foreground="DarkBlue"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event. </Run> <LineBreak /><LineBreak />   
+                    <Run FontSize="48" Foreground="DarkBlue">Ways To Fundraise</Run><LineBreak></LineBreak> 
+                                    <Run Foreground="DarkBlue"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event. </Run> <LineBreak /><LineBreak />   
                     Here are just a few fundraising ideas: <LineBreak></LineBreak>
                     -   Corporate event - boxing, head shaving etc <LineBreak></LineBreak>
                     -   Sporting event - golfing, bowls etc <LineBreak></LineBreak>
