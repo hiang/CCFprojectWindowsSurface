@@ -48,9 +48,9 @@
     <!--end of codechunk -->
     <Viewbox>
         <!-- CANVAS -->
-        <Grid x:Name="Canvas" ClipToBounds="True">
+        <Grid x:Name="Canvas" IsManipulationEnabled="True" ClipToBounds="True">
             <!-- "FRAME" -->
-            <Grid  x:Name="Frame" Width="1920" Height="1080">
+            <Grid x:Name="Frame" Width="1920" Height="1080">
                 <!-- HOME PAGE -->
                 <Grid x:Name="_HomePage_0" Visibility="Visible" ZIndex="0">
                     <Grid.RenderTransform>
@@ -685,7 +685,7 @@
                     </Grid>
 
                     <Grid Width="1631" Height="1080" HorizontalAlignment="Left" VerticalAlignment="Center">
-                        <Grid.Background>
+                        <Grid.Background >
                             <ImageBrush ImageSource="./Resources/306p2_elements/306p2_elements_how_you_can_help/306p2_elements__0009_green-sphere---how-you-can-help.png"/>
                         </Grid.Background>
 

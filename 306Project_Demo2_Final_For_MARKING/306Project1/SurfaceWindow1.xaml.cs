@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows;
+using System.Windows.Input;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
@@ -25,7 +25,7 @@ namespace _306Project1
     /// </summary>
     /// 
 
-    public partial class SurfaceWindow1 : SurfaceWindow
+    public partial class SurfaceWindow1 : SurfaceWindow 
     {
         /// <summary>
         /// Default constructor.
@@ -33,6 +33,7 @@ namespace _306Project1
         /// 
         int turn;
         int i, j;
+        protected TouchPoint TouchStart;
 
         private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
         {
@@ -42,11 +43,42 @@ namespace _306Project1
 
         public SurfaceWindow1()
         {
-            InitializeComponent();
-
+            InitializeComponent();   
             // Add handlers for window availability events
             AddWindowAvailabilityHandlers();
+
+            //Add Touch Events for sliding the page 
+            this.TouchDown += new EventHandler<TouchEventArgs>(BasePage_TouchDown);
+            this.TouchMove += new EventHandler<TouchEventArgs>(BasePage_TouchMove); 
         }
+
+
+        //Hiang 
+        //*** Code block for swipping to home screen 
+        //This method detects if the current page is being touch down
+        private void BasePage_TouchDown(object sender, TouchEventArgs e)
+        { TouchStart = e.GetTouchPoint(this); }
+
+        //Hiang
+        //This method is used for detecting the touch move, it's identified whether the finger is being dragged. 
+        //It allows the user to instantly navigate to the home screen when they slide their finger to the Left. 
+        private void BasePage_TouchMove(object sender, TouchEventArgs e)
+        {
+            if (current_page!=0)   //The sliding effect only works when the user is NOT at home screen 
+            {
+                var Touch = e.GetTouchPoint(this);    //Get the current touch point 
+                
+                //The swipe threhold is 500 pixels
+                //Swipe Left
+                if (TouchStart != null && Touch.Position.X < (TouchStart.Position.X - 500)) 
+                {
+                    showHomePage();   //Navigate to home screen 
+                }
+            }
+
+            e.Handled = true;
+        }
+        //***End of code block for swipping to home screen 
 
         /// <summary>
         /// Occurs when the window is about to close. 
@@ -82,7 +114,7 @@ namespace _306Project1
         protected override void OnInitialized(EventArgs e)
         {
             base.OnInitialized(e);
-            DataContext = this;
+            DataContext = this; 
             pages.Add(_HomePage_0);
             pages.Add(_WhatWeDo_1);
             pages.Add(_WhatWeDo_AboutUs_2);
@@ -1036,6 +1068,11 @@ namespace _306Project1
 
         public void go_HomePage_0(object sender, RoutedEventArgs e)
         {
+            showHomePage(); 
+        }
+
+        private void showHomePage()
+        {
             Grid now_page = pages.ElementAt(current_page);
             current_page = 0;
             Grid next_page = pages.ElementAt(current_page);
@@ -1046,8 +1083,6 @@ namespace _306Project1
             sb2.Begin(next_page);
 
             pages.ElementAt(current_page).Visibility = System.Windows.Visibility.Visible;
-        
-        
         }
 
         public void go_WhatWeDo_1(object sender, RoutedEventArgs e)
@@ -1099,6 +1134,11 @@ namespace _306Project1
 
         }
         public void go_HowYouCanHelp_6(object sender, RoutedEventArgs e)
+        {
+            showHowYouCanHelp_6();  
+        }
+
+        private void showHowYouCanHelp_6()
         {
             Grid now_page = pages.ElementAt(current_page);
             current_page = 6;
