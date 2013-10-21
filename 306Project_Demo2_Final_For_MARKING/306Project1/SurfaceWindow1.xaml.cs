@@ -889,6 +889,9 @@ namespace _306Project1
 
         }
 
+        //Hiang
+        //This method is responsible for disable the current content page when a new menu button is pressed.
+        //The contents will be disabled depending on the name of the previous menu button. 
         private void disableCurrentContent(String topic)
         {
             switch (topic)
@@ -919,6 +922,8 @@ namespace _306Project1
             }
         }
 
+        //Hiang
+        //This method change the state of the button to disable, i.e. the button will become darker 
         private void setNonActiveBtn(String topic)
         {
             switch (topic)
@@ -946,7 +951,7 @@ namespace _306Project1
 
         }
 
-        private void setActiveHowWeHelp(String activeBtn)
+        private void setActiveHowWeHelpBtn(String activeBtn)
         {
             ImageBrush myBrush = new ImageBrush();
             Image image = new Image();
@@ -1133,24 +1138,42 @@ namespace _306Project1
 
 
         }
+
         public void go_HowYouCanHelp_6(object sender, RoutedEventArgs e)
         {
-            showHowYouCanHelp_6();  
-        }
+            //Set the default active button to donate when the user revisit How You Can Help page for the second time 
+            if (currentPage != "donate")
+            {
+                //Make the other menu buttons and their contents to invisille 
+                setNonActiveBtnHowYouHelp(currentPage);
+                disableCurrentContent(currentPage);
+                //Redefine the page to Donate 
+                currentPage = "donate";
 
-        private void showHowYouCanHelp_6()
-        {
+                //Set everything that is belonged to this "donate" to visible 
+                setActiveHowWeHelpBtn(currentPage);
+                qrLabel.Visibility = System.Windows.Visibility.Visible;
+                qrCodeImg.Visibility = System.Windows.Visibility.Visible;
+                donateELabel.Visibility = System.Windows.Visibility.Visible;
+                donateMsg.Visibility = System.Windows.Visibility.Visible;
+            }
+         
+            //Use grid for sliding effect 
             Grid now_page = pages.ElementAt(current_page);
             current_page = 6;
             Grid next_page = pages.ElementAt(current_page);
+            //setActiveHowWeHelpBtn(currentPage); 
 
+            //Add sliding effect 
             Storyboard sb1 = (Storyboard)Resources["SlideOriginToRight"];
             Storyboard sb2 = (Storyboard)Resources["SlideLeftToOrigin"];
             sb1.Begin(now_page);
             sb2.Begin(next_page);
 
+            //Enable the How You Can Help page
             pages.ElementAt(current_page).Visibility = System.Windows.Visibility.Visible;
         }
+
 
         public void go_HowYouCanHelp_Donate_7(object sender, RoutedEventArgs e)
         {
@@ -1169,7 +1192,7 @@ namespace _306Project1
             //Now the current page is a "donate" page 
             currentPage = "donate";
             //set donate to active
-            setActiveHowWeHelp(currentPage);
+            setActiveHowWeHelpBtn(currentPage);
 
         }
         public void go_HowYouCanHelp_Volunteer_8(object sender, RoutedEventArgs e)
@@ -1177,7 +1200,7 @@ namespace _306Project1
             //Set the active button
             setNonActiveBtnHowYouHelp(currentPage);
             //VolunteerButn.Background = Brushes.Gray;
-            setActiveHowWeHelp("volunteer");
+            setActiveHowWeHelpBtn("volunteer");
 
             //Visibility setting
             disableCurrentContent(currentPage);
@@ -1193,7 +1216,7 @@ namespace _306Project1
         {
             setNonActiveBtnHowYouHelp(currentPage);
             //FundraiseButn.Background = Brushes.Gray;
-            setActiveHowWeHelp("fundraise");
+            setActiveHowWeHelpBtn("fundraise");
 
             disableCurrentContent(currentPage);
             currentPage = "fundraise";
@@ -1204,7 +1227,7 @@ namespace _306Project1
         {
             setNonActiveBtnHowYouHelp(currentPage);
             // SponsorButn.Background = Brushes.Gray;
-            setActiveHowWeHelp("sponsor");
+            setActiveHowWeHelpBtn("sponsor");
 
             disableCurrentContent(currentPage);
             currentPage = "sponsor";
