@@ -1138,7 +1138,10 @@ namespace _306Project1
 
 
         }
-
+        
+        //Hiang 
+        //**Code block for How You Can Help page 
+        //This method enable the donate page when the user presses on How You Can Help button on the home screen 
         public void go_HowYouCanHelp_6(object sender, RoutedEventArgs e)
         {
             //Set the default active button to donate when the user revisit How You Can Help page for the second time 
@@ -1174,27 +1177,28 @@ namespace _306Project1
             pages.ElementAt(current_page).Visibility = System.Windows.Visibility.Visible;
         }
 
-
+        //This method will be invoked when the the donate button is pressed on How You Can Help page
+        //It enables all contents and GUI elements of that page 
         public void go_HowYouCanHelp_Donate_7(object sender, RoutedEventArgs e)
         {
             //Set active button
             setNonActiveBtnHowYouHelp(currentPage);
-
-            //DonateButn.Background = Brushes.Gray;
 
             disableCurrentContent(currentPage);
             //Enable the donate content to visible 
             qrLabel.Visibility = System.Windows.Visibility.Visible;
             qrCodeImg.Visibility = System.Windows.Visibility.Visible;
             donateELabel.Visibility = System.Windows.Visibility.Visible;
-            //submilEButton.Visibility = System.Windows.Visibility.Visible;
             donateMsg.Visibility = System.Windows.Visibility.Visible;
+            
             //Now the current page is a "donate" page 
             currentPage = "donate";
-            //set donate to active
+            //set donate button to active 
             setActiveHowWeHelpBtn(currentPage);
-
         }
+
+        //This method will be invoked when the Volunteer button is pressed on the How You Can Help page
+        //Set all elemments of Volunteer page to visible and disable the previously used page 
         public void go_HowYouCanHelp_Volunteer_8(object sender, RoutedEventArgs e)
         {
             //Set the active button
@@ -1208,10 +1212,12 @@ namespace _306Project1
             VolunteerButn.Visibility = System.Windows.Visibility.Visible;
             volunteerText.Visibility = System.Windows.Visibility.Visible;
             volunteerMsg.Visibility = System.Windows.Visibility.Visible;
-            //smilEButton.Visibility = System.Windows.Visibility.Visible;
             VolunteerSignLabel.Visibility = System.Windows.Visibility.Visible;
 
         }
+
+        //It is invoked when the user press on Fundraise on How You Can Help page 
+        //This method will enable every GUI elemennt of Fundraise page including buttons and contents 
         public void go_HowYouCanHelp_Fundraise_9(object sender, RoutedEventArgs e)
         {
             setNonActiveBtnHowYouHelp(currentPage);
@@ -1223,6 +1229,8 @@ namespace _306Project1
             fundraiseText.Visibility = System.Windows.Visibility.Visible;
         }
 
+        //It is invoked when the user presses on Sponsors on How You Can Help page 
+        //This method enable every GUI element of sponsor page 
         public void go_HowYouCanHelp_Sponsor_10(object sender, RoutedEventArgs e)
         {
             setNonActiveBtnHowYouHelp(currentPage);
@@ -1233,6 +1241,7 @@ namespace _306Project1
             currentPage = "sponsor";
             sponsorText.Visibility = System.Windows.Visibility.Visible;
         }
+        //**Hiang End of code block for How You Can Help page visibiliy settings
 
         public void go_NewsAndEvents_11(object sender, RoutedEventArgs e)
         {
@@ -1249,9 +1258,8 @@ namespace _306Project1
 
 
             pages.ElementAt(current_page).Visibility = System.Windows.Visibility.Visible;
-
-
         }
+
         public void go__NewsAndEvents_News_12(object sender, RoutedEventArgs e)
         {
             pages.ElementAt(current_page).Visibility = System.Windows.Visibility.Collapsed;
