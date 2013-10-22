@@ -95,13 +95,9 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Resource Include="Resources\pdficon.gif" />
-=======
     <Resource Include="Resources\QR_Codes\donateQr.png" />
     <Resource Include="Resources\QR_Codes\twitterQR.png" />
     <Resource Include="Resources\QR_Codes\fbQr.png" />
->>>>>>> f219a4b1ca0e15d8c96f777107d35c9e3ff117c4
     <Resource Include="Resources\news1.PNG" />
     <Resource Include="Resources\news2.PNG" />
     <Resource Include="Resources\news3.PNG" />
@@ -173,11 +169,7 @@
     <Resource Include="Resources\306p2_elements\306p2_elements_what_we_do\306p2_elements__0000_highlighted_button_our_history.png" />
     <Resource Include="Resources\306p2_elements\306p2_elements_what_we_do\306p2_elements__0004_normal_button_our_history.png" />
     <Resource Include="Resources\family_and_support_banner.jpg" />
-<<<<<<< HEAD
-    <Resource Include="Resources\Adobe_PDF_Icon.svg.png" />
-=======
     <Resource Include="Resources\306p2_elements\306p2_elements_how_you_can_help\donateChild.png" />
->>>>>>> f219a4b1ca0e15d8c96f777107d35c9e3ff117c4
     <Content Include="Resources\icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

@@ -99,9 +99,9 @@
                     
                     <Grid Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Bottom">
                         <TextBlock Padding="20,0,0,10">
-                            <Image Height="100" Source="./qrcode.png"/>
+                            <Image Height="100" Source="./Resources/QR_Codes/fbQr.png"/>
                                <TextBlock Padding="40,0,0,10"> 
-                                    <Image Height="100" Source="./qrcode.png"/>
+                                    <Image Height="100" Source="./Resources/QR_Codes/twitterQR.png"/>
                                </TextBlock>
                         </TextBlock>
                     </Grid>  <!--End of Qr code grid-->
@@ -764,25 +764,25 @@
                                     </Grid.RowDefinitions>
                                     
                                     <Grid Grid.Row="0">
-<<<<<<< HEAD
-                                        <TextBlock Name="qrLabel" Text="Donate via QR Code" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="DarkGreen" FontSize="48"/>
-=======
                                         <TextBlock Name="qrLabel" Text="Donate via QR Code" HorizontalAlignment="Left" 
                                                    VerticalAlignment="Center" 
                                                    Foreground="DarkBlue" FontSize="48"/>
->>>>>>> f219a4b1ca0e15d8c96f777107d35c9e3ff117c4
                                     </Grid>
                                     
                                     <Grid Grid.Row="1">
-                                        <Image Name="qrCodeImg" Source="./Resources/QRHowYouCanHelp/qrcode.png" Width="280" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                        <Image Name="qrCodeImg" Source="./Resources/QR_Codes/donateQr.png" Width="280" 
+                                               HorizontalAlignment="Left" VerticalAlignment="Center"/>
                                     </Grid>
 
                                     <Grid Grid.Row="3">
-                                        <Label Name="donateELabel" Content="Donate via Phone"  HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="DarkGreen" FontSize="48"/>
+                                        <Label Name="donateELabel" Content="Donate via Phone"  HorizontalAlignment="Left" 
+                                               VerticalAlignment="Center" Foreground="DarkBlue" FontSize="48"/>
                                     </Grid>
 
                                     <Grid Grid.Row="4">
-                                        <TextBlock Name="donateMsg" Text="Text 'Donate' to 4560 to make a donation" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="DarkOliveGreen" FontSize="28"/>
+                                        <TextBlock Name="donateMsg" Text="Text 'Donate' to 4560 to make a donation" 
+                                                   HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Black" 
+                                                   FontSize="28"/>
                                     </Grid>
 
                                 </Grid>
@@ -796,8 +796,11 @@
                                     </Grid.RowDefinitions>
                                     
                                     <Grid Grid.Row="0">
-                                        <TextBlock Name="volunteerText" Visibility="Collapsed" Foreground="DarkOliveGreen" FontSize="28" TextAlignment="Justify" TextWrapping="Wrap" Padding="0,10,5,10" FontStretch="Normal" MaxWidth="700">
-                                            <Run FontSize="48" Foreground="DarkGreen">Get Involved</Run> <LineBreak />  <Run Foreground="DarkOliveGreen"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event.</Run><LineBreak /><LineBreak />
+                                        <TextBlock Name="volunteerText" Visibility="Collapsed" Foreground="Black" FontSize="28" 
+                                                   TextAlignment="Justify" TextWrapping="Wrap" Padding="0,10,5,10" FontStretch="Normal"
+                                                   MaxWidth="700">
+                                            <Run FontSize="48" Foreground="DarkBlue">Get Involved</Run> <LineBreak />  
+                                            <Run Foreground="DarkBlue"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event.</Run><LineBreak /><LineBreak />
                                             Our volunteers provide a range of services and support including participating in CCF Branch activities,
                                             helping out at the Family Places, working alongside our staff and helping our fundraising team during 
                                             events such as the national Annual Street Appeal and Funrazor events.
@@ -807,14 +810,14 @@
                                     <Grid Grid.Row="1">
                                         <Label Name="VolunteerSignLabel" Content="Sign Up Now" FontSize="48" Height="75" 
                                             HorizontalAlignment="Left" VerticalAlignment="Top" Width="747" 
-                                            Visibility="Collapsed" Foreground="DarkGreen"/>
+                                            Visibility="Collapsed" Foreground="DarkBlue"/>
                                     </Grid>
                                     
                                     <Grid Grid.Row="2">
                                         <TextBlock Name="volunteerMsg" Visibility="Collapsed" FontSize="28" MaxWidth="700"
                                             HorizontalAlignment="Left" 
                                             Text="Send your Email Address via Free Text to 4304 and you will receive a sign up link via email. " 
-                                            Foreground="DarkOliveGreen"/>
+                                            Foreground="Black"/>
                                     </Grid>
 
                                 </Grid>
@@ -824,8 +827,10 @@
                                 
 
                                 <!--Sponsor content-->
-                                <TextBlock Name="sponsorText" Visibility="Collapsed" Foreground="DarkOliveGreen" FontSize="28" TextAlignment="Justify" TextWrapping="Wrap" Padding="0,10,5,10" FontStretch="Normal" MaxWidth="700" Height="635">
-                                    <Run FontSize="48" Foreground="DarkGreen">Ways To Sponsor</Run><LineBreak /><LineBreak />
+                                <TextBlock Name="sponsorText" Visibility="Collapsed" Foreground="Black" FontSize="28" 
+                                           TextAlignment="Justify" TextWrapping="Wrap" Padding="0,10,5,10" FontStretch="Normal"
+                                           MaxWidth="700" Height="635">
+                                    <Run FontSize="48" Foreground="DarkBlue">Ways To Sponsor</Run><LineBreak></LineBreak>
                                     <Run Foreground="DarkBlue"> Become a sponsor or business partner </Run><LineBreak></LineBreak><LineBreak></LineBreak>
                                     You may choose to support and partner with Child Cancer Foundation to help New Zealand children with cancer or align our vision and values with that of your company.
                                     <LineBreak></LineBreak> <LineBreak></LineBreak>
@@ -846,9 +851,12 @@
                                 </TextBlock>
 
                                 <!--Fundraise Page-->
-                                <TextBlock Name="fundraiseText" Visibility="Collapsed" Foreground="DarkOliveGreen" FontSize="28" HorizontalAlignment="Left" Background="Transparent" TextAlignment="Justify" TextWrapping="Wrap" Padding="0,10,5,10" 
+                                <TextBlock Name="fundraiseText" Visibility="Collapsed" Foreground="Black" FontSize="28" 
+                                           HorizontalAlignment="Left" Background="Transparent" TextAlignment="Justify" 
+                                           TextWrapping="Wrap" Padding="0,10,5,10" 
                                FontStretch="Normal" Width="700">
-                    <Run FontSize="48" Foreground="DarkGreen">Ways To Fundraise</Run> <LineBreak /><LineBreak />  <Run Foreground="DarkBlue"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event. </Run> <LineBreak /><LineBreak />   
+                    <Run FontSize="48" Foreground="DarkBlue">Ways To Fundraise</Run><LineBreak></LineBreak> 
+                                    <Run Foreground="DarkBlue"> Raise money for child cancer and have fun! Get together with your friends, family, workmates or community and organise a fundraising event. </Run> <LineBreak /><LineBreak />   
                     Here are just a few fundraising ideas: <LineBreak></LineBreak>
                     -   Corporate event - boxing, head shaving etc <LineBreak></LineBreak>
                     -   Sporting event - golfing, bowls etc <LineBreak></LineBreak>
@@ -1127,7 +1135,9 @@
                                 <Border Name="fnsmain" Visibility="Visible" Background="Transparent">
 
                                     <Grid  Visibility="Visible" Height="800" Width="1000">
-
+                                        <Grid.Background>
+                                            <SolidColorBrush Color="White" Opacity="0.1" />
+                                        </Grid.Background>
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="100"/>
                                         <RowDefinition Height="250"/>
@@ -1199,111 +1209,10 @@
                                 </s:SurfaceScrollViewer>
                                 </Border>
 
-                                <Border Name="Sharing_Magazine" Visibility="Collapsed" Background="Transparent">
-                                    <Grid>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="300"></RowDefinition>
-                                            <RowDefinition Height="400"></RowDefinition>
-                                            <RowDefinition Height="auto"></RowDefinition>
-                                        </Grid.RowDefinitions>
-                                        <Grid Grid.Row="0">
-                                    <TextBlock FontSize="28" Padding="15" Foreground="Black" TextAlignment="Justify" TextWrapping="Wrap" Height="1000" Width="1000" FontStretch="Normal">
-                                        <Run FontSize="44" FontStyle="Italic" Foreground="#4a73b9">
-                                            Sharing Magazine
-                                        </Run>
-                                        <LineBreak></LineBreak>
-                                        <LineBreak></LineBreak>
-                                        <Run FontSize="28" Foreground="#4a73b9">
-                                            Sharing is a magazine for families, members and friends of the Foundation. It is published three times annually and includes family stories, news and Child Cancer Foundation family activities.
-                                        </Run>
-                                    </TextBlock>
-                                        </Grid>
-                                        
-                                        <Grid Grid.Row="1">
-                                            <Border Width="2000" Height="400" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top">
-                                                <s:SurfaceScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Hidden">
-                                                    <Grid Height="800" VerticalAlignment="Top">
-                                                        <Grid.RowDefinitions>
-                                                            <RowDefinition Height="200"></RowDefinition>
-                                                            <RowDefinition Height="200"></RowDefinition>
-                                                            <RowDefinition Height="200"></RowDefinition>
-                                                            <RowDefinition Height="200"></RowDefinition>
-                                                            <RowDefinition Height="auto"></RowDefinition>
-                                                        </Grid.RowDefinitions>
-                                                        <Grid.ColumnDefinitions>
-                                                            <ColumnDefinition Width="200"></ColumnDefinition>
-                                                            <ColumnDefinition Width="450"></ColumnDefinition>
-                                                            <ColumnDefinition Width="auto"></ColumnDefinition>
-                                                        </Grid.ColumnDefinitions>
-                                                        
-
-
-                                                        <Grid Grid.Column="0" Grid.Row="0">
-                                                            <Image Source="./Resources/Adobe_PDF_Icon.svg.png" Height="200" Width="200"></Image>
-                                                        </Grid>
-                                                        <Grid Grid.Column="0" Grid.Row="1">
-                                                            <Image Source="./Resources/Adobe_PDF_Icon.svg.png" Height="200" Width="200"></Image>
-                                                        </Grid>
-                                                        <Grid Grid.Column="0" Grid.Row="2">
-                                                            <Image Source="./Resources/Adobe_PDF_Icon.svg.png" Height="200" Width="200"></Image>
-                                                        </Grid>
-                                                        <Grid Grid.Column="0" Grid.Row="3">
-                                                            <Image Source="./Resources/Adobe_PDF_Icon.svg.png" Height="200" Width="200"></Image>
-                                                        </Grid>
-
-
-
-                                                        <Grid Grid.Column="1" Grid.Row="0">
-
-                                                            <TextBlock FontSize="24" Foreground="Black">
-                                                        <Run Foreground="Black" FontSize="30">
-                                                            August 2013 (.pdf 6.2MB)
-                                                        </Run><LineBreak></LineBreak>
-                                                            Lucy's Life in the Maniatoto; Wiremu's Journey; CCF's History Book.
-                                                            </TextBlock>
-                                                        </Grid>
-
-                                                        <Grid Grid.Column="1" Grid.Row="1">
-
-                                                            <TextBlock FontSize="24" Foreground="Black">
-                                                        <Run Foreground="Black" FontSize="30">
-                                                            March 2013 (.pdf 5MB)
-                                                        </Run><LineBreak></LineBreak>
-                                                            Introducing our 2013 Ambassadors - Hilton, Myah and Emilie!; The Canterbury Earthquake - Two Years On.
-                                                            </TextBlock>
-                                                        </Grid>
-
-                                                        <Grid Grid.Column="1" Grid.Row="2">
-
-                                                            <TextBlock FontSize="24" Foreground="Black">
-                                                        <Run Foreground="Black" FontSize="30">
-                                                            November 2012 (.pdf 4.8MB)
-                                                        </Run><LineBreak></LineBreak>
-                                                            Memorials - remembering our loved ones; Our catch ups - don't they look great!; Shauna and Her Matching Mates.
-                                                            </TextBlock>
-                                                        </Grid>
-
-                                                        <Grid Grid.Column="1" Grid.Row="3">
-
-                                                            <TextBlock FontSize="24" Foreground="Black">
-                                                        <Run Foreground="Black" FontSize="30">
-                                                            August 2012 (.pdf 6.8MB)
-                                                        </Run><LineBreak></LineBreak>
-                                                            Sione and Jerome - a dream come true!; Alex and Molly, Katia and Anouk - a unique bond.
-                                                            </TextBlock>
-                                                        </Grid>
-
-                                                    </Grid>
-                                                </s:SurfaceScrollViewer>
-                                            </Border>
-                                        </Grid>
-                                    </Grid>
-                                </Border>
-
-                                    <s:SurfaceListBox Height="634" Width="380"
+                                <s:SurfaceListBox Height="634" Width="380"
                               Visibility="Collapsed"
                               Background="Transparent"
-                              Name="Sharing_Magazine1"
+                              Name="Sharing_Magazine"
                               
                               ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                               ItemsSource="{Binding Path=sharingItems}"
