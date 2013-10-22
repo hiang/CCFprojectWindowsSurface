@@ -31,15 +31,16 @@
                 <Label Content="{Binding Name}"
                        Foreground="Black"
                        FontWeight="DemiBold"
-                       HorizontalAlignment="Stretch"
+                       HorizontalAlignment="Left"
                        VerticalAlignment="Center"
-                       MaxWidth="260"
+                       MaxWidth="380"
                        FontSize="19"/>
 
                 <Label Content="{Binding Date}"
                        Foreground="Black"
-                       HorizontalAlignment="Stretch"
+                       HorizontalAlignment="Left"
                        VerticalAlignment="Center"
+                       MaxWidth="380"
                        FontSize="16"/>
 
             </StackPanel>
@@ -918,7 +919,7 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="380"/>
                                 <ColumnDefinition Width="15"/>
-                                <ColumnDefinition Width="380"/>
+                                <ColumnDefinition Width="400"/>
                                 <ColumnDefinition Width="15"/>
                                 <ColumnDefinition Width="826"/>
                             </Grid.ColumnDefinitions>
@@ -960,7 +961,7 @@
 
                             <!--Display list of news-->
                             <Grid Name="newsevents_content_panel" Grid.Column="2">
-                                <s:SurfaceListBox Name="news" Visibility="Visible" Width="380" Height="634" Background="Transparent" BorderBrush="Transparent"
+                                <s:SurfaceListBox Name="news" Visibility="Visible" Width="400" Height="634" Background="Transparent" BorderBrush="Transparent"
                                                   HorizontalAlignment="Left" VerticalAlignment="Top"
                                                  
                                                   LostFocus="lstMsgs_LostFocus"
@@ -970,7 +971,7 @@
                                       s:SurfaceScrollViewer.HorizontalScrollBarVisibility="Hidden"/>
 
                                 <!--Display list of events-->
-                                <s:SurfaceListBox Name="events" Visibility="Collapsed" Width="380" Height="634" Background="Transparent" BorderBrush="Transparent"
+                                <s:SurfaceListBox Name="events" Visibility="Collapsed" Width="400" Height="634" Background="Transparent" BorderBrush="Transparent"
                                                   HorizontalAlignment="Left" VerticalAlignment="Top"
                                                   
                                                   ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
@@ -979,7 +980,7 @@
                                       s:SurfaceScrollViewer.HorizontalScrollBarVisibility="Hidden"/>
 
                                 <!--Display list of media-->
-                                <s:SurfaceListBox Name="media" Visibility="Collapsed" Width="380" Height="634" Background="Transparent" BorderBrush="Transparent"
+                                <s:SurfaceListBox Name="media" Visibility="Collapsed" Width="400" Height="634" Background="Transparent" BorderBrush="Transparent"
                                                   HorizontalAlignment="Left" VerticalAlignment="Top"
                                                  
                                                   ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"

@@ -17,6 +17,7 @@ using Microsoft.Surface.Presentation.Controls;
 using Microsoft.Surface.Presentation.Input;
 using System.Collections.ObjectModel;
 using System.Windows.Media.Animation;
+using HtmlAgilityPack;
 
 namespace _306Project1
 {
@@ -153,30 +154,165 @@ namespace _306Project1
             // end of initialization of family services stuff
 
             // initialization of news events stuff
-            NewsItems.Add(new DataItems("Assurity Consulting support One Day", "30/09/13", "Assurity Consulting Group has been generously supporting CCF through fundraising initiatives during the year, and they came on board once again as part of our One Day for Child Cancer campaign in July"));
-            NewsItems.Add(new DataItems("Charity begins at the office", "20/08/13", "Executive Travel have embarked on a year long fundraising programme for CCF."));
-            NewsItems.Add(new DataItems("Governor-General Dinner in Hamilton great night for all", "15/07/13", "You're invited to attend the inaugural Child Cancer Legends Luncheon in Mt Maunganui to dine with sporting legends!"));
-            NewsItems.Add(new DataItems("CRC Speedshow auction paintings for charity", "15/07/13", "Three of the 17 NZ Legends of Speed being honoured at this year’s CRC Speedshow have been painted by renowned artist Don Packwood with the unique oil paintings being auctioned and the profits donated to charity."));
-            NewsItems.Add(new DataItems("Thanks for voting!!", "15/07/13", "Voting has now closed and the results are in! The Wooden Toy Box just gave away $50,000 worth of toys and CCF got a huge 41% of them!"));
-            //NewsItems.Add(new DataItems("Wife's memory keeps Eric helping out", "12/07/13"));
-            //NewsItems.Add(new DataItems("CCF Supporter Feedback Survey", "05/07/13"));
-            //NewsItems.Add(new DataItems("TrueBliss back for charity campaign", "21/06/13"));
-            //NewsItems.Add(new DataItems("Family unity's a head-turner", "27/06/13"));
+            string[] News_Titles = new string[100];
+            string[] News_Dates = new string[100];
+            string[] News_Details = new string[100];
 
-            EventsItems.Add(new DataItems("Charity Home for CCF", "12/10/2013 to 20/11/13", "Proud sponsor Professionals Hutt City, in partnership with PlaceMakers Hutt City and Certified Builders, are building a house in October in support of CCF."));
-            EventsItems.Add(new DataItems("Crafty Knitwits Knitathon Grand Auction", "19/10/13", "The Knitathon was run for the first time in 2011 and has grown exponentially since then, with all items auctioned off for CCF."));
-            EventsItems.Add(new DataItems("Child Cancer Legends Luncheon", "22/11/2013", "The Top of the Range Horse Trek is being held in the beautiful Hawke's Bay over 4 days across a course that will feature stunning views of the Te Pohue area from 1000 metres above sea level. Register now to take part in this great event!"));
-            EventsItems.Add(new DataItems("Top of the Range Horse Trek", "27/01/14 to 02/02/14", "The Top of the Range Horse Trek is being held in the beautiful Hawke's Bay over 4 days across a course that will feature stunning views of the Te Pohue area from 1000 metres above sea level. Register now to take part in this great event!"));
+            string[] Event_Titles = new string[10];
+            string[] Event_Dates = new string[10];
+            string[] Event_Details = new string[10];
 
-            MediaItems.Add(new DataItems("Elish Wilkes on Close Up", "", "Mark Sainsbury and Close Up screened an amazing interview with Eilish Wilkes with input from Mum, Kathie. Close Up interviewed Eilish a few years ago and this segment revisits how she is doing."));
-            MediaItems.Add(new DataItems("Comfort found in silver lining", "", "Last July The Aucklander shared with its readers Kelcey Robert's story. Sophie Bond catches up with Kelcey again and meets her friend Koral Marchant. "));
-            MediaItems.Add(new DataItems("900 Beads of Courage", "", "Eight year-old Joyce Singh isn't letting her cancer diagnosis get in the way of her dreams of becoming a professional model or reporter."));
-            MediaItems.Add(new DataItems("Joy, hope and a girl called Emma", "", "Three year-old Emma Watson has experienced more challenges in her life than most kids of her age would have faced including a cardiac arrest and organ failure."));
-            MediaItems.Add(new DataItems("Joyce Singh's cancer journey", "", "Brave eight year-old Joyce Singh featured on Asia Downunder on Sunday 20th March with her family."));
-            MediaItems.Add(new DataItems("Child Cancer Appeal Month television commercial", "", "Watch our television commercial featuring Bernadine Oliver-Kerby and Emma."));
-            MediaItems.Add(new DataItems("Marc Ellis swims to support children with cancer", "", "TV personality Marc Ellis kicks of Appeal week with an early morning swim across Wellington Harbour to raise money for the Child Cancer Foundation."));
-            MediaItems.Add(new DataItems("Kayak for child cancer", "", "Five year old Joseph Imrie from Kumeu and his mother Kellie featured in a moving snap shot of their child cancer journey on Campbell Live on Friday night. The story promoted Kayak for Cancer. "));
-            //end of initialization of news events stuff
+            string[] Media_Titles = new string[25];
+            string[] Media_Dates = new string[25];
+            string[] Media_Details = new string[25];
+
+            int i = 0;
+
+            HtmlDocument news_document = new HtmlWeb().Load("http://www.childcancer.org.nz/News-and-events/News.aspx");
+            HtmlDocument event_document = new HtmlWeb().Load("http://www.childcancer.org.nz/News-and-events/Events.aspx");
+            HtmlDocument media_document = new HtmlWeb().Load("http://www.childcancer.org.nz/News-and-events/Press-releases.aspx");
+
+            // News
+            var news_titles = news_document.DocumentNode.SelectNodes("//h3");
+            var news_dates = news_document.DocumentNode.SelectNodes("//small");
+            var news_details = news_document.DocumentNode.SelectNodes("//div[@class='item']//p");
+
+            // titles of news
+            if (news_titles != null)
+            {
+                i = 0;
+                foreach (var t in news_titles)
+                {
+                    String text = t.InnerText;
+
+                    News_Titles[i] = text;
+                    i++;
+                }
+            }
+
+            // dates of news
+            if (news_dates != null)
+            {
+                i = 0;
+                foreach (var d in news_dates)
+                {
+                    String date = d.InnerText;
+
+                    News_Dates[i] = date;
+                    i++;
+                }
+            }
+
+            // details of news
+            if (news_details != null)
+            {
+                i = 0;
+                foreach (var det in news_details)
+                {
+                    String detail = det.InnerText;
+
+                    News_Details[i] = detail;
+                    i++;
+                }
+            }
+
+            // news data binding
+            for (int nws = 0; nws < i; nws++)
+            {
+                NewsItems.Add(new DataItems(News_Titles[nws], News_Dates[nws], News_Details[nws]));
+            }
+
+            // Events
+            var event_titles = event_document.DocumentNode.SelectNodes("//h3");
+            var event_dates = event_document.DocumentNode.SelectNodes("//small");
+            var event_details = event_document.DocumentNode.SelectNodes("//div[@class='item']//p");
+
+            // titles of events
+            if (event_titles != null)
+            {
+                i = 0;
+                foreach (var t in event_titles)
+                {
+                    String text = t.InnerText;
+
+                    Event_Titles[i] = text;
+                    i++;
+                }
+            }
+
+            // dates of events
+            if (event_dates != null)
+            {
+                i = 0;
+                foreach (var d in event_dates)
+                {
+                    String date = d.InnerText;
+
+                    Event_Dates[i] = date;
+                    i++;
+                }
+            }
+
+            // details of events
+            if (event_details != null)
+            {
+                i = 0;
+                foreach (var det in event_details)
+                {
+                    String detail = det.InnerText;
+
+                    Event_Details[i] = detail;
+                    i++;
+                }
+            }
+
+            // events data binding
+            for (int evnt = 0; evnt < i; evnt++)
+            {
+                EventsItems.Add(new DataItems(Event_Titles[evnt], Event_Dates[evnt], Event_Details[evnt]));
+            }
+
+            // Media
+            var media_titles = media_document.DocumentNode.SelectNodes("//h3");
+            var media_details = media_document.DocumentNode.SelectNodes("//div[@id='contentPrimary']//a[@href]");
+
+            // titles of medias
+            if (media_titles != null)
+            {
+                i = 0;
+                foreach (var t in media_titles)
+                {
+                    String text = t.InnerText;
+
+                    Media_Titles[i] = text;
+                    i++;
+                }
+            }
+
+            // details of medias
+            if (media_details != null)
+            {
+                i = 0;
+                foreach (var det in media_details)
+                {
+                    String detail = det.Attributes["href"].Value;
+                    if (detail[0] != 'h')
+                    {
+                        detail = "http://www.childcancer.org.nz" + detail;
+                    }
+
+                    Media_Details[i] = detail;
+                    i++;
+                }
+            }
+
+            // medias data binding
+            for (int mdia = 0; mdia < i; mdia++)
+            {
+                MediaItems.Add(new DataItems(Media_Titles[mdia], "", Media_Details[mdia]));
+            }
+
+            // initialization of news events stuff
 
         }
 
