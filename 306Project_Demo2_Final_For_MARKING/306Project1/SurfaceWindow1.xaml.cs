@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows;
+using System.Windows.Input;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
@@ -25,7 +25,7 @@ namespace _306Project1
     /// </summary>
     /// 
 
-    public partial class SurfaceWindow1 : SurfaceWindow
+    public partial class SurfaceWindow1 : SurfaceWindow 
     {
         /// <summary>
         /// Default constructor.
@@ -33,6 +33,7 @@ namespace _306Project1
         /// 
         int turn;
         int i, j;
+        protected TouchPoint TouchStart;
 
         private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
         {
@@ -42,11 +43,42 @@ namespace _306Project1
 
         public SurfaceWindow1()
         {
-            InitializeComponent();
-
+            InitializeComponent();   
             // Add handlers for window availability events
             AddWindowAvailabilityHandlers();
+
+            //Add Touch Events for sliding the page 
+            this.TouchDown += new EventHandler<TouchEventArgs>(BasePage_TouchDown);
+            this.TouchMove += new EventHandler<TouchEventArgs>(BasePage_TouchMove); 
         }
+
+
+        //Hiang 
+        //*** Code block for swipping to home screen 
+        //This method detects if the current page is being touch down
+        private void BasePage_TouchDown(object sender, TouchEventArgs e)
+        { TouchStart = e.GetTouchPoint(this); }
+
+        //Hiang
+        //This method is used for detecting the touch move, it's identified whether the finger is being dragged. 
+        //It allows the user to instantly navigate to the home screen when they slide their finger to the Left. 
+        private void BasePage_TouchMove(object sender, TouchEventArgs e)
+        {
+            if (current_page!=0)   //The sliding effect only works when the user is NOT at home screen 
+            {
+                var Touch = e.GetTouchPoint(this);    //Get the current touch point 
+                
+                //The swipe threhold is 500 pixels
+                //Swipe Left
+                if (TouchStart != null && Touch.Position.X < (TouchStart.Position.X - 500)) 
+                {
+                    showHomePage();   //Navigate to home screen 
+                }
+            }
+
+            e.Handled = true;
+        }
+        //***End of code block for swipping to home screen 
 
         /// <summary>
         /// Occurs when the window is about to close. 
@@ -82,7 +114,7 @@ namespace _306Project1
         protected override void OnInitialized(EventArgs e)
         {
             base.OnInitialized(e);
-            DataContext = this;
+            DataContext = this; 
             pages.Add(_HomePage_0);
             pages.Add(_WhatWeDo_1);
             pages.Add(_WhatWeDo_AboutUs_2);
@@ -857,6 +889,9 @@ namespace _306Project1
 
         }
 
+        //Hiang
+        //This method is responsible for disable the current content page when a new menu button is pressed.
+        //The contents will be disabled depending on the name of the previous menu button. 
         private void disableCurrentContent(String topic)
         {
             switch (topic)
@@ -887,6 +922,8 @@ namespace _306Project1
             }
         }
 
+        //Hiang
+        //This method change the state of the button to disable, i.e. the button will become darker 
         private void setNonActiveBtn(String topic)
         {
             switch (topic)
@@ -914,7 +951,7 @@ namespace _306Project1
 
         }
 
-        private void setActiveHowWeHelp(String activeBtn)
+        private void setActiveHowWeHelpBtn(String activeBtn)
         {
             ImageBrush myBrush = new ImageBrush();
             Image image = new Image();
@@ -1036,6 +1073,11 @@ namespace _306Project1
 
         public void go_HomePage_0(object sender, RoutedEventArgs e)
         {
+            showHomePage(); 
+        }
+
+        private void showHomePage()
+        {
             Grid now_page = pages.ElementAt(current_page);
             current_page = 0;
             Grid next_page = pages.ElementAt(current_page);
@@ -1046,8 +1088,6 @@ namespace _306Project1
             sb2.Begin(next_page);
 
             pages.ElementAt(current_page).Visibility = System.Windows.Visibility.Visible;
-        
-        
         }
 
         public void go_WhatWeDo_1(object sender, RoutedEventArgs e)
@@ -1098,46 +1138,73 @@ namespace _306Project1
 
 
         }
+        
+        //Hiang 
+        //**Code block for How You Can Help page 
+        //This method enable the donate page when the user presses on How You Can Help button on the home screen 
         public void go_HowYouCanHelp_6(object sender, RoutedEventArgs e)
         {
+            //Set the default active button to donate when the user revisit How You Can Help page for the second time 
+            if (currentPage != "donate")
+            {
+                //Make the other menu buttons and their contents to invisille 
+                setNonActiveBtnHowYouHelp(currentPage);
+                disableCurrentContent(currentPage);
+                //Redefine the page to Donate 
+                currentPage = "donate";
+
+                //Set everything that is belonged to this "donate" to visible 
+                setActiveHowWeHelpBtn(currentPage);
+                qrLabel.Visibility = System.Windows.Visibility.Visible;
+                qrCodeImg.Visibility = System.Windows.Visibility.Visible;
+                donateELabel.Visibility = System.Windows.Visibility.Visible;
+                donateMsg.Visibility = System.Windows.Visibility.Visible;
+            }
+         
+            //Use grid for sliding effect 
             Grid now_page = pages.ElementAt(current_page);
             current_page = 6;
             Grid next_page = pages.ElementAt(current_page);
+            //setActiveHowWeHelpBtn(currentPage); 
 
+            //Add sliding effect 
             Storyboard sb1 = (Storyboard)Resources["SlideOriginToRight"];
             Storyboard sb2 = (Storyboard)Resources["SlideLeftToOrigin"];
             sb1.Begin(now_page);
             sb2.Begin(next_page);
 
+            //Enable the How You Can Help page
             pages.ElementAt(current_page).Visibility = System.Windows.Visibility.Visible;
         }
 
+        //This method will be invoked when the the donate button is pressed on How You Can Help page
+        //It enables all contents and GUI elements of that page 
         public void go_HowYouCanHelp_Donate_7(object sender, RoutedEventArgs e)
         {
             //Set active button
             setNonActiveBtnHowYouHelp(currentPage);
-
-            //DonateButn.Background = Brushes.Gray;
 
             disableCurrentContent(currentPage);
             //Enable the donate content to visible 
             qrLabel.Visibility = System.Windows.Visibility.Visible;
             qrCodeImg.Visibility = System.Windows.Visibility.Visible;
             donateELabel.Visibility = System.Windows.Visibility.Visible;
-            //submilEButton.Visibility = System.Windows.Visibility.Visible;
             donateMsg.Visibility = System.Windows.Visibility.Visible;
+            
             //Now the current page is a "donate" page 
             currentPage = "donate";
-            //set donate to active
-            setActiveHowWeHelp(currentPage);
-
+            //set donate button to active 
+            setActiveHowWeHelpBtn(currentPage);
         }
+
+        //This method will be invoked when the Volunteer button is pressed on the How You Can Help page
+        //Set all elemments of Volunteer page to visible and disable the previously used page 
         public void go_HowYouCanHelp_Volunteer_8(object sender, RoutedEventArgs e)
         {
             //Set the active button
             setNonActiveBtnHowYouHelp(currentPage);
             //VolunteerButn.Background = Brushes.Gray;
-            setActiveHowWeHelp("volunteer");
+            setActiveHowWeHelpBtn("volunteer");
 
             //Visibility setting
             disableCurrentContent(currentPage);
@@ -1145,31 +1212,36 @@ namespace _306Project1
             VolunteerButn.Visibility = System.Windows.Visibility.Visible;
             volunteerText.Visibility = System.Windows.Visibility.Visible;
             volunteerMsg.Visibility = System.Windows.Visibility.Visible;
-            //smilEButton.Visibility = System.Windows.Visibility.Visible;
             VolunteerSignLabel.Visibility = System.Windows.Visibility.Visible;
 
         }
+
+        //It is invoked when the user press on Fundraise on How You Can Help page 
+        //This method will enable every GUI elemennt of Fundraise page including buttons and contents 
         public void go_HowYouCanHelp_Fundraise_9(object sender, RoutedEventArgs e)
         {
             setNonActiveBtnHowYouHelp(currentPage);
             //FundraiseButn.Background = Brushes.Gray;
-            setActiveHowWeHelp("fundraise");
+            setActiveHowWeHelpBtn("fundraise");
 
             disableCurrentContent(currentPage);
             currentPage = "fundraise";
             fundraiseText.Visibility = System.Windows.Visibility.Visible;
         }
 
+        //It is invoked when the user presses on Sponsors on How You Can Help page 
+        //This method enable every GUI element of sponsor page 
         public void go_HowYouCanHelp_Sponsor_10(object sender, RoutedEventArgs e)
         {
             setNonActiveBtnHowYouHelp(currentPage);
             // SponsorButn.Background = Brushes.Gray;
-            setActiveHowWeHelp("sponsor");
+            setActiveHowWeHelpBtn("sponsor");
 
             disableCurrentContent(currentPage);
             currentPage = "sponsor";
             sponsorText.Visibility = System.Windows.Visibility.Visible;
         }
+        //**Hiang End of code block for How You Can Help page visibiliy settings
 
         public void go_NewsAndEvents_11(object sender, RoutedEventArgs e)
         {
@@ -1186,9 +1258,8 @@ namespace _306Project1
 
 
             pages.ElementAt(current_page).Visibility = System.Windows.Visibility.Visible;
-
-
         }
+
         public void go__NewsAndEvents_News_12(object sender, RoutedEventArgs e)
         {
             pages.ElementAt(current_page).Visibility = System.Windows.Visibility.Collapsed;

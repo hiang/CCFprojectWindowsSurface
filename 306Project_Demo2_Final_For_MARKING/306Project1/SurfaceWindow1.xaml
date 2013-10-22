@@ -48,9 +48,9 @@
     <!--end of codechunk -->
     <Viewbox>
         <!-- CANVAS -->
-        <Grid x:Name="Canvas" ClipToBounds="True">
+        <Grid x:Name="Canvas" IsManipulationEnabled="True" ClipToBounds="True">
             <!-- "FRAME" -->
-            <Grid  x:Name="Frame" Width="1920" Height="1080">
+            <Grid x:Name="Frame" Width="1920" Height="1080">
                 <!-- HOME PAGE -->
                 <Grid x:Name="_HomePage_0" Visibility="Visible" ZIndex="0">
                     <Grid.RenderTransform>
@@ -685,7 +685,7 @@
                     </Grid>
 
                     <Grid Width="1631" Height="1080" HorizontalAlignment="Left" VerticalAlignment="Center">
-                        <Grid.Background>
+                        <Grid.Background >
                             <ImageBrush ImageSource="./Resources/306p2_elements/306p2_elements_how_you_can_help/306p2_elements__0009_green-sphere---how-you-can-help.png"/>
                         </Grid.Background>
 
@@ -700,7 +700,12 @@
                                 <ColumnDefinition Width="100"/>
                                 <ColumnDefinition Width="1151"/>
                             </Grid.ColumnDefinitions>
-
+                            
+                            <Grid Grid.Column="2" Visibility="Visible" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                <TextBlock Padding="0,0,0,300">
+                                <Image Width="700" Source="./Resources/306p2_elements/306p2_elements_how_you_can_help/donateChild.png"/>
+                                </TextBlock>
+                            </Grid>
                             <Grid Grid.Column="0" Name="howyoucanhelp_menu_panel">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="80"/>
@@ -759,7 +764,13 @@
                                     </Grid.RowDefinitions>
                                     
                                     <Grid Grid.Row="0">
+<<<<<<< HEAD
                                         <TextBlock Name="qrLabel" Text="Donate via QR Code" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="DarkGreen" FontSize="48"/>
+=======
+                                        <TextBlock Name="qrLabel" Text="Donate via QR Code" HorizontalAlignment="Left" 
+                                                   VerticalAlignment="Center" 
+                                                   Foreground="DarkBlue" FontSize="48"/>
+>>>>>>> f219a4b1ca0e15d8c96f777107d35c9e3ff117c4
                                     </Grid>
                                     
                                     <Grid Grid.Row="1">
