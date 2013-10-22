@@ -96,6 +96,7 @@
     <None Include="Resources\QRHowYouCanHelp\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\pdficon.gif" />
     <Resource Include="Resources\news1.PNG" />
     <Resource Include="Resources\news2.PNG" />
     <Resource Include="Resources\news3.PNG" />
@@ -169,6 +170,7 @@
     <Resource Include="Resources\306p2_elements\306p2_elements_what_we_do\306p2_elements__0000_highlighted_button_our_history.png" />
     <Resource Include="Resources\306p2_elements\306p2_elements_what_we_do\306p2_elements__0004_normal_button_our_history.png" />
     <Resource Include="Resources\family_and_support_banner.jpg" />
+    <Resource Include="Resources\Adobe_PDF_Icon.svg.png" />
     <Content Include="Resources\icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
