@@ -764,13 +764,12 @@
                                     </Grid.RowDefinitions>
                                     
                                     <Grid Grid.Row="0">
-<<<<<<< HEAD
-                                        <TextBlock Name="qrLabel" Text="Donate via QR Code" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="DarkGreen" FontSize="48"/>
-=======
+
+
                                         <TextBlock Name="qrLabel" Text="Donate via QR Code" HorizontalAlignment="Left" 
                                                    VerticalAlignment="Center" 
                                                    Foreground="DarkBlue" FontSize="48"/>
->>>>>>> f219a4b1ca0e15d8c96f777107d35c9e3ff117c4
+
                                     </Grid>
                                     
                                     <Grid Grid.Row="1">
@@ -1239,16 +1238,16 @@
 
 
                                                         <Grid Grid.Column="0" Grid.Row="0">
-                                                            <Image Source="./Resources/Adobe_PDF_Icon.svg.png" Height="200" Width="200"></Image>
+                                                            <Image Source="./Resources/pdficon.gif" Height="200" Width="200"></Image>
                                                         </Grid>
                                                         <Grid Grid.Column="0" Grid.Row="1">
-                                                            <Image Source="./Resources/Adobe_PDF_Icon.svg.png" Height="200" Width="200"></Image>
+                                                            <Image Source="./Resources/pdficon.gif" Height="200" Width="200"></Image>
                                                         </Grid>
                                                         <Grid Grid.Column="0" Grid.Row="2">
-                                                            <Image Source="./Resources/Adobe_PDF_Icon.svg.png" Height="200" Width="200"></Image>
+                                                            <Image Source="./Resources/pdficon.gif" Height="200" Width="200"></Image>
                                                         </Grid>
                                                         <Grid Grid.Column="0" Grid.Row="3">
-                                                            <Image Source="./Resources/Adobe_PDF_Icon.svg.png" Height="200" Width="200"></Image>
+                                                            <Image Source="./Resources/pdficon.gif" Height="200" Width="200"></Image>
                                                         </Grid>
 
 
