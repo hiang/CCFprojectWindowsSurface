@@ -702,9 +702,19 @@
                                 <ColumnDefinition Width="1151"/>
                             </Grid.ColumnDefinitions>
                             
-                            <Grid Grid.Column="2" Visibility="Visible" HorizontalAlignment="Right" VerticalAlignment="Center">
-                                <TextBlock Padding="0,0,0,300">
-                                <Image Width="700" Source="./Resources/306p2_elements/306p2_elements_how_you_can_help/donateChild.png"/>
+                            <Grid Grid.Column="3" Visibility="Visible" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                <TextBlock Padding="500,0,0,0">
+                                <Image Name="donatePic" Visibility="Collapsed" Height="900" Width="800" Source="./Resources/306p2_elements/306p2_elements_how_you_can_help/donateChild.png"/>
+                                </TextBlock>
+                                
+                                <TextBlock Padding="600,50,0,250">
+                                <Image Name="sponsorPic" Visibility="Collapsed" Height="600" Width="800" Source="./Resources/306p2_elements/306p2_elements_how_you_can_help/sponsorPic.png"/>
+                                </TextBlock>
+                                    <TextBlock Padding="500,50,0,250">
+                                <Image Name="volunteerPic" Visibility="Collapsed" Width="500" Height="700" Source="./Resources/306p2_elements/306p2_elements_how_you_can_help/donateVolunteer.png"/>
+                                </TextBlock>
+                                <TextBlock Padding="500,50,0,250">
+                                <Image Name="fundraisePic" Visibility="Visible" Width="500" Height="700" Source="./Resources/306p2_elements/306p2_elements_how_you_can_help/fundraisePic.png"/>
                                 </TextBlock>
                             </Grid>
                             <Grid Grid.Column="0" Name="howyoucanhelp_menu_panel">
