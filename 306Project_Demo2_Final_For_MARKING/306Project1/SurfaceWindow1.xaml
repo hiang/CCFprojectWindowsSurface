@@ -31,15 +31,16 @@
                 <Label Content="{Binding Name}"
                        Foreground="Black"
                        FontWeight="DemiBold"
-                       HorizontalAlignment="Stretch"
+                       HorizontalAlignment="Left"
                        VerticalAlignment="Center"
-                       MaxWidth="260"
+                       MaxWidth="380"
                        FontSize="19"/>
 
                 <Label Content="{Binding Date}"
                        Foreground="Black"
-                       HorizontalAlignment="Stretch"
+                       HorizontalAlignment="Left"
                        VerticalAlignment="Center"
+                       MaxWidth="380"
                        FontSize="16"/>
 
             </StackPanel>
@@ -51,6 +52,7 @@
         <Grid x:Name="Canvas" IsManipulationEnabled="True" ClipToBounds="True">
             <!-- "FRAME" -->
             <Grid x:Name="Frame" Width="1920" Height="1080">
+             
                 <!-- HOME PAGE -->
                 <Grid x:Name="_HomePage_0" Visibility="Visible" ZIndex="0">
                     <Grid.RenderTransform>
@@ -356,6 +358,7 @@
                     </Label>
                 </Grid>
                 <!--End of TIc TAC TOE-->
+            
 
                 <!-- WHAT WE DO -->
                 <Grid x:Name="_WhatWeDo_1" Visibility="Collapsed">
@@ -382,12 +385,27 @@
                     <Grid Width="1631" Height="1080" HorizontalAlignment="Left" VerticalAlignment="Center">
                         <Grid.Background>
                             <ImageBrush ImageSource="/Resources/306p2_elements/306p2_elements_what_we_do/306p2_elements__0009_pink-sphere---what-we-do.png"/>
+                            
                         </Grid.Background>
 
                         <Grid.RowDefinitions>
                             <RowDefinition Height="200"/>
+                            <RowDefinition Height="600"/>
                             <RowDefinition Height="auto"/>
                         </Grid.RowDefinitions>
+
+                        <!--Hiang add swipe to home icon at the bottom of the page--> 
+                        <Grid Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                            <!--This is the swipe icon-->
+                            <TextBlock Padding="400,150,0,10" Name="swipeHome"  >
+                                   <Image Width="200" Height="100" Source="./Resources/swipe left.png"/>
+     
+                            <!--This is the swipe text--> 
+                            </TextBlock>
+                                <TextBlock Padding="400,250,0,10" Foreground="DarkBlue" FontSize="20">
+                                     Swipe Left To Go Back Home
+                               </TextBlock>                       
+                        </Grid>
 
                         <Grid Grid.Row="1">
                             <Grid.ColumnDefinitions>
@@ -404,7 +422,7 @@
                                     <RowDefinition Height="80"/>
                                     <RowDefinition Height="auto"/>
                                 </Grid.RowDefinitions>
-
+                                
                                 <Grid Grid.Row="0">
                                     <s:SurfaceButton Name="go_about_us" Click="aboutus_Click" Width="293" Height="69" HorizontalAlignment="right" VerticalAlignment="center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
                                         <s:SurfaceButton.Background>
@@ -691,9 +709,24 @@
 
                         <Grid.RowDefinitions>
                             <RowDefinition Height="200"/>
+                            <RowDefinition Height="760"/>
                             <RowDefinition Height="auto"/>
                         </Grid.RowDefinitions>
 
+                        <!--Hiang add swipe to home icon at the bottom of the page-->
+                        <Grid Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                            <!--This is the swipe icon-->
+                            <TextBlock Padding="400,0,0,0"  >
+                                   <Image Width="200" Height="100" Source="./Resources/swipe left.png"/>
+     
+                            <!--This is the swipe text-->
+                            </TextBlock>
+                            <TextBlock Padding="400,90,0,10" Foreground="DarkBlue" FontSize="20">
+                                     Swipe Left To Go Back Home
+                            </TextBlock>
+                        </Grid>
+                        <!--End of swipe code-->
+                        
                         <Grid Grid.Row="1">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="380"/>
@@ -701,11 +734,22 @@
                                 <ColumnDefinition Width="1151"/>
                             </Grid.ColumnDefinitions>
                             
-                            <Grid Grid.Column="2" Visibility="Visible" HorizontalAlignment="Right" VerticalAlignment="Center">
-                                <TextBlock Padding="0,0,0,300">
-                                <Image Width="700" Source="./Resources/306p2_elements/306p2_elements_how_you_can_help/donateChild.png"/>
+                            <Grid Grid.Column="3" Grid.RowSpan="3" Visibility="Visible" HorizontalAlignment="Right" VerticalAlignment="Top">
+                                <TextBlock Padding="500,50,0,0">
+                                <Image Name="donatePic" Visibility="Visible" MaxHeight="500" Width="800" Source="./Resources/306p2_elements/306p2_elements_how_you_can_help/donateChild.png"/>
+                                </TextBlock>
+                                
+                                <TextBlock Padding="600,50,0,250">
+                                <Image Name="sponsorPic" Visibility="Collapsed" Height="500" Width="800" Source="./Resources/306p2_elements/306p2_elements_how_you_can_help/sponsorPic.png"/>
+                                </TextBlock>
+                                    <TextBlock Padding="500,50,0,250">
+                                <Image Name="volunteerPic" Visibility="Collapsed" Width="500" Height="700" Source="./Resources/306p2_elements/306p2_elements_how_you_can_help/donateVolunteer.png"/>
+                                </TextBlock>
+                                <TextBlock Padding="600,100,0,0">
+                                <Image Name="fundraisePic" Visibility="Collapsed" Width="500" Height="700" Source="./Resources/306p2_elements/306p2_elements_how_you_can_help/fundraisePic.png"/>
                                 </TextBlock>
                             </Grid>
+                             
                             <Grid Grid.Column="0" Name="howyoucanhelp_menu_panel">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="80"/>
@@ -862,19 +906,10 @@
                     -   Sporting event - golfing, bowls etc <LineBreak></LineBreak>
                     -   Art Auction <LineBreak></LineBreak></TextBlock>
 
-                                
-
-                                
+                            
                             </Grid>
 
-
-
-
                         </Grid>
-
-                        
-
-                        
 
                     </Grid>
 
@@ -911,14 +946,27 @@
 
                         <Grid.RowDefinitions>
                             <RowDefinition Height="200"/>
+                            <RowDefinition Height="600"/>
                             <RowDefinition Height="auto"/>
                         </Grid.RowDefinitions>
 
+                        <!--Hiang add swipe to home icon at the bottom of the page-->
+                        <Grid Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                            <!--This is the swipe icon-->
+                            <TextBlock Padding="400,150,0,10"  >
+                                   <Image Width="200" Height="100" Source="./Resources/swipe left.png"/>
+     
+                            <!--This is the swipe text-->
+                            </TextBlock>
+                            <TextBlock Padding="400,250,0,10" Foreground="DarkBlue" FontSize="20">
+                                     Swipe Left To Go Back Home
+                            </TextBlock>
+                        </Grid>
                         <Grid Grid.Row="1">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="380"/>
                                 <ColumnDefinition Width="15"/>
-                                <ColumnDefinition Width="380"/>
+                                <ColumnDefinition Width="400"/>
                                 <ColumnDefinition Width="15"/>
                                 <ColumnDefinition Width="826"/>
                             </Grid.ColumnDefinitions>
@@ -958,9 +1006,9 @@
 
                             </Grid>
 
-                            <!--Display list of news-->
                             <Grid Name="newsevents_content_panel" Grid.Column="2">
-                                <s:SurfaceListBox Name="news" Visibility="Visible" Width="380" Height="634" Background="Transparent" BorderBrush="Transparent"
+                                <!--Display list of news-->
+                                <s:SurfaceListBox Name="news" Visibility="Visible" Width="400" Height="634" Background="Transparent" BorderBrush="Transparent"
                                                   HorizontalAlignment="Left" VerticalAlignment="Top"
                                                  
                                                   LostFocus="lstMsgs_LostFocus"
@@ -970,7 +1018,7 @@
                                       s:SurfaceScrollViewer.HorizontalScrollBarVisibility="Hidden"/>
 
                                 <!--Display list of events-->
-                                <s:SurfaceListBox Name="events" Visibility="Collapsed" Width="380" Height="634" Background="Transparent" BorderBrush="Transparent"
+                                <s:SurfaceListBox Name="events" Visibility="Collapsed" Width="400" Height="634" Background="Transparent" BorderBrush="Transparent"
                                                   HorizontalAlignment="Left" VerticalAlignment="Top"
                                                   
                                                   ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
@@ -979,7 +1027,7 @@
                                       s:SurfaceScrollViewer.HorizontalScrollBarVisibility="Hidden"/>
 
                                 <!--Display list of media-->
-                                <s:SurfaceListBox Name="media" Visibility="Collapsed" Width="380" Height="634" Background="Transparent" BorderBrush="Transparent"
+                                <s:SurfaceListBox Name="media" Visibility="Collapsed" Width="400" Height="634" Background="Transparent" BorderBrush="Transparent"
                                                   HorizontalAlignment="Left" VerticalAlignment="Top"
                                                  
                                                   ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
@@ -993,13 +1041,19 @@
 
                                 <!--Display the selected news-->
                                 <Border Name="selectednews_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
-                                    <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="SelectedNews" Text="{Binding SelectedItem.Details, ElementName=news}" />
+                                    <StackPanel>
+                                        <Image  Margin='0' Source="{Binding SelectedItem.Images_Src, ElementName=news}" Visibility="Visible" MaxWidth="350" MaxHeight="350"  VerticalAlignment="Stretch" HorizontalAlignment="Left"/>
+                                        <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="SelectedNews" Text="{Binding SelectedItem.Details, ElementName=news}" />
+                                    </StackPanel>
                                 </Border>
                                 
 
                                 <!--Display the selected events-->
                                 <Border Name="selectedevent_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Collapsed">
-                                    <TextBlock FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="SelectedEvent" Text="{Binding SelectedItem.Details, ElementName=events}" />
+                                    <StackPanel>
+                                        <Image  Margin='0' Source="{Binding SelectedItem.Images_Src, ElementName=events}" Visibility="Visible" MaxWidth="350" MaxHeight="350"  VerticalAlignment="Stretch" HorizontalAlignment="Left"/>
+                                        <TextBlock FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="SelectedEvent" Text="{Binding SelectedItem.Details, ElementName=events}" />
+                                    </StackPanel>
                                 </Border>
 
                                 <!--Display the selected media-->
@@ -1046,9 +1100,23 @@
 
                         <Grid.RowDefinitions>
                             <RowDefinition Height="200"/>
+                            <RowDefinition Height="600"/>
                             <RowDefinition Height="auto"/>
                         </Grid.RowDefinitions>
 
+                        <!--Hiang add swipe to home icon at the bottom of the page-->
+                        <Grid Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                            <!--This is the swipe icon-->
+                            <TextBlock Padding="400,150,0,10"  >
+                                   <Image Width="200" Height="100" Source="./Resources/swipe left.png"/>
+     
+                            <!--This is the swipe text-->
+                            </TextBlock>
+                            <TextBlock Padding="400,250,0,10" Foreground="DarkBlue" FontSize="20">
+                                     Swipe Left To Go Back Home
+                            </TextBlock>
+                        </Grid>
+                        
                         <Grid Grid.Row="1">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="380"/>

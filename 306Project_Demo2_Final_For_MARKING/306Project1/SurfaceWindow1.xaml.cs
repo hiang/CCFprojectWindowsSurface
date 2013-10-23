@@ -17,6 +17,7 @@ using Microsoft.Surface.Presentation.Controls;
 using Microsoft.Surface.Presentation.Input;
 using System.Collections.ObjectModel;
 using System.Windows.Media.Animation;
+using HtmlAgilityPack;
 
 namespace _306Project1
 {
@@ -68,9 +69,9 @@ namespace _306Project1
             {
                 var Touch = e.GetTouchPoint(this);    //Get the current touch point 
                 
-                //The swipe threhold is 500 pixels
+                //The swipe threhold is 150 pixels
                 //Swipe Left
-                if (TouchStart != null && Touch.Position.X < (TouchStart.Position.X - 500)) 
+                if (TouchStart != null && Touch.Position.X < (TouchStart.Position.X - 150)) 
                 {
                     showHomePage();   //Navigate to home screen 
                 }
@@ -136,47 +137,201 @@ namespace _306Project1
 
             //initialization of family services stuff
 
-            BeadsItems.Add(new DataItems("Collection guide", "", "http://www.childcancer.org.nz/CCFSite/media/images/Ambassadors/Beads-of-Courage-Collection-Guideline-Sept-2012_2.pdf"));
-            BeadsItems.Add(new DataItems("Member's tally sheet", "", "http://www.childcancer.org.nz/CCFSite/media/images/Ambassadors/FSC-Beads-of-Courage-MEMBERS-Programme-SEP-2012-FINAL.pdf"));
-            BeadsItems.Add(new DataItems("Sibling's programme", "", "http://www.childcancer.org.nz/CCFSite/media/images/Ambassadors/FSC-Beads-of-Courage-SIBLING-Programme-SEP-2012-FINAL.pdf"));
-            BeadsItems.Add(new DataItems("Update on Beads of Courage㈢  programme", "", "http://www.childcancer.org.nz/CCFSite/media/images/Ambassadors/Newsletter-Sep-2102---Beads-of-Courage_1.pdf"));
+            BeadsItems.Add(new DataItems("Collection guide", "", "http://www.childcancer.org.nz/CCFSite/media/images/Ambassadors/Beads-of-Courage-Collection-Guideline-Sept-2012_2.pdf", ""));
+            BeadsItems.Add(new DataItems("Member's tally sheet", "", "http://www.childcancer.org.nz/CCFSite/media/images/Ambassadors/FSC-Beads-of-Courage-MEMBERS-Programme-SEP-2012-FINAL.pdf", ""));
+            BeadsItems.Add(new DataItems("Sibling's programme", "", "http://www.childcancer.org.nz/CCFSite/media/images/Ambassadors/FSC-Beads-of-Courage-SIBLING-Programme-SEP-2012-FINAL.pdf", ""));
+            BeadsItems.Add(new DataItems("Update on Beads of Courage㈢  programme", "", "http://www.childcancer.org.nz/CCFSite/media/images/Ambassadors/Newsletter-Sep-2102---Beads-of-Courage_1.pdf", ""));
 
-            sharingItems.Add(new DataItems("August 2013 (.pdf 6.2MB)", "Feature Stories: Lucy's Life in the Maniatoto; \nWiremu's Journey; CCF's \nHistory Book.", "http://www.childcancer.org.nz/getattachment/Family-support/Sharing-magazine/J000154_SharingAUG13_LR.pdf.aspx"));
-            sharingItems.Add(new DataItems("March 2013 (.pdf 5MB)", "Feature Stories: Introducing our 2013 Ambassadors\n - Hilton, Myah and \nEmilie!; The Canterbury Earthquake - Two Years On.", "http://www.childcancer.org.nz/getattachment/Family-support/Sharing-magazine/Sharing-March-2013-(1).pdf.aspx"));
-            sharingItems.Add(new DataItems("November 2012 (.pdf 4.8MB)", "Feature Stories: Memorials - remembering our loved ones; Our catch ups \n- don't they look great!; Shauna & Her Matching Mates.", "http://www.childcancer.org.nz/getattachment/Family-support/Sharing-magazine/J000023_CCFSharingNOV_LR.pdf.aspx"));
-            sharingItems.Add(new DataItems("August 2012 (.pdf 6.8MB)", "Feature Stories: Sione & Jerome - a dream come true!; Alex and Molly, \nKatia & Anouk - a unique bond.", "http://www.childcancer.org.nz/getattachment/Family-support/Sharing-magazine/J000023_CCFSharingAUG_LR.pdf.aspx"));
+            sharingItems.Add(new DataItems("August 2013 (.pdf 6.2MB)", "Feature Stories: Lucy's Life in the Maniatoto; \nWiremu's Journey; CCF's \nHistory Book.", "http://www.childcancer.org.nz/getattachment/Family-support/Sharing-magazine/J000154_SharingAUG13_LR.pdf.aspx", ""));
+            sharingItems.Add(new DataItems("March 2013 (.pdf 5MB)", "Feature Stories: Introducing our 2013 Ambassadors\n - Hilton, Myah and \nEmilie!; The Canterbury Earthquake - Two Years On.", "http://www.childcancer.org.nz/getattachment/Family-support/Sharing-magazine/Sharing-March-2013-(1).pdf.aspx", ""));
+            sharingItems.Add(new DataItems("November 2012 (.pdf 4.8MB)", "Feature Stories: Memorials - remembering our loved ones; Our catch ups \n- don't they look great!; Shauna & Her Matching Mates.", "http://www.childcancer.org.nz/getattachment/Family-support/Sharing-magazine/J000023_CCFSharingNOV_LR.pdf.aspx", ""));
+            sharingItems.Add(new DataItems("August 2012 (.pdf 6.8MB)", "Feature Stories: Sione & Jerome - a dream come true!; Alex and Molly, \nKatia & Anouk - a unique bond.", "http://www.childcancer.org.nz/getattachment/Family-support/Sharing-magazine/J000023_CCFSharingAUG_LR.pdf.aspx", ""));
 
-            contactItems.Add(new DataItems("Family Support - Auckland﻿", "", "Janet Masina\n(09) 303 9885\njmasina@childcancer.org.nz\n\nMary Mangan\n(09) 303 9971\nmmangan@childcancer.org.nz"));
-            contactItems.Add(new DataItems("Family Support - Christchurch ﻿", "", "Christine Graham\n(03) 365 1485\ncgraham@childcancer.org.nz\n\nDiane Kerr\n021 838 142\ndkerr@childcancer.org.nz"));
-            contactItems.Add(new DataItems("Family Support - Dunedin﻿", "", "Christine Donovan\n(03) 471 7258\ncdonovan@childcancer.org.nz"));
+            contactItems.Add(new DataItems("Family Support - Auckland﻿", "", "Janet Masina\n(09) 303 9885\njmasina@childcancer.org.nz\n\nMary Mangan\n(09) 303 9971\nmmangan@childcancer.org.nz", ""));
+            contactItems.Add(new DataItems("Family Support - Christchurch ﻿", "", "Christine Graham\n(03) 365 1485\ncgraham@childcancer.org.nz\n\nDiane Kerr\n021 838 142\ndkerr@childcancer.org.nz", ""));
+            contactItems.Add(new DataItems("Family Support - Dunedin﻿", "", "Christine Donovan\n(03) 471 7258\ncdonovan@childcancer.org.nz", ""));
             
             // end of initialization of family services stuff
 
-            // initialization of news events stuff
-            NewsItems.Add(new DataItems("Assurity Consulting support One Day", "30/09/13", "Assurity Consulting Group has been generously supporting CCF through fundraising initiatives during the year, and they came on board once again as part of our One Day for Child Cancer campaign in July"));
-            NewsItems.Add(new DataItems("Charity begins at the office", "20/08/13", "Executive Travel have embarked on a year long fundraising programme for CCF."));
-            NewsItems.Add(new DataItems("Governor-General Dinner in Hamilton great night for all", "15/07/13", "You're invited to attend the inaugural Child Cancer Legends Luncheon in Mt Maunganui to dine with sporting legends!"));
-            NewsItems.Add(new DataItems("CRC Speedshow auction paintings for charity", "15/07/13", "Three of the 17 NZ Legends of Speed being honoured at this year’s CRC Speedshow have been painted by renowned artist Don Packwood with the unique oil paintings being auctioned and the profits donated to charity."));
-            NewsItems.Add(new DataItems("Thanks for voting!!", "15/07/13", "Voting has now closed and the results are in! The Wooden Toy Box just gave away $50,000 worth of toys and CCF got a huge 41% of them!"));
-            //NewsItems.Add(new DataItems("Wife's memory keeps Eric helping out", "12/07/13"));
-            //NewsItems.Add(new DataItems("CCF Supporter Feedback Survey", "05/07/13"));
-            //NewsItems.Add(new DataItems("TrueBliss back for charity campaign", "21/06/13"));
-            //NewsItems.Add(new DataItems("Family unity's a head-turner", "27/06/13"));
+            /* Initialisation of news and events stuff */
+            string[] News_Titles = new string[100];
+            string[] News_Dates = new string[100];
+            string[] News_Details = new string[100];
+            string[] News_Images = new string[100];
 
-            EventsItems.Add(new DataItems("Charity Home for CCF", "12/10/2013 to 20/11/13", "Proud sponsor Professionals Hutt City, in partnership with PlaceMakers Hutt City and Certified Builders, are building a house in October in support of CCF."));
-            EventsItems.Add(new DataItems("Crafty Knitwits Knitathon Grand Auction", "19/10/13", "The Knitathon was run for the first time in 2011 and has grown exponentially since then, with all items auctioned off for CCF."));
-            EventsItems.Add(new DataItems("Child Cancer Legends Luncheon", "22/11/2013", "The Top of the Range Horse Trek is being held in the beautiful Hawke's Bay over 4 days across a course that will feature stunning views of the Te Pohue area from 1000 metres above sea level. Register now to take part in this great event!"));
-            EventsItems.Add(new DataItems("Top of the Range Horse Trek", "27/01/14 to 02/02/14", "The Top of the Range Horse Trek is being held in the beautiful Hawke's Bay over 4 days across a course that will feature stunning views of the Te Pohue area from 1000 metres above sea level. Register now to take part in this great event!"));
+            string[] Event_Titles = new string[10];
+            string[] Event_Dates = new string[10];
+            string[] Event_Details = new string[10];
+            string[] Event_Images = new string[10];
 
-            MediaItems.Add(new DataItems("Elish Wilkes on Close Up", "", "Mark Sainsbury and Close Up screened an amazing interview with Eilish Wilkes with input from Mum, Kathie. Close Up interviewed Eilish a few years ago and this segment revisits how she is doing."));
-            MediaItems.Add(new DataItems("Comfort found in silver lining", "", "Last July The Aucklander shared with its readers Kelcey Robert's story. Sophie Bond catches up with Kelcey again and meets her friend Koral Marchant. "));
-            MediaItems.Add(new DataItems("900 Beads of Courage", "", "Eight year-old Joyce Singh isn't letting her cancer diagnosis get in the way of her dreams of becoming a professional model or reporter."));
-            MediaItems.Add(new DataItems("Joy, hope and a girl called Emma", "", "Three year-old Emma Watson has experienced more challenges in her life than most kids of her age would have faced including a cardiac arrest and organ failure."));
-            MediaItems.Add(new DataItems("Joyce Singh's cancer journey", "", "Brave eight year-old Joyce Singh featured on Asia Downunder on Sunday 20th March with her family."));
-            MediaItems.Add(new DataItems("Child Cancer Appeal Month television commercial", "", "Watch our television commercial featuring Bernadine Oliver-Kerby and Emma."));
-            MediaItems.Add(new DataItems("Marc Ellis swims to support children with cancer", "", "TV personality Marc Ellis kicks of Appeal week with an early morning swim across Wellington Harbour to raise money for the Child Cancer Foundation."));
-            MediaItems.Add(new DataItems("Kayak for child cancer", "", "Five year old Joseph Imrie from Kumeu and his mother Kellie featured in a moving snap shot of their child cancer journey on Campbell Live on Friday night. The story promoted Kayak for Cancer. "));
-            //end of initialization of news events stuff
+            string[] Media_Titles = new string[25];
+            string[] Media_Dates = new string[25];
+            string[] Media_Details = new string[25];
+
+            int i = 0;
+
+            // Declaration of html documents needed for parsing links
+            HtmlDocument news_document = new HtmlWeb().Load("http://www.childcancer.org.nz/News-and-events/News.aspx"); // News section
+            HtmlDocument event_document = new HtmlWeb().Load("http://www.childcancer.org.nz/News-and-events/Events.aspx"); // Events section
+            HtmlDocument media_document = new HtmlWeb().Load("http://www.childcancer.org.nz/News-and-events/Press-releases.aspx"); // Media section
+
+            /* NEWS SECTION */
+
+            // Initialisation of parent node where searching (for children nodes) begins
+            var news_item = news_document.DocumentNode.SelectNodes("//div[@class='item']");
+            i = 0;
+
+            foreach (HtmlNode item in news_item)
+            {
+                // Declaration of children nodes
+                var news_title = item.SelectSingleNode("./h3");
+                var news_date = item.SelectSingleNode("./small");
+                var news_detail = item.SelectSingleNode("./p");
+                var news_image = item.SelectSingleNode("./img");
+
+                // Store each news header found in website into news titles array
+                if (news_title != null)
+                {
+                    News_Titles[i] = news_title.InnerText;
+                }
+
+                // Store the date of each news into news dates array
+                if (news_date != null)
+                {
+                    News_Dates[i] = news_date.InnerText;
+                }
+
+                // Store the content of each news into news details array
+                if (news_detail != null)
+                {
+                    News_Details[i] = news_detail.InnerText;
+                }
+
+                // Store the link of image found under each news into news images array.
+                // If none, empty string will be stored.
+                if (news_image != null)
+                {
+                    string source_detail = news_image.Attributes["src"].Value;
+                    if (source_detail[0] != 'h')
+                    {
+                        source_detail = "http://www.childcancer.org.nz" + source_detail;
+                    }
+                    News_Images[i] = source_detail;
+                }
+                else if (news_image == null)
+                {
+                    News_Images[i] = "";
+                }
+
+                i++;
+            }
+
+            // Bind the respective elements into NewsItems collection.
+            for (int nws = 0; nws < i; nws++)
+            {
+                NewsItems.Add(new DataItems(News_Titles[nws], News_Dates[nws], News_Details[nws], News_Images[nws]));
+            }
+
+            /* EVENTS SECTION */
+
+            // Initialisation of parent node where searching (for children nodes) begins
+            var event_item = event_document.DocumentNode.SelectNodes("//div[@class='item']");
+            i = 0;
+
+            foreach (HtmlNode item in event_item)
+            {
+                // Declaration of children nodes
+                var event_title = item.SelectSingleNode("./h3");
+                var event_date = item.SelectSingleNode("./small");
+                var event_detail = item.SelectSingleNode("./p");
+                var event_image = item.SelectSingleNode("./img");
+
+                // Store each event names found into event titles array
+                if (event_title != null)
+                {
+                    Event_Titles[i] = event_title.InnerText;
+                }
+
+                // Store the date of each event into event dates array
+                if (event_date != null)
+                {
+                    Event_Dates[i] = event_date.InnerText;
+                }
+
+                // Store the detail of each event into event details array
+                if (event_detail != null)
+                {
+                    Event_Details[i] = event_detail.InnerText;
+                }
+
+                // Store the link of image of respective event into news images array.
+                // If none, empty string will be stored.
+                if (event_image != null)
+                {
+                    string source_detail = event_image.Attributes["src"].Value;
+                    if (source_detail[0] != 'h')
+                    {
+                        source_detail = "http://www.childcancer.org.nz" + source_detail;
+                    }
+                    Event_Images[i] = source_detail;
+                }
+                else if (event_image == null)
+                {
+                    Event_Images[i] = "";
+                }
+
+                i++;
+            }
+
+            // Bind the respective elements into EventsItems collection.
+            for (int evnt = 0; evnt < i; evnt++)
+            {
+                EventsItems.Add(new DataItems(Event_Titles[evnt], Event_Dates[evnt], Event_Details[evnt], Event_Images[evnt]));
+            }
+
+            /* MEDIA SECTION */
+
+            // Initialisation of nodes where the parsing begins
+            var media_titles = media_document.DocumentNode.SelectNodes("//h3");
+            var media_details = media_document.DocumentNode.SelectNodes("//div[@id='contentPrimary']//a[@href]");
+
+            // Search for the title of the media items and store them into media titles array.
+            if (media_titles != null)
+            {
+                i = 0;
+                foreach (var t in media_titles)
+                {
+                    String text = t.InnerText;
+
+                    Media_Titles[i] = text;
+                    i++;
+                }
+            }
+
+            // Store the respective, external links of media items into media details array
+            if (media_details != null)
+            {
+                i = 0;
+                foreach (var det in media_details)
+                {
+                    String detail = det.Attributes["href"].Value;
+                    if (detail[0] != 'h')
+                    {
+                        detail = "http://www.childcancer.org.nz" + detail;
+                    }
+
+                    Media_Details[i] = detail;
+                    i++;
+                }
+            }
+
+            // Bind the respective elements into MediasItems collection.
+            for (int mdia = 0; mdia < i; mdia++)
+            {
+                MediaItems.Add(new DataItems(Media_Titles[mdia], "", Media_Details[mdia], ""));
+            }
+
+            // end initialization of news events stuff
 
         }
 
@@ -902,6 +1057,7 @@ namespace _306Project1
                     donateELabel.Visibility = System.Windows.Visibility.Collapsed;
                     //submilEButton.Visibility = System.Windows.Visibility.Collapsed;
                     donateMsg.Visibility = System.Windows.Visibility.Collapsed;
+                    donatePic.Visibility = System.Windows.Visibility.Collapsed; 
                     break;
 
                 case "volunteer":
@@ -909,14 +1065,17 @@ namespace _306Project1
                     volunteerMsg.Visibility = System.Windows.Visibility.Collapsed;
                     // submilEButton.Visibility = System.Windows.Visibility.Collapsed;
                     VolunteerSignLabel.Visibility = System.Windows.Visibility.Collapsed;
+                    volunteerPic.Visibility = System.Windows.Visibility.Collapsed; 
                     break;
 
                 case "fundraise":
                     fundraiseText.Visibility = System.Windows.Visibility.Collapsed;
+                    fundraisePic.Visibility = System.Windows.Visibility.Collapsed; 
                     break;
 
                 case "sponsor":
                     sponsorText.Visibility = System.Windows.Visibility.Collapsed;
+                    sponsorPic.Visibility = System.Windows.Visibility.Collapsed;
                     break;
 
             }
@@ -1190,6 +1349,7 @@ namespace _306Project1
             qrCodeImg.Visibility = System.Windows.Visibility.Visible;
             donateELabel.Visibility = System.Windows.Visibility.Visible;
             donateMsg.Visibility = System.Windows.Visibility.Visible;
+            donatePic.Visibility = System.Windows.Visibility.Visible; 
             
             //Now the current page is a "donate" page 
             currentPage = "donate";
@@ -1213,6 +1373,7 @@ namespace _306Project1
             volunteerText.Visibility = System.Windows.Visibility.Visible;
             volunteerMsg.Visibility = System.Windows.Visibility.Visible;
             VolunteerSignLabel.Visibility = System.Windows.Visibility.Visible;
+            volunteerPic.Visibility = System.Windows.Visibility.Visible; 
 
         }
 
@@ -1227,6 +1388,7 @@ namespace _306Project1
             disableCurrentContent(currentPage);
             currentPage = "fundraise";
             fundraiseText.Visibility = System.Windows.Visibility.Visible;
+            fundraisePic.Visibility = System.Windows.Visibility.Visible; 
         }
 
         //It is invoked when the user presses on Sponsors on How You Can Help page 
@@ -1240,6 +1402,7 @@ namespace _306Project1
             disableCurrentContent(currentPage);
             currentPage = "sponsor";
             sponsorText.Visibility = System.Windows.Visibility.Visible;
+            sponsorPic.Visibility = System.Windows.Visibility.Visible; 
         }
         //**Hiang End of code block for How You Can Help page visibiliy settings
 
@@ -1506,33 +1669,12 @@ namespace _306Project1
 
 
     // Custom classes to assist data binding
-    public class News
-    {
-        private string name;
-        private bool canDrop;
-
-        public string Name
-        {
-            get { return name; }
-        }
-
-        public bool CanDrop
-        {
-            get { return canDrop; }
-        }
-
-        public News(string name, bool canDrop)
-        {
-            this.name = name;
-            this.canDrop = canDrop;
-        }
-    }
-
     public class DataItems
     {
         private string name;
         private string date;
         private string details;
+        private string images_src;
 
         public string Name
         {
@@ -1550,11 +1692,17 @@ namespace _306Project1
 
         }
 
-        public DataItems(string name, string date, string details)
+        public string Images_Src
+        {
+            get { return images_src; }
+        }
+
+        public DataItems(string name, string date, string details, string images_src)
         {
             this.name = name;
             this.date = date;
             this.details = details;
+            this.images_src = images_src;
         }
 
     }
