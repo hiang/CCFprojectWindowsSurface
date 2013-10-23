@@ -1048,13 +1048,20 @@
 
                                 <!--Display the selected news-->
                                 <Border Name="selectednews_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Visible" >
-                                    <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="SelectedNews" Text="{Binding SelectedItem.Details, ElementName=news}" />
+                                    <StackPanel>
+                                        <Image  Margin='0' Source="{Binding SelectedItem.Images_Src, ElementName=news}" Visibility="Visible" MaxWidth="350" MaxHeight="350"  VerticalAlignment="Stretch" HorizontalAlignment="Left"/>
+                                        <TextBlock  FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="SelectedNews" Text="{Binding SelectedItem.Details, ElementName=news}" />
+                                    </StackPanel>
                                 </Border>
                                 
 
                                 <!--Display the selected events-->
                                 <Border Name="selectedevent_border" HorizontalAlignment="Left" Background="Transparent" BorderThickness="4" BorderBrush="Transparent" Width="600" Height="634" Visibility="Collapsed">
-                                    <TextBlock FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="SelectedEvent" Text="{Binding SelectedItem.Details, ElementName=events}" />
+                                    <StackPanel>
+                                        <Image  Margin='0' Source="{Binding SelectedItem.Images_Src, ElementName=events}" Visibility="Visible" MaxWidth="350" MaxHeight="350"  VerticalAlignment="Stretch" HorizontalAlignment="Left"/>
+                                        <TextBlock FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="SelectedEvent" Text="{Binding SelectedItem.Details, ElementName=events}" />
+                                    </StackPanel>
+                                    
                                 </Border>
 
                                 <!--Display the selected media-->
