@@ -69,9 +69,9 @@ namespace _306Project1
             {
                 var Touch = e.GetTouchPoint(this);    //Get the current touch point 
                 
-                //The swipe threhold is 500 pixels
+                //The swipe threhold is 150 pixels
                 //Swipe Left
-                if (TouchStart != null && Touch.Position.X < (TouchStart.Position.X - 500)) 
+                if (TouchStart != null && Touch.Position.X < (TouchStart.Position.X - 150)) 
                 {
                     showHomePage();   //Navigate to home screen 
                 }
@@ -1038,6 +1038,7 @@ namespace _306Project1
                     donateELabel.Visibility = System.Windows.Visibility.Collapsed;
                     //submilEButton.Visibility = System.Windows.Visibility.Collapsed;
                     donateMsg.Visibility = System.Windows.Visibility.Collapsed;
+                    donatePic.Visibility = System.Windows.Visibility.Collapsed; 
                     break;
 
                 case "volunteer":
@@ -1045,14 +1046,17 @@ namespace _306Project1
                     volunteerMsg.Visibility = System.Windows.Visibility.Collapsed;
                     // submilEButton.Visibility = System.Windows.Visibility.Collapsed;
                     VolunteerSignLabel.Visibility = System.Windows.Visibility.Collapsed;
+                    volunteerPic.Visibility = System.Windows.Visibility.Collapsed; 
                     break;
 
                 case "fundraise":
                     fundraiseText.Visibility = System.Windows.Visibility.Collapsed;
+                    fundraisePic.Visibility = System.Windows.Visibility.Collapsed; 
                     break;
 
                 case "sponsor":
                     sponsorText.Visibility = System.Windows.Visibility.Collapsed;
+                    sponsorPic.Visibility = System.Windows.Visibility.Collapsed;
                     break;
 
             }
@@ -1326,6 +1330,7 @@ namespace _306Project1
             qrCodeImg.Visibility = System.Windows.Visibility.Visible;
             donateELabel.Visibility = System.Windows.Visibility.Visible;
             donateMsg.Visibility = System.Windows.Visibility.Visible;
+            donatePic.Visibility = System.Windows.Visibility.Visible; 
             
             //Now the current page is a "donate" page 
             currentPage = "donate";
@@ -1349,6 +1354,7 @@ namespace _306Project1
             volunteerText.Visibility = System.Windows.Visibility.Visible;
             volunteerMsg.Visibility = System.Windows.Visibility.Visible;
             VolunteerSignLabel.Visibility = System.Windows.Visibility.Visible;
+            volunteerPic.Visibility = System.Windows.Visibility.Visible; 
 
         }
 
@@ -1363,6 +1369,7 @@ namespace _306Project1
             disableCurrentContent(currentPage);
             currentPage = "fundraise";
             fundraiseText.Visibility = System.Windows.Visibility.Visible;
+            fundraisePic.Visibility = System.Windows.Visibility.Visible; 
         }
 
         //It is invoked when the user presses on Sponsors on How You Can Help page 
@@ -1376,6 +1383,7 @@ namespace _306Project1
             disableCurrentContent(currentPage);
             currentPage = "sponsor";
             sponsorText.Visibility = System.Windows.Visibility.Visible;
+            sponsorPic.Visibility = System.Windows.Visibility.Visible; 
         }
         //**Hiang End of code block for How You Can Help page visibiliy settings
 
