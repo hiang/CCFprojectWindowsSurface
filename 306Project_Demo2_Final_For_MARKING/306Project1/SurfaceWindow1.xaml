@@ -1006,8 +1006,8 @@
 
                             </Grid>
 
-                            <!--Display list of news-->
                             <Grid Name="newsevents_content_panel" Grid.Column="2">
+                                <!--Display list of news-->
                                 <s:SurfaceListBox Name="news" Visibility="Visible" Width="400" Height="634" Background="Transparent" BorderBrush="Transparent"
                                                   HorizontalAlignment="Left" VerticalAlignment="Top"
                                                  
@@ -1054,7 +1054,6 @@
                                         <Image  Margin='0' Source="{Binding SelectedItem.Images_Src, ElementName=events}" Visibility="Visible" MaxWidth="350" MaxHeight="350"  VerticalAlignment="Stretch" HorizontalAlignment="Left"/>
                                         <TextBlock FontSize="28" Foreground="Brown" TextAlignment="Justify" HorizontalAlignment="Left" Padding="5,5" Name="SelectedEvent" Text="{Binding SelectedItem.Details, ElementName=events}" />
                                     </StackPanel>
-                                    
                                 </Border>
 
                                 <!--Display the selected media-->
