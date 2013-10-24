@@ -153,7 +153,7 @@ namespace _306Project1
             
             // end of initialization of family services stuff
 
-            // initialization of news events stuff
+            /* Initialisation of news and events stuff */
             string[] News_Titles = new string[100];
             string[] News_Dates = new string[100];
             string[] News_Details = new string[100];
@@ -170,36 +170,45 @@ namespace _306Project1
 
             int i = 0;
 
-            HtmlDocument news_document = new HtmlWeb().Load("http://www.childcancer.org.nz/News-and-events/News.aspx");
-            HtmlDocument event_document = new HtmlWeb().Load("http://www.childcancer.org.nz/News-and-events/Events.aspx");
-            HtmlDocument media_document = new HtmlWeb().Load("http://www.childcancer.org.nz/News-and-events/Press-releases.aspx");
+            // Declaration of html documents needed for parsing links
+            HtmlDocument news_document = new HtmlWeb().Load("http://www.childcancer.org.nz/News-and-events/News.aspx"); // News section
+            HtmlDocument event_document = new HtmlWeb().Load("http://www.childcancer.org.nz/News-and-events/Events.aspx"); // Events section
+            HtmlDocument media_document = new HtmlWeb().Load("http://www.childcancer.org.nz/News-and-events/Press-releases.aspx"); // Media section
 
-            // News
+            /* NEWS SECTION */
+
+            // Initialisation of parent node where searching (for children nodes) begins
             var news_item = news_document.DocumentNode.SelectNodes("//div[@class='item']");
             i = 0;
+
             foreach (HtmlNode item in news_item)
             {
-
+                // Declaration of children nodes
                 var news_title = item.SelectSingleNode("./h3");
                 var news_date = item.SelectSingleNode("./small");
                 var news_detail = item.SelectSingleNode("./p");
                 var news_image = item.SelectSingleNode("./img");
 
+                // Store each news header found in website into news titles array
                 if (news_title != null)
                 {
                     News_Titles[i] = news_title.InnerText;
                 }
 
+                // Store the date of each news into news dates array
                 if (news_date != null)
                 {
                     News_Dates[i] = news_date.InnerText;
                 }
 
+                // Store the content of each news into news details array
                 if (news_detail != null)
                 {
                     News_Details[i] = news_detail.InnerText;
                 }
 
+                // Store the link of image found under each news into news images array.
+                // If none, empty string will be stored.
                 if (news_image != null)
                 {
                     string source_detail = news_image.Attributes["src"].Value;
@@ -217,38 +226,46 @@ namespace _306Project1
                 i++;
             }
 
-            // news data binding
+            // Bind the respective elements into NewsItems collection.
             for (int nws = 0; nws < i; nws++)
             {
                 NewsItems.Add(new DataItems(News_Titles[nws], News_Dates[nws], News_Details[nws], News_Images[nws]));
             }
 
-            // Events
+            /* EVENTS SECTION */
+
+            // Initialisation of parent node where searching (for children nodes) begins
             var event_item = event_document.DocumentNode.SelectNodes("//div[@class='item']");
             i = 0;
+
             foreach (HtmlNode item in event_item)
             {
-
+                // Declaration of children nodes
                 var event_title = item.SelectSingleNode("./h3");
                 var event_date = item.SelectSingleNode("./small");
                 var event_detail = item.SelectSingleNode("./p");
                 var event_image = item.SelectSingleNode("./img");
 
+                // Store each event names found into event titles array
                 if (event_title != null)
                 {
                     Event_Titles[i] = event_title.InnerText;
                 }
 
+                // Store the date of each event into event dates array
                 if (event_date != null)
                 {
                     Event_Dates[i] = event_date.InnerText;
                 }
 
+                // Store the detail of each event into event details array
                 if (event_detail != null)
                 {
                     Event_Details[i] = event_detail.InnerText;
                 }
 
+                // Store the link of image of respective event into news images array.
+                // If none, empty string will be stored.
                 if (event_image != null)
                 {
                     string source_detail = event_image.Attributes["src"].Value;
@@ -266,17 +283,19 @@ namespace _306Project1
                 i++;
             }
 
-            // events data binding
+            // Bind the respective elements into EventsItems collection.
             for (int evnt = 0; evnt < i; evnt++)
             {
                 EventsItems.Add(new DataItems(Event_Titles[evnt], Event_Dates[evnt], Event_Details[evnt], Event_Images[evnt]));
             }
 
+            /* MEDIA SECTION */
 
+            // Initialisation of nodes where the parsing begins
             var media_titles = media_document.DocumentNode.SelectNodes("//h3");
             var media_details = media_document.DocumentNode.SelectNodes("//div[@id='contentPrimary']//a[@href]");
 
-            // titles of medias
+            // Search for the title of the media items and store them into media titles array.
             if (media_titles != null)
             {
                 i = 0;
@@ -289,7 +308,7 @@ namespace _306Project1
                 }
             }
 
-            // details of medias
+            // Store the respective, external links of media items into media details array
             if (media_details != null)
             {
                 i = 0;
@@ -306,13 +325,13 @@ namespace _306Project1
                 }
             }
 
-            // medias data binding
+            // Bind the respective elements into MediasItems collection.
             for (int mdia = 0; mdia < i; mdia++)
             {
                 MediaItems.Add(new DataItems(Media_Titles[mdia], "", Media_Details[mdia], ""));
             }
 
-            // initialization of news events stuff
+            // end initialization of news events stuff
 
         }
 
