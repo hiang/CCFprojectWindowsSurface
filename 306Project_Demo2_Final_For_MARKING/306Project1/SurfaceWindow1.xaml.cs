@@ -1642,28 +1642,6 @@ namespace _306Project1
 
 
     // Custom classes to assist data binding
-    public class News
-    {
-        private string name;
-        private bool canDrop;
-
-        public string Name
-        {
-            get { return name; }
-        }
-
-        public bool CanDrop
-        {
-            get { return canDrop; }
-        }
-
-        public News(string name, bool canDrop)
-        {
-            this.name = name;
-            this.canDrop = canDrop;
-        }
-    }
-
     public class DataItems
     {
         private string name;
